@@ -1,0 +1,2 @@
+all:
+	g++ -std=c++11 -mconsole -I./Player -I./UI -I./Scenes -I./Utils -IN:/KPlayer/KPlayer/include/SDL2 -IN:/KPlayer/KPlayer/include -LN:/KPlayer/KPlayer/lib -o main.exe main.cpp Player/Player.cpp Scenes/MainMenuScene.cpp Scenes/PlaybackScene.cpp UI/Button.cpp Utils/TextRenderer.cpp UI/Slider.cpp -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_mixer -lavformat -lavcodec -lavutil -lswresample -lcomdlg32 -static-libgcc -static-libstdc++
