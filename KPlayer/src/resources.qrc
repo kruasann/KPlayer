@@ -1,0 +1,9 @@
+<!-- resources.qrc -->
+<RCC>
+    <qresource prefix="/">
+        <file>assets/styles/style.qss</file>    
+        <file>assets/icons/play.png</file>
+        <file>assets/icons/pause.png</file>
+        <file>assets/icons/stop.png</file>
+    </qresource>
+</RCC>

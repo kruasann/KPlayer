@@ -1,0 +1,5 @@
+N:/KPlayer/KPlayer/build/CMakeFiles/MediaPlayer.dir
+N:/KPlayer/KPlayer/build/CMakeFiles/edit_cache.dir
+N:/KPlayer/KPlayer/build/CMakeFiles/rebuild_cache.dir
+N:/KPlayer/KPlayer/build/CMakeFiles/MediaPlayer_autogen_timestamp_deps.dir
+N:/KPlayer/KPlayer/build/CMakeFiles/MediaPlayer_autogen.dir

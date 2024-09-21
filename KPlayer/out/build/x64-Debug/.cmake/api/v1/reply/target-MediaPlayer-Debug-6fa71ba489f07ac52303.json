@@ -1,0 +1,791 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "MediaPlayer.exe"
+		},
+		{
+			"path" : "MediaPlayer.pdb"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"_qt_internal_create_executable",
+			"qt6_add_executable",
+			"qt_add_executable",
+			"target_link_libraries",
+			"set_target_properties",
+			"include",
+			"find_package",
+			"find_dependency",
+			"_qt_internal_find_qt_dependencies",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+			"CMakeLists.txt",
+			"N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Network/Qt6NetworkVersionlessTargets.cmake",
+			"N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake",
+			"N:/VisualSt/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake",
+			"N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+			"N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Multimedia/Qt6MultimediaDependencies.cmake",
+			"N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Multimedia/Qt6MultimediaConfig.cmake",
+			"N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6/Qt6Config.cmake",
+			"N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Network/Qt6NetworkTargets.cmake",
+			"N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake",
+			"N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake",
+			"N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
+			"N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
+			"N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake",
+			"N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake",
+			"N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 26,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 818,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 575,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 629,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 31,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 1,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"file" : 8,
+				"parent" : 6
+			},
+			{
+				"command" : 7,
+				"file" : 8,
+				"line" : 164,
+				"parent" : 7
+			},
+			{
+				"file" : 7,
+				"parent" : 8
+			},
+			{
+				"command" : 6,
+				"file" : 7,
+				"line" : 40,
+				"parent" : 9
+			},
+			{
+				"file" : 6,
+				"parent" : 10
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 39,
+				"parent" : 11
+			},
+			{
+				"command" : 8,
+				"file" : 5,
+				"line" : 111,
+				"parent" : 12
+			},
+			{
+				"command" : 7,
+				"file" : 4,
+				"line" : 76,
+				"parent" : 13
+			},
+			{
+				"file" : 3,
+				"parent" : 14
+			},
+			{
+				"command" : 6,
+				"file" : 3,
+				"line" : 57,
+				"parent" : 15
+			},
+			{
+				"file" : 2,
+				"parent" : 16
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 61,
+				"parent" : 17
+			},
+			{
+				"command" : 6,
+				"file" : 3,
+				"line" : 52,
+				"parent" : 15
+			},
+			{
+				"file" : 9,
+				"parent" : 19
+			},
+			{
+				"command" : 5,
+				"file" : 9,
+				"line" : 61,
+				"parent" : 20
+			},
+			{
+				"command" : 7,
+				"file" : 8,
+				"line" : 164,
+				"parent" : 7
+			},
+			{
+				"file" : 11,
+				"parent" : 22
+			},
+			{
+				"command" : 6,
+				"file" : 11,
+				"line" : 52,
+				"parent" : 23
+			},
+			{
+				"file" : 10,
+				"parent" : 24
+			},
+			{
+				"command" : 5,
+				"file" : 10,
+				"line" : 61,
+				"parent" : 25
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 576,
+				"parent" : 2
+			},
+			{
+				"command" : 6,
+				"file" : 11,
+				"line" : 40,
+				"parent" : 23
+			},
+			{
+				"file" : 14,
+				"parent" : 28
+			},
+			{
+				"command" : 9,
+				"file" : 14,
+				"line" : 39,
+				"parent" : 29
+			},
+			{
+				"command" : 8,
+				"file" : 5,
+				"line" : 111,
+				"parent" : 30
+			},
+			{
+				"command" : 7,
+				"file" : 4,
+				"line" : 76,
+				"parent" : 31
+			},
+			{
+				"file" : 13,
+				"parent" : 32
+			},
+			{
+				"command" : 6,
+				"file" : 13,
+				"line" : 53,
+				"parent" : 33
+			},
+			{
+				"file" : 12,
+				"parent" : 34
+			},
+			{
+				"command" : 5,
+				"file" : 12,
+				"line" : 61,
+				"parent" : 35
+			},
+			{
+				"command" : 8,
+				"file" : 5,
+				"line" : 111,
+				"parent" : 30
+			},
+			{
+				"command" : 7,
+				"file" : 4,
+				"line" : 76,
+				"parent" : 37
+			},
+			{
+				"file" : 16,
+				"parent" : 38
+			},
+			{
+				"command" : 6,
+				"file" : 16,
+				"line" : 52,
+				"parent" : 39
+			},
+			{
+				"file" : 15,
+				"parent" : 40
+			},
+			{
+				"command" : 5,
+				"file" : 15,
+				"line" : 61,
+				"parent" : 41
+			},
+			{
+				"command" : 10,
+				"file" : 1,
+				"line" : 38,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 27,
+					"define" : "MINGW_HAS_SECURE_API=1"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_MULTIMEDIAWIDGETS_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_MULTIMEDIA_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_WIDGETS_LIB"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "WIN32"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "WIN64"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "_ENABLE_EXTENDED_ALIGNED_STORAGE"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "_UNICODE"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "_WIN64"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "N:/KPlayer/KPlayer/out/build/x64-Debug/MediaPlayer_autogen/include"
+				},
+				{
+					"backtrace" : 43,
+					"path" : "N:/KPlayer/KPlayer/src"
+				},
+				{
+					"backtrace" : 27,
+					"isSystem" : true,
+					"path" : "N:/Qt/6.6.3/mingw_64/include/QtCore"
+				},
+				{
+					"backtrace" : 27,
+					"isSystem" : true,
+					"path" : "N:/Qt/6.6.3/mingw_64/include"
+				},
+				{
+					"backtrace" : 27,
+					"isSystem" : true,
+					"path" : "N:/Qt/6.6.3/mingw_64/mkspecs/win32-g++"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "N:/Qt/6.6.3/mingw_64/include/QtWidgets"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "N:/Qt/6.6.3/mingw_64/include/QtGui"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "N:/Qt/6.6.3/mingw_64/include/QtMultimedia"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "N:/Qt/6.6.3/mingw_64/include/QtNetwork"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					27,
+					27
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				3,
+				5,
+				7,
+				9,
+				11,
+				13,
+				15,
+				17,
+				19,
+				21,
+				24,
+				26,
+				28,
+				31
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"id" : "MediaPlayer_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "MediaPlayer_autogen::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "MediaPlayer::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "N:\\Qt\\6.6.3\\mingw_64\\lib\\libQt6MultimediaWidgets.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "N:\\Qt\\6.6.3\\mingw_64\\lib\\libQt6Multimedia.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 18,
+				"fragment" : "N:\\Qt\\6.6.3\\mingw_64\\lib\\libQt6Network.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 21,
+				"fragment" : "ws2_32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "N:\\Qt\\6.6.3\\mingw_64\\lib\\libQt6Widgets.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "N:\\Qt\\6.6.3\\mingw_64\\lib\\libQt6Gui.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 27,
+				"fragment" : "N:\\Qt\\6.6.3\\mingw_64\\lib\\libQt6Core.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "mpr.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "userenv.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 42,
+				"fragment" : "d3d11.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 42,
+				"fragment" : "dxgi.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 42,
+				"fragment" : "dxguid.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 42,
+				"fragment" : "d3d12.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "MediaPlayer",
+	"nameOnDisk" : "MediaPlayer.exe",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				3,
+				5,
+				7,
+				9,
+				11,
+				13,
+				15,
+				17,
+				19,
+				21,
+				24,
+				26,
+				28,
+				31
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				2,
+				4,
+				6,
+				8,
+				10,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				23,
+				25,
+				27
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				29,
+				30
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				32,
+				33
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/MediaPlayer_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/App.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/App.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Player/AudioPlayer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Player/AudioPlayer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Player/MediaPlayer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Player/MediaPlayer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Player/VideoPlayer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Player/VideoPlayer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/UI/AudioVisualizer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/UI/AudioVisualizer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/UI/Button.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/UI/Button.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/UI/MainScene.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/UI/MainScene.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/UI/Menu.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/UI/Menu.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/UI/PlayerScene.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/UI/PlayerScene.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/UI/Scene.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/UI/Scene.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/UI/Slider.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/UI/Slider.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/UI/ui_MainScene.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Utils/FileManager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Utils/FileManager.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Utils/ThreadPool.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Utils/ThreadPool.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/resources.qrc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/MediaPlayer_autogen/timestamp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/MediaPlayer_autogen/timestamp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp.rule",
+			"sourceGroupIndex" : 3
+		}
+	],
+	"type" : "EXECUTABLE"
+}

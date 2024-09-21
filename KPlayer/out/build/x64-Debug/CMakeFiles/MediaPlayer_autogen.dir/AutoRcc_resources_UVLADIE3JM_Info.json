@@ -1,0 +1,25 @@
+{
+	"BUILD_DIR" : "N:/KPlayer/KPlayer/out/build/x64-Debug/MediaPlayer_autogen",
+	"CMAKE_BINARY_DIR" : "N:/KPlayer/KPlayer/out/build/x64-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "N:/KPlayer/KPlayer/out/build/x64-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "N:/KPlayer/KPlayer",
+	"CMAKE_SOURCE_DIR" : "N:/KPlayer/KPlayer",
+	"INCLUDE_DIR" : "N:/KPlayer/KPlayer/out/build/x64-Debug/MediaPlayer_autogen/include",
+	"INPUTS" : 
+	[
+		"N:/KPlayer/KPlayer/src/assets/styles/style.qss",
+		"N:/KPlayer/KPlayer/src/assets/icons/stop.png",
+		"N:/KPlayer/KPlayer/src/assets/icons/pause.png",
+		"N:/KPlayer/KPlayer/src/assets/icons/play.png"
+	],
+	"LOCK_FILE" : "N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/MediaPlayer_autogen.dir/AutoRcc_resources_UVLADIE3JM_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "UVLADIE3JM",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "N:/Qt/6.6.3/mingw_64/./bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/MediaPlayer_autogen.dir/AutoRcc_resources_UVLADIE3JM_Used.txt",
+	"SOURCE" : "N:/KPlayer/KPlayer/src/resources.qrc",
+	"VERBOSITY" : 0
+}
