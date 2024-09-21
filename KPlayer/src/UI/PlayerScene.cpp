@@ -1,4 +1,3 @@
-// src/UI/PlayerScene.cpp
 #include "PlayerScene.h"
 #include "App.h"
 #include "Utils/FileManager.h"
@@ -49,7 +48,7 @@ PlayerScene::PlayerScene(App* app, const QString& filePath, QWidget* parent)
     // Аудио-визуализатор
     audioVisualizer = new AudioVisualizer(this);
     audioVisualizer->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
-    audioVisualizer->hide(); // Скрываем по умолчанию
+    audioVisualizer->show(); // Показываем по умолчанию
     mainLayout->addWidget(audioVisualizer, 1);
 
     // Медиаплеер
@@ -200,9 +199,12 @@ void PlayerScene::setMediaSource(const QString& filePath)
             qDebug() << "PlayerScene::setMediaSource() - hasVideo:" << hasVideo;
             handleHasVideoChanged(hasVideo);
             });
+
+        // Немедленно проверить наличие видео и обновить видимость
+        bool hasVideo = mediaPlayer->hasVideo();
+        handleHasVideoChanged(hasVideo);
     }
 }
-
 
 void PlayerScene::stopPlayback()
 {
@@ -258,6 +260,10 @@ void PlayerScene::openFile()
         mediaPlayer->play();
         playPauseButton->setIconPath(":/assets/icons/pause.png");
         isPlaying = true;
+
+        // Немедленно проверить наличие видео и обновить видимость
+        bool hasVideo = mediaPlayer->hasVideo();
+        handleHasVideoChanged(hasVideo);
     }
 }
 
@@ -277,23 +283,21 @@ void PlayerScene::updateMarquee()
     if (fullMediaTitle.length() > 20) {
         QString displayText = fullMediaTitle.mid(marqueeIndex, 20);
         mediaLabel->setText(displayText);
-        marqueeIndex = (marqueeIndex + 1) % fullMediaTitle.length();
+        marqueeIndex = (marqueeIndex + 1) % (fullMediaTitle.length() - 19);
     }
     else {
         mediaLabel->setText(fullMediaTitle);
     }
 }
 
+// Функция для обработки наличия видео
 void PlayerScene::handleHasVideoChanged(bool hasVideo)
 {
-    qDebug() << "PlayerScene::handleHasVideoChanged() - hasVideo:" << hasVideo;
     if (hasVideo) {
-        // Показываем видео
         videoWidget->show();
         audioVisualizer->hide();
     }
     else {
-        // Показываем визуализатор
         videoWidget->hide();
         audioVisualizer->show();
     }

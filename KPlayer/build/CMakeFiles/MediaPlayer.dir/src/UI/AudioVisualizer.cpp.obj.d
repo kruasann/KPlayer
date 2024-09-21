@@ -356,16 +356,30 @@ CMakeFiles/MediaPlayer.dir/src/UI/AudioVisualizer.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qsizepolicy.h \
  N:/Qt/6.6.3/mingw_64/include/QtGui/qcursor.h \
  N:/Qt/6.6.3/mingw_64/include/QtGui/qbitmap.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qbytearray.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QVector \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QPointF \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qpoint.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/QColor \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qcolor.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QTimer \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qtimer.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qbasictimer.h \
  N:/Qt/6.6.3/mingw_64/include/QtGui/QPainter \
  N:/Qt/6.6.3/mingw_64/include/QtGui/qpainter.h \
  N:/Qt/6.6.3/mingw_64/include/QtGui/qtextoption.h \
  N:/Qt/6.6.3/mingw_64/include/QtGui/qpen.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/QVector \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h \
- N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioFormat \
- N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudioformat.h \
- N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
- N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
- N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qtmultimediaexports.h
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QRandomGenerator \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qrandom.h \
+ N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/random \
+ N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/random.h \
+ N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h \
+ N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/pmmintrin.h \
+ N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/emmintrin.h \
+ N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/xmmintrin.h \
+ N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/mmintrin.h \
+ N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/random.tcc \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/QLinearGradient \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qbrush.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QDebug \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qdebug.h

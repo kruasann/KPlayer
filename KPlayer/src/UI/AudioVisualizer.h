@@ -1,12 +1,10 @@
-// src/UI/AudioVisualizer.h
-
 #ifndef AUDIOVISUALIZER_H
 #define AUDIOVISUALIZER_H
 
 #include <QWidget>
-#include <QByteArray>
-#include <QPainter>
 #include <QVector>
+#include <QPointF>
+#include <QColor>
 
 class AudioVisualizer : public QWidget {
     Q_OBJECT
@@ -24,6 +22,11 @@ public slots:
      */
     void processBuffer(const QByteArray& buffer);
 
+    /**
+     * @brief Обновляет анимацию
+     */
+    void updateAnimation();
+
 protected:
     /**
      * @brief Рисует визуализацию
@@ -32,7 +35,11 @@ protected:
     void paintEvent(QPaintEvent* event) override;
 
 private:
-    QVector<qreal> levels;
+    QVector<QPointF> particlePositions; // Позиции частиц
+    QVector<QPointF> particleVelocities; // Скорости частиц
+    QVector<QColor> particleColors; // Цвета частиц
+    const int maxParticles = 100;
+    const int numParticles = 30; // Количество частиц
 };
 
 #endif // AUDIOVISUALIZER_H

@@ -444,12 +444,12 @@ CMakeFiles/MediaPlayer.dir/src/App.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qbytearray.h \
  N:/KPlayer/KPlayer/src/UI/AudioVisualizer.h \
- N:/Qt/6.6.3/mingw_64/include/QtGui/QPainter \
- N:/Qt/6.6.3/mingw_64/include/QtGui/qpainter.h \
- N:/Qt/6.6.3/mingw_64/include/QtGui/qtextoption.h \
- N:/Qt/6.6.3/mingw_64/include/QtGui/qpen.h \
  N:/Qt/6.6.3/mingw_64/include/QtCore/QVector \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QPointF \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qpoint.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/QColor \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qcolor.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QLabel \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMenuBar \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QApplication \

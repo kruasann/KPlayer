@@ -387,12 +387,12 @@ CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/mocs_compilation.cpp.obj: \
  N:/KPlayer/KPlayer/src/UI/AudioVisualizer.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidget \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qwidget.h \
- N:/Qt/6.6.3/mingw_64/include/QtGui/QPainter \
- N:/Qt/6.6.3/mingw_64/include/QtGui/qpainter.h \
- N:/Qt/6.6.3/mingw_64/include/QtGui/qtextoption.h \
- N:/Qt/6.6.3/mingw_64/include/QtGui/qpen.h \
  N:/Qt/6.6.3/mingw_64/include/QtCore/QVector \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QPointF \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qpoint.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/QColor \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qcolor.h \
  N:\KPlayer\KPlayer\build\MediaPlayer_autogen\WAYUIA5GRM/moc_Button.cpp \
  N:/KPlayer/KPlayer/src/UI/Button.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QPushButton \
@@ -453,6 +453,8 @@ CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/mocs_compilation.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidget \
  N:/Qt/6.6.3/mingw_64/include/QtGui/qtextcursor.h \
  N:/Qt/6.6.3/mingw_64/include/QtGui/qtextformat.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qpen.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qtextoption.h \
  N:\KPlayer\KPlayer\build\MediaPlayer_autogen\WAYUIA5GRM/moc_Menu.cpp \
  N:/KPlayer/KPlayer/src/UI/Menu.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMenuBar \

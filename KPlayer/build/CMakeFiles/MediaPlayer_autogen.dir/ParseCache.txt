@@ -3,7 +3,7 @@ N:/KPlayer/KPlayer/src/UI/AudioVisualizer.h
  mmc:Q_OBJECT
  mdp:N:/KPlayer/KPlayer/build/MediaPlayer_autogen/moc_predefs.h
  mdp:N:/KPlayer/KPlayer/src/UI/AudioVisualizer.h
- mdp:N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray
+ mdp:N:/Qt/6.6.3/mingw_64/include/QtCore/QPointF
  mdp:N:/Qt/6.6.3/mingw_64/include/QtCore/QVector
  mdp:N:/Qt/6.6.3/mingw_64/include/QtCore/q20functional.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtCore/q20memory.h
@@ -119,7 +119,7 @@ N:/KPlayer/KPlayer/src/UI/AudioVisualizer.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtCore/qversiontagging.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtCore/qxptype_traits.h
- mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/QPainter
+ mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/QColor
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qaction.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qbitmap.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qbrush.h
@@ -132,16 +132,13 @@ N:/KPlayer/KPlayer/src/UI/AudioVisualizer.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qimage.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qkeysequence.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qpaintdevice.h
- mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qpainter.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qpalette.h
- mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qpen.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qpixelformat.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qpixmap.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qpolygon.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qregion.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qrgb.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qrgba64.h
- mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qtextoption.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qtgui-config.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qtguiexports.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qtguiglobal.h
@@ -714,6 +711,7 @@ N:/KPlayer/KPlayer/src/UI/PlayerScene.h
  mdp:N:/KPlayer/KPlayer/src/UI/Slider.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray
  mdp:N:/Qt/6.6.3/mingw_64/include/QtCore/QObject
+ mdp:N:/Qt/6.6.3/mingw_64/include/QtCore/QPointF
  mdp:N:/Qt/6.6.3/mingw_64/include/QtCore/QString
  mdp:N:/Qt/6.6.3/mingw_64/include/QtCore/QTimer
  mdp:N:/Qt/6.6.3/mingw_64/include/QtCore/QVector
@@ -836,7 +834,7 @@ N:/KPlayer/KPlayer/src/UI/PlayerScene.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtCore/qversiontagging.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtCore/qxptype_traits.h
- mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/QPainter
+ mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/QColor
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qaction.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qbitmap.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qbrush.h
@@ -849,9 +847,7 @@ N:/KPlayer/KPlayer/src/UI/PlayerScene.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qimage.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qkeysequence.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qpaintdevice.h
- mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qpainter.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qpalette.h
- mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qpen.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qpicture.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qpixelformat.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qpixmap.h
@@ -860,7 +856,6 @@ N:/KPlayer/KPlayer/src/UI/PlayerScene.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qrgb.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qrgba64.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qtextdocument.h
- mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qtextoption.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qtgui-config.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qtguiexports.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qtguiglobal.h
@@ -1449,7 +1444,6 @@ N:/KPlayer/KPlayer/src/UI/Slider.h
  mdp:N:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
 N:/KPlayer/KPlayer/src/Player/VideoPlayer.cpp
 N:/KPlayer/KPlayer/src/Utils/FileManager.h
-N:/KPlayer/KPlayer/src/UI/AudioVisualizer.cpp
 N:/KPlayer/KPlayer/src/UI/Menu.h
  mmc:Q_OBJECT
  mdp:N:/KPlayer/KPlayer/build/MediaPlayer_autogen/moc_predefs.h
@@ -1799,6 +1793,7 @@ N:/KPlayer/KPlayer/src/UI/Menu.h
  mdp:N:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h
  mdp:N:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:N:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
+N:/KPlayer/KPlayer/src/UI/AudioVisualizer.cpp
 N:/KPlayer/KPlayer/src/UI/Button.cpp
 N:/KPlayer/KPlayer/src/UI/PlayerScene.cpp
 N:/KPlayer/KPlayer/src/UI/Slider.cpp
@@ -3266,8 +3261,8 @@ N:/KPlayer/KPlayer/src/UI/Scene.h
  mdp:N:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:N:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
 N:/KPlayer/KPlayer/src/UI/ui_MainScene.h
-N:/KPlayer/KPlayer/src/Utils/ThreadPool.h
 N:/KPlayer/KPlayer/src/App.cpp
+N:/KPlayer/KPlayer/src/Utils/ThreadPool.h
 N:/KPlayer/KPlayer/src/Player/MediaPlayer.cpp
 N:/KPlayer/KPlayer/src/UI/MainScene.cpp
 N:/KPlayer/KPlayer/src/UI/Menu.cpp
