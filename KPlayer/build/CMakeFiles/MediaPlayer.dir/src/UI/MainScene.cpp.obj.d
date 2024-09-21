@@ -438,11 +438,20 @@ CMakeFiles/MediaPlayer.dir/src/UI/MainScene.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/qvideowidget.h \
  N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
  N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/QLabel \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMenuBar \
  N:/Qt/6.6.3/mingw_64/include/QtCore/QTimer \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qtimer.h \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qbasictimer.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qbytearray.h \
+ N:/KPlayer/KPlayer/src/UI/AudioVisualizer.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/QPainter \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qpainter.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qtextoption.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qpen.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QVector \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QLabel \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMenuBar \
  N:/KPlayer/KPlayer/src/Utils/FileManager.h \
  N:/Qt/6.6.3/mingw_64/include/QtCore/QStringList \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qstringlist.h \

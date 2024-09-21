@@ -356,14 +356,16 @@ CMakeFiles/MediaPlayer.dir/src/UI/AudioVisualizer.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qsizepolicy.h \
  N:/Qt/6.6.3/mingw_64/include/QtGui/qcursor.h \
  N:/Qt/6.6.3/mingw_64/include/QtGui/qbitmap.h \
- N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioBuffer \
- N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudiobuffer.h \
- N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
- N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
- N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
- N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudio.h \
- N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudioformat.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qbytearray.h \
  N:/Qt/6.6.3/mingw_64/include/QtGui/QPainter \
  N:/Qt/6.6.3/mingw_64/include/QtGui/qpainter.h \
  N:/Qt/6.6.3/mingw_64/include/QtGui/qtextoption.h \
- N:/Qt/6.6.3/mingw_64/include/QtGui/qpen.h
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qpen.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QVector \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h \
+ N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioFormat \
+ N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudioformat.h \
+ N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
+ N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
+ N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qtmultimediaexports.h

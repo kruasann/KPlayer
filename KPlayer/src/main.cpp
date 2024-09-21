@@ -18,7 +18,19 @@ int main(int argc, char* argv[]) {
         qDebug() << "Not able to load styles file.";
     }
 
+    // Инициализируем приложение
     App mediaPlayerApp;
-    mediaPlayerApp.start();
+
+    // Проверяем, передан ли файл через командную строку
+    QString filePath;
+    if (argc > 1) {
+        // Первый аргумент после имени приложения обычно является путем к файлу
+        filePath = QString::fromUtf8(argv[1]);
+        qDebug() << "main() - File path passed:" << filePath;
+    }
+
+    // Запускаем приложение с переданным файлом, если он был указан
+    mediaPlayerApp.start(filePath);
+
     return app.exec();
 }

@@ -14,10 +14,12 @@ CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/mocs_compilation.cpp.obj: MediaPl
   N:/KPlayer/KPlayer/src/UI/Scene.h \
   N:/KPlayer/KPlayer/src/UI/Slider.h \
   N:/KPlayer/KPlayer/src/UI/ui_MainScene.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QObject \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QString \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QTimer \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QVariant \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QVector \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20functional.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20memory.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -144,6 +146,7 @@ CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/mocs_compilation.cpp.obj: MediaPl
   N:/Qt/6.6.3/mingw_64/include/QtCore/qutf8stringview.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvariant.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvarlengtharray.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qversiontagging.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qxptype_traits.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/QAction \
@@ -184,12 +187,9 @@ CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/mocs_compilation.cpp.obj: MediaPl
   N:/Qt/6.6.3/mingw_64/include/QtGui/qvalidator.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs_win.h \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioBuffer \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioOutput \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QMediaPlayer \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudio.h \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudiobuffer.h \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudioformat.h \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudiooutput.h \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qmediaenumdebug.h \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qmediaplayer.h \
@@ -460,8 +460,17 @@ CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/mocs_compilation.cpp.obj: MediaPl
   MediaPlayer_autogen/WAYUIA5GRM/moc_Slider.cpp
 
 CMakeFiles/MediaPlayer.dir/src/App.cpp.obj: N:/KPlayer/KPlayer/src/App.cpp \
+  N:/KPlayer/KPlayer/src/Player/MediaPlayer.h \
+  N:/KPlayer/KPlayer/src/UI/AudioVisualizer.h \
+  N:/KPlayer/KPlayer/src/UI/Button.h \
+  N:/KPlayer/KPlayer/src/UI/Slider.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QDebug \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QObject \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QString \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QTimer \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QVariant \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QVector \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20functional.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20memory.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -476,6 +485,7 @@ CMakeFiles/MediaPlayer.dir/src/App.cpp.obj: N:/KPlayer/KPlayer/src/App.cpp \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qatomic.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qatomic_cxx11.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qbasicatomic.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/qbasictimer.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qbindingstorage.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qbytearray.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qbytearrayalgorithms.h \
@@ -524,6 +534,7 @@ CMakeFiles/MediaPlayer.dir/src/App.cpp.obj: N:/KPlayer/KPlayer/src/App.cpp \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qmargins.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qmath.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qmetacontainer.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/qmetaobject.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qmetatype.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qminmax.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qnamespace.h \
@@ -570,6 +581,7 @@ CMakeFiles/MediaPlayer.dir/src/App.cpp.obj: N:/KPlayer/KPlayer/src/App.cpp \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtdeprecationmarkers.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtenvironmentvariables.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtextstream.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/qtimer.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtmetamacros.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtnoop.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtpreprocessorsupport.h \
@@ -584,9 +596,11 @@ CMakeFiles/MediaPlayer.dir/src/App.cpp.obj: N:/KPlayer/KPlayer/src/App.cpp \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qutf8stringview.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvariant.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvarlengtharray.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qversiontagging.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qxptype_traits.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/QAction \
+  N:/Qt/6.6.3/mingw_64/include/QtGui/QPainter \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qaction.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qbitmap.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qbrush.h \
@@ -602,7 +616,9 @@ CMakeFiles/MediaPlayer.dir/src/App.cpp.obj: N:/KPlayer/KPlayer/src/App.cpp \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qinputmethod.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qkeysequence.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qpaintdevice.h \
+  N:/Qt/6.6.3/mingw_64/include/QtGui/qpainter.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qpalette.h \
+  N:/Qt/6.6.3/mingw_64/include/QtGui/qpen.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qpicture.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qpixelformat.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qpixmap.h \
@@ -611,6 +627,7 @@ CMakeFiles/MediaPlayer.dir/src/App.cpp.obj: N:/KPlayer/KPlayer/src/App.cpp \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qrgb.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qrgba64.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qtextdocument.h \
+  N:/Qt/6.6.3/mingw_64/include/QtGui/qtextoption.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qtgui-config.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qtguiexports.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qtguiglobal.h \
@@ -618,6 +635,19 @@ CMakeFiles/MediaPlayer.dir/src/App.cpp.obj: N:/KPlayer/KPlayer/src/App.cpp \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qvalidator.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs_win.h \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioOutput \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QMediaPlayer \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudio.h \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudiooutput.h \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qmediaenumdebug.h \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qmediaplayer.h \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/QVideoWidget \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/qvideowidget.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/QApplication \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/QLabel \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/QListWidget \
@@ -625,8 +655,11 @@ CMakeFiles/MediaPlayer.dir/src/App.cpp.obj: N:/KPlayer/KPlayer/src/App.cpp \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMainWindow \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMenu \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMenuBar \
+  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QPushButton \
+  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QSlider \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/QStatusBar \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidget \
+  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractbutton.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractitemview.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractscrollarea.h \
@@ -640,6 +673,7 @@ CMakeFiles/MediaPlayer.dir/src/App.cpp.obj: N:/KPlayer/KPlayer/src/App.cpp \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qmainwindow.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qmenu.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qmenubar.h \
+  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qpushbutton.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qrubberband.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qsizepolicy.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qslider.h \
@@ -865,12 +899,18 @@ CMakeFiles/MediaPlayer.dir/src/App.cpp.obj: N:/KPlayer/KPlayer/src/App.cpp \
   N:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
   N:/KPlayer/KPlayer/src/App.h \
   N:/KPlayer/KPlayer/src/UI/MainScene.h \
+  N:/KPlayer/KPlayer/src/UI/PlayerScene.h \
+  N:/KPlayer/KPlayer/src/UI/Scene.h \
   N:/KPlayer/KPlayer/src/UI/ui_MainScene.h
 
 CMakeFiles/MediaPlayer.dir/src/Player/AudioPlayer.cpp.obj: N:/KPlayer/KPlayer/src/Player/AudioPlayer.cpp
 
 CMakeFiles/MediaPlayer.dir/src/Player/MediaPlayer.cpp.obj: N:/KPlayer/KPlayer/src/Player/MediaPlayer.cpp \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QDebug \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QObject \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QRandomGenerator \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QTimer \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20functional.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20memory.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -884,6 +924,7 @@ CMakeFiles/MediaPlayer.dir/src/Player/MediaPlayer.cpp.obj: N:/KPlayer/KPlayer/sr
   N:/Qt/6.6.3/mingw_64/include/QtCore/qatomic.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qatomic_cxx11.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qbasicatomic.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/qbasictimer.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qbindingstorage.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qbytearray.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qbytearrayalgorithms.h \
@@ -938,6 +979,7 @@ CMakeFiles/MediaPlayer.dir/src/Player/MediaPlayer.cpp.obj: N:/KPlayer/KPlayer/sr
   N:/Qt/6.6.3/mingw_64/include/QtCore/qpair.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qpoint.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qprocessordetection.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/qrandom.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qrect.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qrefcount.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qscopedpointer.h \
@@ -970,6 +1012,7 @@ CMakeFiles/MediaPlayer.dir/src/Player/MediaPlayer.cpp.obj: N:/KPlayer/KPlayer/sr
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtdeprecationmarkers.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtenvironmentvariables.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtextstream.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/qtimer.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtmetamacros.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtnoop.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtpreprocessorsupport.h \
@@ -1077,6 +1120,8 @@ CMakeFiles/MediaPlayer.dir/src/Player/MediaPlayer.cpp.obj: N:/KPlayer/KPlayer/sr
   N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/postypes.h \
   N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/predefined_ops.h \
   N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ptr_traits.h \
+  N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/random.h \
+  N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/random.tcc \
   N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/range_access.h \
   N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/refwrap.h \
   N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr.h \
@@ -1155,6 +1200,7 @@ CMakeFiles/MediaPlayer.dir/src/Player/MediaPlayer.cpp.obj: N:/KPlayer/KPlayer/sr
   N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_memory_defs.h \
   N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_numeric_defs.h \
   N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/pstl_config.h \
+  N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/random \
   N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ratio \
   N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdexcept \
   N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdlib.h \
@@ -1190,12 +1236,17 @@ CMakeFiles/MediaPlayer.dir/src/Player/MediaPlayer.cpp.obj: N:/KPlayer/KPlayer/sr
   N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h \
   N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/emmintrin.h \
   N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/mm_malloc.h \
+  N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/mmintrin.h \
+  N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/pmmintrin.h \
   N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdarg.h \
   N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdbool.h \
   N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stddef.h \
   N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdint.h \
+  N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/xmmintrin.h \
   N:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/_mingw.h \
   N:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/_mingw_mac.h \
   N:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/_mingw_off_t.h \
@@ -1245,6 +1296,8 @@ CMakeFiles/MediaPlayer.dir/src/Player/MediaPlayer.cpp.obj: N:/KPlayer/KPlayer/sr
 CMakeFiles/MediaPlayer.dir/src/Player/VideoPlayer.cpp.obj: N:/KPlayer/KPlayer/src/Player/VideoPlayer.cpp
 
 CMakeFiles/MediaPlayer.dir/src/UI/AudioVisualizer.cpp.obj: N:/KPlayer/KPlayer/src/UI/AudioVisualizer.cpp \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QVector \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20functional.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20memory.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -1356,6 +1409,7 @@ CMakeFiles/MediaPlayer.dir/src/UI/AudioVisualizer.cpp.obj: N:/KPlayer/KPlayer/sr
   N:/Qt/6.6.3/mingw_64/include/QtCore/qutf8stringview.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvariant.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvarlengtharray.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qversiontagging.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qxptype_traits.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/QPainter \
@@ -1387,9 +1441,7 @@ CMakeFiles/MediaPlayer.dir/src/UI/AudioVisualizer.cpp.obj: N:/KPlayer/KPlayer/sr
   N:/Qt/6.6.3/mingw_64/include/QtGui/qtransform.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs_win.h \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioBuffer \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudio.h \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudiobuffer.h \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioFormat \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudioformat.h \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
@@ -1977,15 +2029,18 @@ CMakeFiles/MediaPlayer.dir/src/UI/Button.cpp.obj: N:/KPlayer/KPlayer/src/UI/Butt
 CMakeFiles/MediaPlayer.dir/src/UI/MainScene.cpp.obj: N:/KPlayer/KPlayer/src/UI/MainScene.cpp \
   N:/KPlayer/KPlayer/src/App.h \
   N:/KPlayer/KPlayer/src/Player/MediaPlayer.h \
+  N:/KPlayer/KPlayer/src/UI/AudioVisualizer.h \
   N:/KPlayer/KPlayer/src/UI/Button.h \
   N:/KPlayer/KPlayer/src/UI/Slider.h \
   N:/KPlayer/KPlayer/src/Utils/FileManager.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QFile \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QObject \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QString \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QStringList \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QTimer \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QVariant \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QVector \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20functional.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20memory.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -2118,9 +2173,11 @@ CMakeFiles/MediaPlayer.dir/src/UI/MainScene.cpp.obj: N:/KPlayer/KPlayer/src/UI/M
   N:/Qt/6.6.3/mingw_64/include/QtCore/qutf8stringview.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvariant.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvarlengtharray.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qversiontagging.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qxptype_traits.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/QAction \
+  N:/Qt/6.6.3/mingw_64/include/QtGui/QPainter \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qaction.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qbitmap.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qbrush.h \
@@ -2136,7 +2193,9 @@ CMakeFiles/MediaPlayer.dir/src/UI/MainScene.cpp.obj: N:/KPlayer/KPlayer/src/UI/M
   N:/Qt/6.6.3/mingw_64/include/QtGui/qinputmethod.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qkeysequence.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qpaintdevice.h \
+  N:/Qt/6.6.3/mingw_64/include/QtGui/qpainter.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qpalette.h \
+  N:/Qt/6.6.3/mingw_64/include/QtGui/qpen.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qpicture.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qpixelformat.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qpixmap.h \
@@ -2145,6 +2204,7 @@ CMakeFiles/MediaPlayer.dir/src/UI/MainScene.cpp.obj: N:/KPlayer/KPlayer/src/UI/M
   N:/Qt/6.6.3/mingw_64/include/QtGui/qrgb.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qrgba64.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qtextdocument.h \
+  N:/Qt/6.6.3/mingw_64/include/QtGui/qtextoption.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qtgui-config.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qtguiexports.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qtguiglobal.h \
@@ -2862,9 +2922,11 @@ CMakeFiles/MediaPlayer.dir/src/UI/Menu.cpp.obj: N:/KPlayer/KPlayer/src/UI/Menu.c
 CMakeFiles/MediaPlayer.dir/src/UI/PlayerScene.cpp.obj: N:/KPlayer/KPlayer/src/UI/PlayerScene.cpp \
   N:/KPlayer/KPlayer/src/App.h \
   N:/KPlayer/KPlayer/src/Player/MediaPlayer.h \
+  N:/KPlayer/KPlayer/src/UI/AudioVisualizer.h \
   N:/KPlayer/KPlayer/src/UI/Button.h \
   N:/KPlayer/KPlayer/src/UI/Slider.h \
   N:/KPlayer/KPlayer/src/Utils/FileManager.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QDebug \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QFileInfo \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QObject \
@@ -2872,6 +2934,7 @@ CMakeFiles/MediaPlayer.dir/src/UI/PlayerScene.cpp.obj: N:/KPlayer/KPlayer/src/UI
   N:/Qt/6.6.3/mingw_64/include/QtCore/QStringList \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QTime \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QTimer \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QVector \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20functional.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20memory.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -3001,8 +3064,10 @@ CMakeFiles/MediaPlayer.dir/src/UI/PlayerScene.cpp.obj: N:/KPlayer/KPlayer/src/UI
   N:/Qt/6.6.3/mingw_64/include/QtCore/qutf8stringview.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvariant.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvarlengtharray.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qversiontagging.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qxptype_traits.h \
+  N:/Qt/6.6.3/mingw_64/include/QtGui/QPainter \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qaction.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qbitmap.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qbrush.h \
@@ -3018,7 +3083,9 @@ CMakeFiles/MediaPlayer.dir/src/UI/PlayerScene.cpp.obj: N:/KPlayer/KPlayer/src/UI
   N:/Qt/6.6.3/mingw_64/include/QtGui/qinputmethod.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qkeysequence.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qpaintdevice.h \
+  N:/Qt/6.6.3/mingw_64/include/QtGui/qpainter.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qpalette.h \
+  N:/Qt/6.6.3/mingw_64/include/QtGui/qpen.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qpicture.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qpixelformat.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qpixmap.h \
@@ -3027,6 +3094,7 @@ CMakeFiles/MediaPlayer.dir/src/UI/PlayerScene.cpp.obj: N:/KPlayer/KPlayer/src/UI
   N:/Qt/6.6.3/mingw_64/include/QtGui/qrgb.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qrgba64.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qtextdocument.h \
+  N:/Qt/6.6.3/mingw_64/include/QtGui/qtextoption.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qtgui-config.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qtguiexports.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qtguiglobal.h \
@@ -4867,10 +4935,12 @@ MediaPlayer_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   N:/KPlayer/KPlayer/src/Utils/ThreadPool.h \
   N:/KPlayer/KPlayer/src/main.cpp \
   N:/KPlayer/KPlayer/src/resources.qrc \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QObject \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QString \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QTimer \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QVariant \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QVector \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20functional.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20memory.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -4996,6 +5066,7 @@ MediaPlayer_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qutf8stringview.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvariant.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvarlengtharray.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qversiontagging.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qxptype_traits.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/QAction \
@@ -5034,12 +5105,9 @@ MediaPlayer_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qvalidator.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs_win.h \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioBuffer \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioOutput \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QMediaPlayer \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudio.h \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudiobuffer.h \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudioformat.h \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudiooutput.h \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qmediaenumdebug.h \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qmediaplayer.h \
@@ -5572,10 +5640,12 @@ MediaPlayer_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   N:/KPlayer/KPlayer/src/Utils/ThreadPool.h \
   N:/KPlayer/KPlayer/src/main.cpp \
   N:/KPlayer/KPlayer/src/resources.qrc \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QObject \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QString \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QTimer \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QVariant \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QVector \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20functional.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20memory.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -5701,6 +5771,7 @@ MediaPlayer_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qutf8stringview.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvariant.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvarlengtharray.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qversiontagging.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qxptype_traits.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/QAction \
@@ -5739,12 +5810,9 @@ MediaPlayer_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qvalidator.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs_win.h \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioBuffer \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioOutput \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QMediaPlayer \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudio.h \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudiobuffer.h \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudioformat.h \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudiooutput.h \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qmediaenumdebug.h \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qmediaplayer.h \
@@ -6277,10 +6345,12 @@ MediaPlayer_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   N:/KPlayer/KPlayer/src/Utils/ThreadPool.h \
   N:/KPlayer/KPlayer/src/main.cpp \
   N:/KPlayer/KPlayer/src/resources.qrc \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QObject \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QString \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QTimer \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QVariant \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QVector \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20functional.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20memory.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -6406,6 +6476,7 @@ MediaPlayer_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qutf8stringview.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvariant.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvarlengtharray.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qversiontagging.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qxptype_traits.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/QAction \
@@ -6444,12 +6515,9 @@ MediaPlayer_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qvalidator.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs_win.h \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioBuffer \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioOutput \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QMediaPlayer \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudio.h \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudiobuffer.h \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudioformat.h \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudiooutput.h \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qmediaenumdebug.h \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qmediaplayer.h \
@@ -6982,10 +7050,12 @@ MediaPlayer_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   N:/KPlayer/KPlayer/src/Utils/ThreadPool.h \
   N:/KPlayer/KPlayer/src/main.cpp \
   N:/KPlayer/KPlayer/src/resources.qrc \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QObject \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QString \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QTimer \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QVariant \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QVector \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20functional.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20memory.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -7111,6 +7181,7 @@ MediaPlayer_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qutf8stringview.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvariant.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvarlengtharray.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qversiontagging.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qxptype_traits.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/QAction \
@@ -7149,12 +7220,9 @@ MediaPlayer_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qvalidator.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs_win.h \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioBuffer \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioOutput \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QMediaPlayer \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudio.h \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudiobuffer.h \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudioformat.h \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudiooutput.h \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qmediaenumdebug.h \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qmediaplayer.h \
@@ -7687,10 +7755,12 @@ MediaPlayer_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   N:/KPlayer/KPlayer/src/Utils/ThreadPool.h \
   N:/KPlayer/KPlayer/src/main.cpp \
   N:/KPlayer/KPlayer/src/resources.qrc \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QObject \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QString \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QTimer \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QVariant \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QVector \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20functional.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20memory.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -7816,6 +7886,7 @@ MediaPlayer_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qutf8stringview.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvariant.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvarlengtharray.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qversiontagging.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qxptype_traits.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/QAction \
@@ -7854,12 +7925,9 @@ MediaPlayer_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qvalidator.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs_win.h \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioBuffer \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioOutput \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QMediaPlayer \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudio.h \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudiobuffer.h \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudioformat.h \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudiooutput.h \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qmediaenumdebug.h \
   N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qmediaplayer.h \
@@ -8344,14 +8412,6 @@ N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/map:
 
 N:/KPlayer/KPlayer/src/UI/Button.h:
 
-N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6MultimediaWidgets/Qt6MultimediaWidgetsTargets.cmake:
-
-N:/Qt/6.6.3/mingw_64/include/QtCore/qhashfunctions.h:
-
-N:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/_mingw_mac.h:
-
-N:/Qt/6.6.3/mingw_64/include/QtWidgets/qstatusbar.h:
-
 MediaPlayer_autogen/mocs_compilation.cpp:
 
 N:/Qt/6.6.3/mingw_64/include/QtCore/qarraydata.h:
@@ -8436,6 +8496,10 @@ N:/KPlayer/KPlayer/src/UI/Slider.h:
 
 N:/KPlayer/KPlayer/src/UI/ui_MainScene.h:
 
+N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qmediaplayer.h:
+
+N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray:
+
 N:/Qt/6.6.3/mingw_64/include/QtCore/qcontainerinfo.h:
 
 N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ctime:
@@ -8449,6 +8513,20 @@ N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Multimedia/Qt6MultimediaPlugins.cmake:
 N:/Qt/6.6.3/mingw_64/include/QtCore/QObject:
 
 N:/Qt/6.6.3/mingw_64/include/QtCore/QTimer:
+
+N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_algorithm_defs.h:
+
+N:/Qt/6.6.3/mingw_64/include/QtCore/qcoreapplication.h:
+
+N:/Qt/6.6.3/mingw_64/include/QtWidgets/qframe.h:
+
+N:/Qt/6.6.3/mingw_64/include/QtCore/qatomic.h:
+
+N:/Qt/6.6.3/mingw_64/include/QtCore/QVector:
+
+N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/list:
+
+N:/Qt/6.6.3/mingw_64/include/QtCore/qstring.h:
 
 N:/Qt/6.6.3/mingw_64/include/QtCore/qglobal.h:
 
@@ -8498,16 +8576,6 @@ N:/Qt/6.6.3/mingw_64/include/QtCore/qbindingstorage.h:
 
 N:/Qt/6.6.3/mingw_64/include/QtCore/qassert.h:
 
-N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_algorithm_defs.h:
-
-N:/Qt/6.6.3/mingw_64/include/QtCore/qcoreapplication.h:
-
-N:/Qt/6.6.3/mingw_64/include/QtWidgets/qframe.h:
-
-N:/KPlayer/KPlayer/src/UI/PlayerScene.cpp:
-
-N:/Qt/6.6.3/mingw_64/include/QtCore/qatomic.h:
-
 N:/Qt/6.6.3/mingw_64/include/QtCore/qatomic_cxx11.h:
 
 N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets-relwithdebinfo.cmake:
@@ -8548,11 +8616,11 @@ N:/Qt/6.6.3/mingw_64/include/QtGui/QPainter:
 
 N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc:
 
-N:/Qt/6.6.3/mingw_64/include/QtCore/qdarwinhelpers.h:
+N:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/swprintf.inl:
 
 N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream:
 
-N:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/swprintf.inl:
+N:/Qt/6.6.3/mingw_64/include/QtCore/qdarwinhelpers.h:
 
 N:/Qt/6.6.3/mingw_64/include/QtCore/qdatastream.h:
 
@@ -8572,11 +8640,11 @@ N:/Qt/6.6.3/mingw_64/include/QtCore/qflags.h:
 
 N:/Qt/6.6.3/mingw_64/include/QtCore/qfloat16.h:
 
+N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:
+
 N:/Qt/6.6.3/mingw_64/include/QtCore/qforeach.h:
 
 N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdarg.h:
-
-N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:
 
 N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator_base_funcs.h:
 
@@ -8598,9 +8666,19 @@ N:/Qt/6.6.3/mingw_64/include/QtCore/qrefcount.h:
 
 N:/Qt/6.6.3/mingw_64/include/QtGui/QAction:
 
+N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6MultimediaWidgets/Qt6MultimediaWidgetsTargets.cmake:
+
+N:/Qt/6.6.3/mingw_64/include/QtCore/qhashfunctions.h:
+
+N:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/_mingw_mac.h:
+
+N:/Qt/6.6.3/mingw_64/include/QtWidgets/qstatusbar.h:
+
 N:/Qt/6.6.3/mingw_64/include/QtCore/qiodevicebase.h:
 
 N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets_nonio.h:
+
+N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/xmmintrin.h:
 
 N:/Qt/6.6.3/mingw_64/include/QtCore/qtenvironmentvariables.h:
 
@@ -8744,11 +8822,11 @@ N:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/stdio.h:
 
 N:/Qt/6.6.3/mingw_64/include/QtCore/qshareddata_impl.h:
 
+N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios:
+
 N:/Qt/6.6.3/mingw_64/include/QtCore/qsharedpointer.h:
 
 N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/hypergeometric.tcc:
-
-N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios:
 
 C:/Program\ Files/CMake/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake:
 
@@ -8764,15 +8842,11 @@ N:/Qt/6.6.3/mingw_64/include/QtCore/qsize.h:
 
 N:/Qt/6.6.3/mingw_64/include/QtGui/qtextcursor.h:
 
-N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/list:
-
-N:/Qt/6.6.3/mingw_64/include/QtCore/qstring.h:
-
 N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Multimedia/Qt6QWindowsMediaPluginAdditionalTargetInfo.cmake:
 
-N:/Qt/6.6.3/mingw_64/include/QtCore/qstringalgorithms.h:
-
 N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h:
+
+N:/Qt/6.6.3/mingw_64/include/QtCore/qstringalgorithms.h:
 
 N:/Qt/6.6.3/mingw_64/include/QtCore/qstringconverter_base.h:
 
@@ -8781,6 +8855,8 @@ N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/alig
 N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMainWindow:
 
 N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/enable_special_members.h:
+
+N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioFormat:
 
 N:/Qt/6.6.3/mingw_64/include/QtCore/qstringlist.h:
 
@@ -8810,11 +8886,11 @@ CMakeFiles/3.28.0/CMakeCXXCompiler.cmake:
 
 N:/Qt/6.6.3/mingw_64/include/QtCore/qswap.h:
 
+N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/locale:
+
 N:/Qt/6.6.3/mingw_64/include/QtCore/qsysinfo.h:
 
 N:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/pthread_signal.h:
-
-N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/locale:
 
 N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake:
 
@@ -8883,6 +8959,8 @@ N:/Qt/6.6.3/mingw_64/include/QtGui/qguiapplication.h:
 N:/Qt/6.6.3/mingw_64/include/QtCore/qvariant.h:
 
 N:/Qt/6.6.3/mingw_64/include/QtCore/qvarlengtharray.h:
+
+N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h:
 
 MediaPlayer_autogen/WAYUIA5GRM/moc_Slider.cpp:
 
@@ -8998,11 +9076,9 @@ N:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/pthread.h:
 
 N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractscrollarea.h:
 
+N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h:
+
 N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs_win.h:
-
-N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioBuffer:
-
-N:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/math.h:
 
 N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioOutput:
 
@@ -9012,12 +9088,6 @@ N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QMediaPlayer:
 
 N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudio.h:
 
-N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudiobuffer.h:
-
-N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_heap.h:
-
-N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudioformat.h:
-
 N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudiooutput.h:
 
 N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-relwithdebinfo.cmake:
@@ -9025,8 +9095,6 @@ N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-relwithdebinfo.cm
 C:/Program\ Files/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:
 
 N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qmediaenumdebug.h:
-
-N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qmediaplayer.h:
 
 N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Gui/Qt6QPdfPluginConfig.cmake:
 
@@ -9117,6 +9185,8 @@ N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_p
 N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Network/Qt6QNLMNIPluginConfig.cmake:
 
 N:/Qt/6.6.3/mingw_64/include/QtWidgets/qslider.h:
+
+N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/mmintrin.h:
 
 N:/Qt/6.6.3/mingw_64/include/QtWidgets/qstyle.h:
 
@@ -9258,6 +9328,8 @@ N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwchar:
 
 N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_function.h:
 
+N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_heap.h:
+
 N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Multimedia/Qt6MultimediaDependencies.cmake:
 
 N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator_base_types.h:
@@ -9352,17 +9424,19 @@ C:/Program\ Files/CMake/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.c
 
 N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/functional:
 
-N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Network/Qt6NetworkAdditionalTargetInfo.cmake:
-
-N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iterator:
-
-N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/exp_integral.tcc:
-
 N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginAdditionalTargetInfo.cmake:
 
 N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake:
 
 N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/ell_integral.tcc:
+
+N:/Qt/6.6.3/mingw_64/include/QtCore/qrandom.h:
+
+N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Network/Qt6NetworkAdditionalTargetInfo.cmake:
+
+N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iterator:
+
+N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/exp_integral.tcc:
 
 N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/numeric:
 
@@ -9432,6 +9506,8 @@ N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w6
 
 N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h:
 
+N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/random.h:
+
 N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h:
 
 N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdbool.h:
@@ -9462,6 +9538,8 @@ N:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/errno.h:
 
 N:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/limits.h:
 
+N:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/math.h:
+
 N:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
 
 N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets.cmake:
@@ -9490,7 +9568,23 @@ MediaPlayer_autogen/WAYUIA5GRM/moc_Menu.cpp:
 
 MediaPlayer_autogen/WAYUIA5GRM/moc_Scene.cpp:
 
+N:/Qt/6.6.3/mingw_64/include/QtCore/QRandomGenerator:
+
+N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateTargets.cmake:
+
+N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/random.tcc:
+
+N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/random:
+
+N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/emmintrin.h:
+
+N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:
+
+N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/pmmintrin.h:
+
 N:/KPlayer/KPlayer/src/Player/VideoPlayer.cpp:
+
+N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudioformat.h:
 
 N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake:
 
@@ -9524,9 +9618,9 @@ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qdialog.h:
 
 N:/Qt/6.6.3/mingw_64/include/QtWidgets/qdialogbuttonbox.h:
 
-N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.h:
-
 N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/sstream:
+
+N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.h:
 
 N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_fwd.h:
 
@@ -9559,6 +9653,8 @@ N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w6
 N:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wctype.h:
 
 N:/KPlayer/KPlayer/src/UI/Menu.cpp:
+
+N:/KPlayer/KPlayer/src/UI/PlayerScene.cpp:
 
 N:/Qt/6.6.3/mingw_64/include/QtWidgets/QHBoxLayout:
 
@@ -9880,8 +9976,6 @@ N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginConfig.cmak
 
 N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginTargets-relwithdebinfo.cmake:
 
-N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:
-
 N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake:
 
 N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:
@@ -9899,5 +9993,3 @@ N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake
 N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake:
 
 N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake:
-
-N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateTargets.cmake:

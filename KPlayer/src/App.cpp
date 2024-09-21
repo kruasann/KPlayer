@@ -1,17 +1,29 @@
 // src/App.cpp
 #include "App.h"
 #include "UI/MainScene.h"
+#include "UI/PlayerScene.h"
 #include <QApplication>
+#include <QDebug>
 
 App::App() {
     mainWindow = new QMainWindow();
     currentScene = nullptr;
 }
 
-void App::start() {
+void App::start(const QString& filePath) {
     mainWindow->setWindowTitle("K-Player");
     mainWindow->resize(800, 600);
-    changeScene(new MainScene(this));
+
+    if (!filePath.isEmpty()) {
+        qDebug() << "App::start() - Opening file:" << filePath;
+        // Если передан файл, открываем сцену плеера сразу
+        changeScene(new PlayerScene(this, filePath));
+    }
+    else {
+        // Иначе показываем начальную сцену с историей
+        changeScene(new MainScene(this));
+    }
+
     mainWindow->show();
 }
 

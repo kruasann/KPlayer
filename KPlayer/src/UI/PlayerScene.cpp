@@ -2,6 +2,7 @@
 #include "PlayerScene.h"
 #include "App.h"
 #include "Utils/FileManager.h"
+#include "UI/MainScene.h"
 #include <QHBoxLayout>
 #include <QVBoxLayout>
 #include <QFileDialog>
@@ -42,22 +43,50 @@ PlayerScene::PlayerScene(App* app, const QString& filePath, QWidget* parent)
     // Видео-виджет
     videoWidget = new QVideoWidget(this);
     videoWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+    videoWidget->hide(); // Скрываем по умолчанию
     mainLayout->addWidget(videoWidget, 1);
+
+    // Аудио-визуализатор
+    audioVisualizer = new AudioVisualizer(this);
+    audioVisualizer->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+    audioVisualizer->hide(); // Скрываем по умолчанию
+    mainLayout->addWidget(audioVisualizer, 1);
 
     // Медиаплеер
     mediaPlayer = new MediaPlayer(this);
     mediaPlayer->setVideoOutput(videoWidget);
 
+    // Подключаем сигналы
+    connect(mediaPlayer, &MediaPlayer::positionChanged, this, &PlayerScene::updateProgress);
+    connect(mediaPlayer, &MediaPlayer::durationChanged, this, [this](qint64 duration) {
+        progressSlider->setMaximum(static_cast<int>(duration));
+        });
+    connect(mediaPlayer, &MediaPlayer::errorOccurred, this, &PlayerScene::handleError);
+
+    // Подключаем сигнал hasVideoChanged
+    connect(mediaPlayer, &MediaPlayer::hasVideoChanged, this, &PlayerScene::handleHasVideoChanged);
+
+    // Подключаем аудио-данные к визуализатору
+    connect(mediaPlayer, &MediaPlayer::audioDataGenerated, audioVisualizer, &AudioVisualizer::processBuffer);
+
     // Панель управления
     QHBoxLayout* controlLayout = new QHBoxLayout();
     controlLayout->setSpacing(10);
 
+    // Кнопка "Back"
+    backButton = new QPushButton("Back", this);
+    connect(backButton, &QPushButton::clicked, this, &PlayerScene::goBack);
+    controlLayout->addWidget(backButton);
+
+    // Кнопка Play/Pause
     playPauseButton = new Button(":/assets/icons/play.png", this);
     connect(playPauseButton, &QPushButton::clicked, this, &PlayerScene::togglePlayPause);
 
+    // Кнопка Stop
     stopButton = new Button(":/assets/icons/stop.png", this);
     connect(stopButton, &QPushButton::clicked, this, &PlayerScene::stopPlayback);
 
+    // Ползунок громкости
     QLabel* volumeLabel = new QLabel("Volume:", this);
     volumeSlider = new Slider(Qt::Horizontal, this);
     volumeSlider->setRange(0, 100);
@@ -92,20 +121,29 @@ PlayerScene::PlayerScene(App* app, const QString& filePath, QWidget* parent)
 
     mediaPlayer->setVolume(50);
 
-    connect(mediaPlayer, &MediaPlayer::positionChanged, this, &PlayerScene::updateProgress);
-    connect(mediaPlayer, &MediaPlayer::durationChanged, this, [this](qint64 duration) {
-        progressSlider->setMaximum(static_cast<int>(duration));
-        });
-    connect(mediaPlayer, &MediaPlayer::errorOccurred, this, &PlayerScene::handleError);
-
     marqueeTimer = new QTimer(this);
     connect(marqueeTimer, &QTimer::timeout, this, &PlayerScene::updateMarquee);
     marqueeTimer->start(200);
 
+    // Если был передан файл при запуске
     if (!filePath.isEmpty()) {
-        mediaPlayer->setSource(QUrl::fromLocalFile(filePath));
+        qDebug() << "PlayerScene::PlayerScene() - Opening file:" << filePath;
+
+        QFileInfo checkFile(filePath);
+        if (!checkFile.exists() || !checkFile.isFile()) {
+            qDebug() << "PlayerScene::PlayerScene() - File does not exist or is not a file.";
+            QMessageBox::critical(this, "Error", "File does not exist or is not a file.");
+            return;
+        }
+
+        QUrl mediaUrl = QUrl::fromLocalFile(filePath);
+        qDebug() << "PlayerScene::PlayerScene() - Media URL:" << mediaUrl.toString();
+
+        mediaPlayer->setSource(mediaUrl);
+
         FileManager::addToHistory(filePath);
-        fullMediaTitle = QFileInfo(filePath).fileName();
+
+        fullMediaTitle = checkFile.fileName();
         mediaLabel->setText(fullMediaTitle);
         mediaPlayer->play();
         playPauseButton->setIconPath(":/assets/icons/pause.png");
@@ -131,6 +169,40 @@ void PlayerScene::togglePlayPause()
     }
     isPlaying = !isPlaying;
 }
+
+void PlayerScene::setMediaSource(const QString& filePath)
+{
+    if (!filePath.isEmpty()) {
+        qDebug() << "PlayerScene::setMediaSource() - Opening file:" << filePath;
+
+        QFileInfo checkFile(filePath);
+        if (!checkFile.exists() || !checkFile.isFile()) {
+            qDebug() << "PlayerScene::setMediaSource() - File does not exist or is not a file.";
+            QMessageBox::critical(this, "Error", "File does not exist or is not a file.");
+            return;
+        }
+
+        QUrl mediaUrl = QUrl::fromLocalFile(filePath);
+        qDebug() << "PlayerScene::setMediaSource() - Media URL:" << mediaUrl.toString();
+
+        mediaPlayer->setSource(mediaUrl);
+        FileManager::addToHistory(filePath);
+        fullMediaTitle = checkFile.fileName();
+        mediaLabel->setText(fullMediaTitle);
+        mediaPlayer->play();
+        playPauseButton->setIconPath(":/assets/icons/pause.png");
+        isPlaying = true;
+
+        // Дополнительная проверка наличия видео
+        // Используем QTimer::singleShot, чтобы дождаться загрузки медиа
+        QTimer::singleShot(1000, this, [this]() {
+            bool hasVideo = mediaPlayer->hasVideo();
+            qDebug() << "PlayerScene::setMediaSource() - hasVideo:" << hasVideo;
+            handleHasVideoChanged(hasVideo);
+            });
+    }
+}
+
 
 void PlayerScene::stopPlayback()
 {
@@ -166,9 +238,21 @@ void PlayerScene::openFile()
 {
     QString filePath = QFileDialog::getOpenFileName(this, "Choose Mediafile");
     if (!filePath.isEmpty()) {
-        mediaPlayer->setSource(QUrl::fromLocalFile(filePath));
+        qDebug() << "PlayerScene::openFile() - Opening file:" << filePath;
+
+        QFileInfo checkFile(filePath);
+        if (!checkFile.exists() || !checkFile.isFile()) {
+            qDebug() << "PlayerScene::openFile() - File does not exist or is not a file.";
+            QMessageBox::critical(this, "Error", "File does not exist or is not a file.");
+            return;
+        }
+
+        QUrl mediaUrl = QUrl::fromLocalFile(filePath);
+        qDebug() << "PlayerScene::openFile() - Media URL:" << mediaUrl.toString();
+
+        mediaPlayer->setSource(mediaUrl);
         FileManager::addToHistory(filePath);
-        fullMediaTitle = QFileInfo(filePath).fileName();
+        fullMediaTitle = checkFile.fileName();
         marqueeIndex = 0;
         mediaLabel->setText(fullMediaTitle);
         mediaPlayer->play();
@@ -198,4 +282,26 @@ void PlayerScene::updateMarquee()
     else {
         mediaLabel->setText(fullMediaTitle);
     }
+}
+
+void PlayerScene::handleHasVideoChanged(bool hasVideo)
+{
+    qDebug() << "PlayerScene::handleHasVideoChanged() - hasVideo:" << hasVideo;
+    if (hasVideo) {
+        // Показываем видео
+        videoWidget->show();
+        audioVisualizer->hide();
+    }
+    else {
+        // Показываем визуализатор
+        videoWidget->hide();
+        audioVisualizer->show();
+    }
+}
+
+void PlayerScene::goBack()
+{
+    qDebug() << "PlayerScene::goBack() - Switching to MainScene";
+    // Возвращаемся к MainScene
+    app->changeScene(new MainScene(app));
 }

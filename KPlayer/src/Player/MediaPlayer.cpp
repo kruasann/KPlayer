@@ -1,5 +1,7 @@
 // src/Player/MediaPlayer.cpp
 #include "MediaPlayer.h"
+#include <QRandomGenerator>
+#include <QDebug>
 
 MediaPlayer::MediaPlayer(QObject* parent)
     : QObject(parent)
@@ -20,6 +22,13 @@ MediaPlayer::MediaPlayer(QObject* parent)
         Q_UNUSED(error);
         emit errorOccurred(player->errorString());
         });
+
+    // Перенаправляем сигнал hasVideoChanged
+    connect(player, &QMediaPlayer::hasVideoChanged, this, &MediaPlayer::hasVideoChanged);
+
+    // Таймер для генерации аудио-данных
+    audioDataTimer = new QTimer(this);
+    connect(audioDataTimer, &QTimer::timeout, this, &MediaPlayer::generateAudioData);
 }
 
 MediaPlayer::~MediaPlayer()
@@ -31,60 +40,86 @@ MediaPlayer::~MediaPlayer()
 
 void MediaPlayer::setSource(const QUrl& url)
 {
-    // Устанавливаем источник медиа
+    qDebug() << "MediaPlayer::setSource() - Setting media source:" << url.toString();
     player->setSource(url);
 }
 
 void MediaPlayer::play()
 {
-    // Начинаем воспроизведение
+    qDebug() << "MediaPlayer::play()";
     player->play();
+
+    // Запускаем таймер генерации аудио-данных
+    audioDataTimer->start(100); // Обновление каждые 100 мс
 }
 
 void MediaPlayer::pause()
 {
-    // Ставим на паузу
+    qDebug() << "MediaPlayer::pause()";
     player->pause();
+
+    // Останавливаем таймер генерации аудио-данных
+    audioDataTimer->stop();
 }
 
 void MediaPlayer::stop()
 {
-    // Останавливаем воспроизведение
+    qDebug() << "MediaPlayer::stop()";
     player->stop();
+
+    // Останавливаем таймер генерации аудио-данных
+    audioDataTimer->stop();
 }
 
 void MediaPlayer::setVolume(int value)
 {
+    qDebug() << "MediaPlayer::setVolume() - Volume:" << value;
     // Устанавливаем громкость (0.0 до 1.0)
     audioOutput->setVolume(value / 100.0);
 }
 
 void MediaPlayer::setPosition(qint64 position)
 {
+    qDebug() << "MediaPlayer::setPosition() - Position:" << position;
     // Устанавливаем позицию воспроизведения
     player->setPosition(position);
 }
 
 qint64 MediaPlayer::position() const
 {
-    // Получаем текущую позицию воспроизведения
     return player->position();
 }
 
 qint64 MediaPlayer::duration() const
 {
-    // Получаем длительность медиа
     return player->duration();
 }
 
 bool MediaPlayer::isPlaying() const
 {
-    // Проверяем, воспроизводится ли медиа
     return player->playbackState() == QMediaPlayer::PlayingState;
 }
 
 void MediaPlayer::setVideoOutput(QVideoWidget* videoWidget)
 {
+    qDebug() << "MediaPlayer::setVideoOutput()";
     // Устанавливаем видео-вывод
     player->setVideoOutput(videoWidget);
+}
+
+bool MediaPlayer::hasVideo() const
+{
+    return player->hasVideo();
+}
+
+void MediaPlayer::generateAudioData()
+{
+    // Генерируем случайные аудио-данные для визуализатора
+    QByteArray data;
+    const int sampleCount = 512;
+    for (int i = 0; i < sampleCount; ++i) {
+        qint16 sample = QRandomGenerator::global()->bounded(-32768, 32767);
+        data.append(reinterpret_cast<const char*>(&sample), sizeof(qint16));
+    }
+    emit audioDataGenerated(data);
 }

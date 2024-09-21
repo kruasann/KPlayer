@@ -378,17 +378,21 @@ CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/mocs_compilation.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/qvideowidget.h \
  N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
  N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QTimer \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qtimer.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qbasictimer.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qbytearray.h \
  N:\KPlayer\KPlayer\build\MediaPlayer_autogen\WAYUIA5GRM/moc_AudioVisualizer.cpp \
  N:/KPlayer/KPlayer/src/UI/AudioVisualizer.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidget \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qwidget.h \
- N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioBuffer \
- N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudiobuffer.h \
- N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudioformat.h \
  N:/Qt/6.6.3/mingw_64/include/QtGui/QPainter \
  N:/Qt/6.6.3/mingw_64/include/QtGui/qpainter.h \
  N:/Qt/6.6.3/mingw_64/include/QtGui/qtextoption.h \
  N:/Qt/6.6.3/mingw_64/include/QtGui/qpen.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QVector \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h \
  N:\KPlayer\KPlayer\build\MediaPlayer_autogen\WAYUIA5GRM/moc_Button.cpp \
  N:/KPlayer/KPlayer/src/UI/Button.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QPushButton \
@@ -459,10 +463,8 @@ CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/mocs_compilation.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QSlider \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qslider.h \
  N:/KPlayer/KPlayer/src/Player/MediaPlayer.h \
+ N:/KPlayer/KPlayer/src/UI/AudioVisualizer.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QLabel \
- N:/Qt/6.6.3/mingw_64/include/QtCore/QTimer \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qtimer.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qbasictimer.h \
  N:\KPlayer\KPlayer\build\MediaPlayer_autogen\WAYUIA5GRM/moc_Scene.cpp \
  N:/KPlayer/KPlayer/src/UI/Scene.h \
  N:\KPlayer\KPlayer\build\MediaPlayer_autogen\WAYUIA5GRM/moc_Slider.cpp \

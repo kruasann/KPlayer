@@ -41,17 +41,15 @@ constexpr auto qt_meta_stringdata_CLASSAudioVisualizerENDCLASS = QtMocHelpers::s
     "AudioVisualizer",
     "processBuffer",
     "",
-    "QAudioBuffer",
     "buffer"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSAudioVisualizerENDCLASS_t {
-    uint offsetsAndSizes[10];
+    uint offsetsAndSizes[8];
     char stringdata0[16];
     char stringdata1[14];
     char stringdata2[1];
-    char stringdata3[13];
-    char stringdata4[7];
+    char stringdata3[7];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSAudioVisualizerENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -60,13 +58,11 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSAudioVisualizerENDCLASS_t qt_me
         QT_MOC_LITERAL(0, 15),  // "AudioVisualizer"
         QT_MOC_LITERAL(16, 13),  // "processBuffer"
         QT_MOC_LITERAL(30, 0),  // ""
-        QT_MOC_LITERAL(31, 12),  // "QAudioBuffer"
-        QT_MOC_LITERAL(44, 6)   // "buffer"
+        QT_MOC_LITERAL(31, 6)   // "buffer"
     },
     "AudioVisualizer",
     "processBuffer",
     "",
-    "QAudioBuffer",
     "buffer"
 };
 #undef QT_MOC_LITERAL
@@ -90,7 +86,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSAudioVisualizerENDCLASS[] = {
        1,    1,   20,    2, 0x0a,    1 /* Public */,
 
  // slots: parameters
-    QMetaType::Void, 0x80000000 | 3,    4,
+    QMetaType::Void, QMetaType::QByteArray,    3,
 
        0        // eod
 };
@@ -106,7 +102,7 @@ Q_CONSTINIT const QMetaObject AudioVisualizer::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<AudioVisualizer, std::true_type>,
         // method 'processBuffer'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<const QAudioBuffer &, std::false_type>
+        QtPrivate::TypeAndForceComplete<const QByteArray &, std::false_type>
     >,
     nullptr
 } };
@@ -117,19 +113,8 @@ void AudioVisualizer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         auto *_t = static_cast<AudioVisualizer *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->processBuffer((*reinterpret_cast< std::add_pointer_t<QAudioBuffer>>(_a[1]))); break;
+        case 0: _t->processBuffer((*reinterpret_cast< std::add_pointer_t<QByteArray>>(_a[1]))); break;
         default: ;
-        }
-    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        switch (_id) {
-        default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
-        case 0:
-            switch (*reinterpret_cast<int*>(_a[1])) {
-            default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
-            case 0:
-                *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< QAudioBuffer >(); break;
-            }
-            break;
         }
     }
 }
@@ -158,7 +143,7 @@ int AudioVisualizer::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         _id -= 1;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
         if (_id < 1)
-            qt_static_metacall(this, _c, _id, _a);
+            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
         _id -= 1;
     }
     return _id;

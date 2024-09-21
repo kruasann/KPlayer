@@ -1,6 +1,8 @@
 N:/KPlayer/KPlayer/build/MediaPlayer_autogen/FOM3TICJJW/moc_MediaPlayer.cpp: N:/KPlayer/KPlayer/src/Player/MediaPlayer.h \
   N:/KPlayer/KPlayer/build/MediaPlayer_autogen/moc_predefs.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QObject \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QTimer \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20functional.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20memory.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -14,6 +16,7 @@ N:/KPlayer/KPlayer/build/MediaPlayer_autogen/FOM3TICJJW/moc_MediaPlayer.cpp: N:/
   N:/Qt/6.6.3/mingw_64/include/QtCore/qatomic.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qatomic_cxx11.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qbasicatomic.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/qbasictimer.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qbindingstorage.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qbytearray.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qbytearrayalgorithms.h \
@@ -100,6 +103,7 @@ N:/KPlayer/KPlayer/build/MediaPlayer_autogen/FOM3TICJJW/moc_MediaPlayer.cpp: N:/
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtdeprecationmarkers.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtenvironmentvariables.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtextstream.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/qtimer.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtmetamacros.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtnoop.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtpreprocessorsupport.h \

@@ -1,31 +1,24 @@
 // src/UI/AudioVisualizer.cpp
 
 #include "AudioVisualizer.h"
+#include <QAudioFormat>
+#include <QPainter>
 
 AudioVisualizer::AudioVisualizer(QWidget* parent)
     : QWidget(parent)
 {
-    // Инициализируем список уровней звука
-    levels.fill(0.0, 64); // Начальное количество столбцов
 }
 
-void AudioVisualizer::processBuffer(const QAudioBuffer& buffer)
+void AudioVisualizer::processBuffer(const QByteArray& buffer)
 {
     levels.clear();
 
-    // Получаем указатель на данные буфера
-    const qint16* data = buffer.constData<qint16>();
-    int channelCount = buffer.format().channelCount();
-    int sampleCount = buffer.sampleCount() / channelCount;
+    const qint16* data = reinterpret_cast<const qint16*>(buffer.constData());
+    int sampleCount = buffer.size() / sizeof(qint16);
 
     // Обрабатываем каждый семпл
-    for (int i = 0; i < sampleCount; i += channelCount) {
-        qreal value = 0;
-        // Усредняем значения каналов
-        for (int c = 0; c < channelCount; ++c) {
-            value += qAbs(qreal(data[i + c])) / 32768.0;
-        }
-        value /= channelCount;
+    for (int i = 0; i < sampleCount; ++i) {
+        qreal value = qAbs(qreal(data[i])) / 32768.0;
         levels.append(value);
     }
 

@@ -411,4 +411,47 @@ CMakeFiles/MediaPlayer.dir/src/App.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qstatusbar.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidget \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qwidget.h \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/QApplication
+ N:\KPlayer\KPlayer\src\UI/PlayerScene.h \
+ N:\KPlayer\KPlayer\src\UI/Scene.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidget \
+ N:/KPlayer/KPlayer/src/UI/Button.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QPushButton \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qpushbutton.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractbutton.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QString \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qstring.h \
+ N:/KPlayer/KPlayer/src/UI/Slider.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QSlider \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qslider.h \
+ N:/KPlayer/KPlayer/src/Player/MediaPlayer.h \
+ N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QMediaPlayer \
+ N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qmediaplayer.h \
+ N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
+ N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
+ N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
+ N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qmediaenumdebug.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qmetaobject.h \
+ N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudio.h \
+ N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioOutput \
+ N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudiooutput.h \
+ N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/QVideoWidget \
+ N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/qvideowidget.h \
+ N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
+ N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QTimer \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qtimer.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qbasictimer.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qbytearray.h \
+ N:/KPlayer/KPlayer/src/UI/AudioVisualizer.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/QPainter \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qpainter.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qtextoption.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qpen.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QVector \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QLabel \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMenuBar \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QApplication \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QDebug \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qdebug.h

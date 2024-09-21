@@ -5,7 +5,7 @@ events:
     kind: "message-v1"
     backtrace:
       - "N:/VisualSt/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:2 (project)"
     message: |
       The system is: Windows - 10.0.19045 - AMD64
   -
@@ -13,54 +13,8 @@ events:
     backtrace:
       - "N:/VisualSt/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "N:/VisualSt/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "N:/VisualSt/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: N:/VisualSt/VS/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe 
-      Build flags: 
-      Id flags:  
-      
-      The output was:
-      0
-      Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.38.33135 для x64
-      (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
-      
-      CMakeCCompilerId.c
-      Microsoft (R) Incremental Linker Version 14.38.33135.0
-      Copyright (C) Microsoft Corporation.  All rights reserved.
-      
-      /out:CMakeCCompilerId.exe 
-      CMakeCCompilerId.obj 
-      
-      
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
-      
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
-      
-      The C compiler identification is MSVC, found in:
-        N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/3.27.2-msvc1/CompilerIdC/CMakeCCompilerId.exe
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "N:/VisualSt/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1158 (message)"
-      - "N:/VisualSt/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
-      - "N:/VisualSt/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt"
-    message: |
-      Detecting C compiler /showIncludes prefix:
-        main.c
-        Примечание: включение файла:  N:\\KPlayer\\KPlayer\\out\\build\\x64-Debug\\CMakeFiles\\ShowIncludes\\foo.h
-        
-      Found prefix "Примечание: включение файла:  "
-  -
-    kind: "message-v1"
-    backtrace:
-      - "N:/VisualSt/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "N:/VisualSt/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "N:/VisualSt/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
       Compiler: N:/VisualSt/VS/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe 
@@ -93,7 +47,7 @@ events:
       - "N:/VisualSt/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1158 (message)"
       - "N:/VisualSt/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
       - "N:/VisualSt/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:2 (project)"
     message: |
       Detecting CXX compiler /showIncludes prefix:
         main.c
@@ -104,87 +58,61 @@ events:
     kind: "try_compile-v1"
     backtrace:
       - "N:/VisualSt/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
-      - "N:/VisualSt/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt"
-    checks:
-      - "Detecting C compiler ABI info"
-    directories:
-      source: "N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-emrv7n"
-      binary: "N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-emrv7n"
-    cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-    buildResult:
-      variable: "CMAKE_C_ABI_COMPILED"
-      cached: true
-      stdout: |
-        Change Dir: 'N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-emrv7n'
-        
-        Run Build Command(s): N:\\VISUALST\\VS\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_f80c6
-        [1/2] N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_f80c6.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_f80c6.dir\\ /FS -c N:\\VisualSt\\VS\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c
-        [2/2] cmd.exe /C "cd . && N:\\VisualSt\\VS\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_f80c6.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_f80c6.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_f80c6.exe /implib:cmTC_f80c6.lib /pdb:cmTC_f80c6.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "N:/VisualSt/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
       - "N:/VisualSt/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:2 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-wpj7k1"
-      binary: "N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-wpj7k1"
+      source: "N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-iiznq0"
+      binary: "N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-iiznq0"
     cmakeVariables:
-      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-wpj7k1'
+        Change Dir: 'N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-iiznq0'
         
-        Run Build Command(s): N:\\VISUALST\\VS\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_68ee0
-        [1/2] N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_68ee0.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_68ee0.dir\\ /FS -c N:\\VisualSt\\VS\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp
-        [2/2] cmd.exe /C "cd . && N:\\VisualSt\\VS\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_68ee0.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_68ee0.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_68ee0.exe /implib:cmTC_68ee0.lib /pdb:cmTC_68ee0.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): N:\\VISUALST\\VS\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_1ce01
+        [1/2] N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_1ce01.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_1ce01.dir\\ /FS -c N:\\VisualSt\\VS\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp
+        [2/2] cmd.exe /C "cd . && N:\\VisualSt\\VS\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_1ce01.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_1ce01.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_1ce01.exe /implib:cmTC_1ce01.lib /pdb:cmTC_1ce01.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
-...
-
----
-events:
   -
     kind: "try_compile-v1"
     backtrace:
       - "N:/VisualSt/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "N:/VisualSt/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
-      - "N:/VisualSt/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "N:/VisualSt/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "N:/VisualSt/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
       - "N:/VisualSt/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/FindThreads.cmake:163 (_threads_check_libc)"
       - "N:/VisualSt/VS/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
       - "N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
       - "N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6/Qt6Dependencies.cmake:24 (_qt_internal_find_third_party_dependencies)"
       - "N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6/Qt6Config.cmake:119 (include)"
-      - "CMakeLists.txt:9 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-mz0sy1"
-      binary: "N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-mz0sy1"
+      source: "N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-jot0xw"
+      binary: "N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-jot0xw"
     cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
       CMAKE_MODULE_PATH: "N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6;N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
     buildResult:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-mz0sy1'
+        Change Dir: 'N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-jot0xw'
         
-        Run Build Command(s): N:\\VISUALST\\VS\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_ed18b
-        [1/2] N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_ed18b.dir\\src.c.obj /FdCMakeFiles\\cmTC_ed18b.dir\\ /FS -c N:\\KPlayer\\KPlayer\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-mz0sy1\\src.c
-        FAILED: CMakeFiles/cmTC_ed18b.dir/src.c.obj 
-        N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_ed18b.dir\\src.c.obj /FdCMakeFiles\\cmTC_ed18b.dir\\ /FS -c N:\\KPlayer\\KPlayer\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-mz0sy1\\src.c
-        N:\\KPlayer\\KPlayer\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-mz0sy1\\src.c(1): fatal error C1083: Не удается открыть файл включение: pthread.h: No such file or directory,
+        Run Build Command(s): N:\\VISUALST\\VS\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_4d104
+        [1/2] N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_4d104.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_4d104.dir\\ /FS -c N:\\KPlayer\\KPlayer\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-jot0xw\\src.cxx
+        FAILED: CMakeFiles/cmTC_4d104.dir/src.cxx.obj 
+        N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_4d104.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_4d104.dir\\ /FS -c N:\\KPlayer\\KPlayer\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-jot0xw\\src.cxx
+        N:\\KPlayer\\KPlayer\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-jot0xw\\src.cxx(1): fatal error C1083: Не удается открыть файл включение: pthread.h: No such file or directory,
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
@@ -198,29 +126,29 @@ events:
       - "N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
       - "N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6/Qt6Dependencies.cmake:24 (_qt_internal_find_third_party_dependencies)"
       - "N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6/Qt6Config.cmake:119 (include)"
-      - "CMakeLists.txt:9 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-da4ips"
-      binary: "N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-da4ips"
+      source: "N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-yd85ng"
+      binary: "N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-yd85ng"
     cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
       CMAKE_MODULE_PATH: "N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6;N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
     buildResult:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-da4ips'
+        Change Dir: 'N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-yd85ng'
         
-        Run Build Command(s): N:\\VISUALST\\VS\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_79fc3
-        [1/2] N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3 -DCHECK_FUNCTION_EXISTS=pthread_create /MDd /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_79fc3.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_79fc3.dir\\ /FS -c N:\\KPlayer\\KPlayer\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-da4ips\\CheckFunctionExists.c
-        [2/2] cmd.exe /C "cd . && N:\\VisualSt\\VS\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_79fc3.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_79fc3.dir\\CheckFunctionExists.c.obj  /out:cmTC_79fc3.exe /implib:cmTC_79fc3.lib /pdb:cmTC_79fc3.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        FAILED: cmTC_79fc3.exe 
-        cmd.exe /C "cd . && N:\\VisualSt\\VS\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_79fc3.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_79fc3.dir\\CheckFunctionExists.c.obj  /out:cmTC_79fc3.exe /implib:cmTC_79fc3.lib /pdb:cmTC_79fc3.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_79fc3.dir\\CheckFunctionExists.c.obj /out:cmTC_79fc3.exe /implib:cmTC_79fc3.lib /pdb:cmTC_79fc3.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_79fc3.dir/intermediate.manifest CMakeFiles\\cmTC_79fc3.dir/manifest.res" failed (exit code 1104) with the following output:
+        Run Build Command(s): N:\\VISUALST\\VS\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_e66de
+        [1/2] N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /GR /EHsc -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_e66de.dir\\CheckFunctionExists.cxx.obj /FdCMakeFiles\\cmTC_e66de.dir\\ /FS -c N:\\KPlayer\\KPlayer\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-yd85ng\\CheckFunctionExists.cxx
+        [2/2] cmd.exe /C "cd . && N:\\VisualSt\\VS\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_e66de.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e66de.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_e66de.exe /implib:cmTC_e66de.lib /pdb:cmTC_e66de.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_e66de.exe 
+        cmd.exe /C "cd . && N:\\VisualSt\\VS\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_e66de.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e66de.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_e66de.exe /implib:cmTC_e66de.lib /pdb:cmTC_e66de.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e66de.dir\\CheckFunctionExists.cxx.obj /out:cmTC_e66de.exe /implib:cmTC_e66de.lib /pdb:cmTC_e66de.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_e66de.dir/intermediate.manifest CMakeFiles\\cmTC_e66de.dir/manifest.res" failed (exit code 1104) with the following output:
         LINK : fatal error LNK1104: не удается открыть файл "pthreads.lib"\x0d
         ninja: build stopped: subcommand failed.
         
@@ -235,29 +163,29 @@ events:
       - "N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
       - "N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6/Qt6Dependencies.cmake:24 (_qt_internal_find_third_party_dependencies)"
       - "N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6/Qt6Config.cmake:119 (include)"
-      - "CMakeLists.txt:9 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-s2giif"
-      binary: "N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-s2giif"
+      source: "N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-hahuxl"
+      binary: "N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-hahuxl"
     cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
       CMAKE_MODULE_PATH: "N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6;N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
     buildResult:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-s2giif'
+        Change Dir: 'N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-hahuxl'
         
-        Run Build Command(s): N:\\VISUALST\\VS\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_bec56
-        [1/2] N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3 -DCHECK_FUNCTION_EXISTS=pthread_create /MDd /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_bec56.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_bec56.dir\\ /FS -c N:\\KPlayer\\KPlayer\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-s2giif\\CheckFunctionExists.c
-        [2/2] cmd.exe /C "cd . && N:\\VisualSt\\VS\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_bec56.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_bec56.dir\\CheckFunctionExists.c.obj  /out:cmTC_bec56.exe /implib:cmTC_bec56.lib /pdb:cmTC_bec56.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        FAILED: cmTC_bec56.exe 
-        cmd.exe /C "cd . && N:\\VisualSt\\VS\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_bec56.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_bec56.dir\\CheckFunctionExists.c.obj  /out:cmTC_bec56.exe /implib:cmTC_bec56.lib /pdb:cmTC_bec56.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_bec56.dir\\CheckFunctionExists.c.obj /out:cmTC_bec56.exe /implib:cmTC_bec56.lib /pdb:cmTC_bec56.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_bec56.dir/intermediate.manifest CMakeFiles\\cmTC_bec56.dir/manifest.res" failed (exit code 1104) with the following output:
+        Run Build Command(s): N:\\VISUALST\\VS\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_66fb9
+        [1/2] N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /GR /EHsc -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_66fb9.dir\\CheckFunctionExists.cxx.obj /FdCMakeFiles\\cmTC_66fb9.dir\\ /FS -c N:\\KPlayer\\KPlayer\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-hahuxl\\CheckFunctionExists.cxx
+        [2/2] cmd.exe /C "cd . && N:\\VisualSt\\VS\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_66fb9.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_66fb9.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_66fb9.exe /implib:cmTC_66fb9.lib /pdb:cmTC_66fb9.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_66fb9.exe 
+        cmd.exe /C "cd . && N:\\VisualSt\\VS\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_66fb9.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_66fb9.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_66fb9.exe /implib:cmTC_66fb9.lib /pdb:cmTC_66fb9.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_66fb9.dir\\CheckFunctionExists.cxx.obj /out:cmTC_66fb9.exe /implib:cmTC_66fb9.lib /pdb:cmTC_66fb9.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_66fb9.dir/intermediate.manifest CMakeFiles\\cmTC_66fb9.dir/manifest.res" failed (exit code 1104) with the following output:
         LINK : fatal error LNK1104: не удается открыть файл "pthread.lib"\x0d
         ninja: build stopped: subcommand failed.
         
@@ -277,26 +205,26 @@ events:
       - "N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:39 (_qt_internal_find_qt_dependencies)"
       - "N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:40 (include)"
       - "N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6/Qt6Config.cmake:164 (find_package)"
-      - "CMakeLists.txt:9 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-gc4tkx"
-      binary: "N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-gc4tkx"
+      source: "N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-41gilb"
+      binary: "N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-41gilb"
     cmakeVariables:
-      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
-      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
       CMAKE_MODULE_PATH: "N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6;N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6/3rdparty/kwin"
     buildResult:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: 'N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-gc4tkx'
+        Change Dir: 'N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-41gilb'
         
-        Run Build Command(s): N:\\VISUALST\\VS\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_719da
-        [1/2] N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DHAVE_STDATOMIC  /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_719da.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_719da.dir\\ /FS -c N:\\KPlayer\\KPlayer\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-gc4tkx\\src.cxx
-        [2/2] cmd.exe /C "cd . && N:\\VisualSt\\VS\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_719da.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_719da.dir\\src.cxx.obj  /out:cmTC_719da.exe /implib:cmTC_719da.lib /pdb:cmTC_719da.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): N:\\VISUALST\\VS\\COMMON7\\IDE\\COMMONEXTENSIONS\\MICROSOFT\\CMAKE\\Ninja\\ninja.exe -v cmTC_f5d2d
+        [1/2] N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DHAVE_STDATOMIC  /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_f5d2d.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_f5d2d.dir\\ /FS -c N:\\KPlayer\\KPlayer\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-41gilb\\src.cxx
+        [2/2] cmd.exe /C "cd . && N:\\VisualSt\\VS\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_f5d2d.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- N:\\VisualSt\\VS\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_f5d2d.dir\\src.cxx.obj  /out:cmTC_f5d2d.exe /implib:cmTC_f5d2d.lib /pdb:cmTC_f5d2d.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
 ...

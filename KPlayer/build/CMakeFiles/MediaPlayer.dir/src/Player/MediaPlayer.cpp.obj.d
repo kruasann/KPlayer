@@ -371,4 +371,21 @@ CMakeFiles/MediaPlayer.dir/src/Player/MediaPlayer.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtGui/qcursor.h \
  N:/Qt/6.6.3/mingw_64/include/QtGui/qbitmap.h \
  N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
- N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h
+ N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QTimer \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qtimer.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qbasictimer.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qbytearray.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QRandomGenerator \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qrandom.h \
+ N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/random \
+ N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/random.h \
+ N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h \
+ N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/pmmintrin.h \
+ N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/emmintrin.h \
+ N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/xmmintrin.h \
+ N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/mmintrin.h \
+ N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/random.tcc \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QDebug \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qdebug.h

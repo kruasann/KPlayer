@@ -386,6 +386,18 @@ CMakeFiles/MediaPlayer.dir/src/UI/PlayerScene.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/qvideowidget.h \
  N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
  N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QTimer \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qtimer.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qbasictimer.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qbytearray.h \
+ N:/KPlayer/KPlayer/src/UI/AudioVisualizer.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/QPainter \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qpainter.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qtextoption.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qpen.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QVector \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QLabel \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qlabel.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qframe.h \
@@ -395,9 +407,6 @@ CMakeFiles/MediaPlayer.dir/src/UI/PlayerScene.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMenuBar \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qmenubar.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qmenu.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/QTimer \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qtimer.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qbasictimer.h \
  N:/KPlayer/KPlayer/src/App.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMainWindow \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qmainwindow.h \
@@ -405,6 +414,48 @@ CMakeFiles/MediaPlayer.dir/src/UI/PlayerScene.cpp.obj: \
  N:/KPlayer/KPlayer/src/Utils/FileManager.h \
  N:/Qt/6.6.3/mingw_64/include/QtCore/QStringList \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qstringlist.h \
+ N:/KPlayer/KPlayer/src/UI/MainScene.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QListWidgetItem \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qlistwidget.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qlistview.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractitemview.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qabstractitemmodel.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qitemselectionmodel.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qstyleoption.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qlocale.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractspinbox.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qvalidator.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qregularexpression.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qslider.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qstyle.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qtabbar.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qrubberband.h \
+ N:/KPlayer/KPlayer/src/UI/ui_MainScene.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QVariant \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qvariant.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/QAction \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qaction.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QApplication \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qapplication.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qcoreapplication.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qcoreevent.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qeventloop.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qnativeinterface.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qcoreapplication_platform.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qguiapplication.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qinputmethod.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qguiapplication_platform.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QLabel \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QListWidget \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMainWindow \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMenu \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qmenu.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMenuBar \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QStatusBar \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qstatusbar.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidget \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QHBoxLayout \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qboxlayout.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qlayout.h \
@@ -450,19 +501,9 @@ CMakeFiles/MediaPlayer.dir/src/UI/PlayerScene.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qfileinfo.h \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qdatetime.h \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qcalendar.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qlocale.h \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qtimezone.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qdialog.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QApplication \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/qapplication.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qcoreapplication.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qcoreevent.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qeventloop.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qnativeinterface.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qcoreapplication_platform.h \
- N:/Qt/6.6.3/mingw_64/include/QtGui/qguiapplication.h \
- N:/Qt/6.6.3/mingw_64/include/QtGui/qinputmethod.h \
- N:/Qt/6.6.3/mingw_64/include/QtGui/qguiapplication_platform.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMessageBox \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qmessagebox.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qdialogbuttonbox.h \

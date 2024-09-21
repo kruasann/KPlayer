@@ -1,12 +1,15 @@
 N:/KPlayer/KPlayer/build/MediaPlayer_autogen/WAYUIA5GRM/moc_PlayerScene.cpp: N:/KPlayer/KPlayer/src/UI/PlayerScene.h \
   N:/KPlayer/KPlayer/build/MediaPlayer_autogen/moc_predefs.h \
   N:/KPlayer/KPlayer/src/Player/MediaPlayer.h \
+  N:/KPlayer/KPlayer/src/UI/AudioVisualizer.h \
   N:/KPlayer/KPlayer/src/UI/Button.h \
   N:/KPlayer/KPlayer/src/UI/Scene.h \
   N:/KPlayer/KPlayer/src/UI/Slider.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QObject \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QString \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QTimer \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QVector \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20functional.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20memory.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -123,8 +126,10 @@ N:/KPlayer/KPlayer/build/MediaPlayer_autogen/WAYUIA5GRM/moc_PlayerScene.cpp: N:/
   N:/Qt/6.6.3/mingw_64/include/QtCore/qutf8stringview.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvariant.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvarlengtharray.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qversiontagging.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qxptype_traits.h \
+  N:/Qt/6.6.3/mingw_64/include/QtGui/QPainter \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qaction.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qbitmap.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qbrush.h \
@@ -137,7 +142,9 @@ N:/KPlayer/KPlayer/build/MediaPlayer_autogen/WAYUIA5GRM/moc_PlayerScene.cpp: N:/
   N:/Qt/6.6.3/mingw_64/include/QtGui/qimage.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qkeysequence.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qpaintdevice.h \
+  N:/Qt/6.6.3/mingw_64/include/QtGui/qpainter.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qpalette.h \
+  N:/Qt/6.6.3/mingw_64/include/QtGui/qpen.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qpicture.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qpixelformat.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qpixmap.h \
@@ -146,6 +153,7 @@ N:/KPlayer/KPlayer/build/MediaPlayer_autogen/WAYUIA5GRM/moc_PlayerScene.cpp: N:/
   N:/Qt/6.6.3/mingw_64/include/QtGui/qrgb.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qrgba64.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qtextdocument.h \
+  N:/Qt/6.6.3/mingw_64/include/QtGui/qtextoption.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qtgui-config.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qtguiexports.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qtguiglobal.h \

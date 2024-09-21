@@ -11,7 +11,7 @@ class App : public QObject {
     Q_OBJECT
 public:
     App();
-    void start();
+    void start(const QString& filePath = QString());
     void changeScene(QWidget* newScene);
 
 private:

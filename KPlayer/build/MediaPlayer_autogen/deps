@@ -65,10 +65,12 @@ MediaPlayer_autogen/timestamp: \
 	N:/KPlayer/KPlayer/src/Utils/ThreadPool.h \
 	N:/KPlayer/KPlayer/src/main.cpp \
 	N:/KPlayer/KPlayer/src/resources.qrc \
+	N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
 	N:/Qt/6.6.3/mingw_64/include/QtCore/QObject \
 	N:/Qt/6.6.3/mingw_64/include/QtCore/QString \
 	N:/Qt/6.6.3/mingw_64/include/QtCore/QTimer \
 	N:/Qt/6.6.3/mingw_64/include/QtCore/QVariant \
+	N:/Qt/6.6.3/mingw_64/include/QtCore/QVector \
 	N:/Qt/6.6.3/mingw_64/include/QtCore/q20functional.h \
 	N:/Qt/6.6.3/mingw_64/include/QtCore/q20memory.h \
 	N:/Qt/6.6.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -194,6 +196,7 @@ MediaPlayer_autogen/timestamp: \
 	N:/Qt/6.6.3/mingw_64/include/QtCore/qutf8stringview.h \
 	N:/Qt/6.6.3/mingw_64/include/QtCore/qvariant.h \
 	N:/Qt/6.6.3/mingw_64/include/QtCore/qvarlengtharray.h \
+	N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h \
 	N:/Qt/6.6.3/mingw_64/include/QtCore/qversiontagging.h \
 	N:/Qt/6.6.3/mingw_64/include/QtCore/qxptype_traits.h \
 	N:/Qt/6.6.3/mingw_64/include/QtGui/QAction \
@@ -232,12 +235,9 @@ MediaPlayer_autogen/timestamp: \
 	N:/Qt/6.6.3/mingw_64/include/QtGui/qvalidator.h \
 	N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs.h \
 	N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs_win.h \
-	N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioBuffer \
 	N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioOutput \
 	N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QMediaPlayer \
 	N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudio.h \
-	N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudiobuffer.h \
-	N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudioformat.h \
 	N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudiooutput.h \
 	N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qmediaenumdebug.h \
 	N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qmediaplayer.h \

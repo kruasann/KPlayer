@@ -6,11 +6,13 @@
 #include "UI/Button.h"
 #include "UI/Slider.h"
 #include "Player/MediaPlayer.h"
+#include "UI/AudioVisualizer.h"
 #include <QWidget>
 #include <QLabel>
 #include <QVideoWidget>
 #include <QMenuBar>
 #include <QTimer>
+#include <QPushButton> // Добавлено
 
 class App;
 
@@ -30,8 +32,12 @@ private slots:
     void exitApplication();
     void handleError(const QString& errorString);
     void updateMarquee();
+    void handleHasVideoChanged(bool hasVideo);
+    void goBack(); // Новый слот
 
 private:
+    void setMediaSource(const QString& filePath);
+
     MediaPlayer* mediaPlayer;
     Button* playPauseButton;
     Button* stopButton;
@@ -41,7 +47,9 @@ private:
     QLabel* mediaLabel;
     QMenuBar* menuBar;
     QVideoWidget* videoWidget;
+    AudioVisualizer* audioVisualizer;
     QTimer* marqueeTimer;
+    QPushButton* backButton; // Кнопка "Back"
     QString fullMediaTitle;
     int marqueeIndex;
     bool isPlaying;

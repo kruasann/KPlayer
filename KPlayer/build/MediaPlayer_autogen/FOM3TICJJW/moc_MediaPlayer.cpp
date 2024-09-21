@@ -45,11 +45,16 @@ constexpr auto qt_meta_stringdata_CLASSMediaPlayerENDCLASS = QtMocHelpers::strin
     "durationChanged",
     "duration",
     "errorOccurred",
-    "errorString"
+    "errorString",
+    "hasVideoChanged",
+    "hasVideo",
+    "audioDataGenerated",
+    "data",
+    "generateAudioData"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSMediaPlayerENDCLASS_t {
-    uint offsetsAndSizes[16];
+    uint offsetsAndSizes[26];
     char stringdata0[12];
     char stringdata1[16];
     char stringdata2[1];
@@ -58,6 +63,11 @@ struct qt_meta_stringdata_CLASSMediaPlayerENDCLASS_t {
     char stringdata5[9];
     char stringdata6[14];
     char stringdata7[12];
+    char stringdata8[16];
+    char stringdata9[9];
+    char stringdata10[19];
+    char stringdata11[5];
+    char stringdata12[18];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSMediaPlayerENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -70,7 +80,12 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMediaPlayerENDCLASS_t qt_meta_s
         QT_MOC_LITERAL(38, 15),  // "durationChanged"
         QT_MOC_LITERAL(54, 8),  // "duration"
         QT_MOC_LITERAL(63, 13),  // "errorOccurred"
-        QT_MOC_LITERAL(77, 11)   // "errorString"
+        QT_MOC_LITERAL(77, 11),  // "errorString"
+        QT_MOC_LITERAL(89, 15),  // "hasVideoChanged"
+        QT_MOC_LITERAL(105, 8),  // "hasVideo"
+        QT_MOC_LITERAL(114, 18),  // "audioDataGenerated"
+        QT_MOC_LITERAL(133, 4),  // "data"
+        QT_MOC_LITERAL(138, 17)   // "generateAudioData"
     },
     "MediaPlayer",
     "positionChanged",
@@ -79,7 +94,12 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMediaPlayerENDCLASS_t qt_meta_s
     "durationChanged",
     "duration",
     "errorOccurred",
-    "errorString"
+    "errorString",
+    "hasVideoChanged",
+    "hasVideo",
+    "audioDataGenerated",
+    "data",
+    "generateAudioData"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -91,22 +111,32 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMediaPlayerENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       3,   14, // methods
+       6,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       3,       // signalCount
+       5,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   32,    2, 0x06,    1 /* Public */,
-       4,    1,   35,    2, 0x06,    3 /* Public */,
-       6,    1,   38,    2, 0x06,    5 /* Public */,
+       1,    1,   50,    2, 0x06,    1 /* Public */,
+       4,    1,   53,    2, 0x06,    3 /* Public */,
+       6,    1,   56,    2, 0x06,    5 /* Public */,
+       8,    1,   59,    2, 0x06,    7 /* Public */,
+      10,    1,   62,    2, 0x06,    9 /* Public */,
+
+ // slots: name, argc, parameters, tag, flags, initial metatype offsets
+      12,    0,   65,    2, 0x08,   11 /* Private */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::LongLong,    3,
     QMetaType::Void, QMetaType::LongLong,    5,
     QMetaType::Void, QMetaType::QString,    7,
+    QMetaType::Void, QMetaType::Bool,    9,
+    QMetaType::Void, QMetaType::QByteArray,   11,
+
+ // slots: parameters
+    QMetaType::Void,
 
        0        // eod
 };
@@ -128,7 +158,15 @@ Q_CONSTINIT const QMetaObject MediaPlayer::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<qint64, std::false_type>,
         // method 'errorOccurred'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'hasVideoChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        // method 'audioDataGenerated'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QByteArray &, std::false_type>,
+        // method 'generateAudioData'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
 } };
@@ -142,6 +180,9 @@ void MediaPlayer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         case 0: _t->positionChanged((*reinterpret_cast< std::add_pointer_t<qint64>>(_a[1]))); break;
         case 1: _t->durationChanged((*reinterpret_cast< std::add_pointer_t<qint64>>(_a[1]))); break;
         case 2: _t->errorOccurred((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 3: _t->hasVideoChanged((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
+        case 4: _t->audioDataGenerated((*reinterpret_cast< std::add_pointer_t<QByteArray>>(_a[1]))); break;
+        case 5: _t->generateAudioData(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -167,6 +208,20 @@ void MediaPlayer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
                 return;
             }
         }
+        {
+            using _t = void (MediaPlayer::*)(bool );
+            if (_t _q_method = &MediaPlayer::hasVideoChanged; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 3;
+                return;
+            }
+        }
+        {
+            using _t = void (MediaPlayer::*)(const QByteArray & );
+            if (_t _q_method = &MediaPlayer::audioDataGenerated; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 4;
+                return;
+            }
+        }
     }
 }
 
@@ -189,13 +244,13 @@ int MediaPlayer::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 6)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 6;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 6)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 3;
+        _id -= 6;
     }
     return _id;
 }
@@ -219,5 +274,19 @@ void MediaPlayer::errorOccurred(const QString & _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 2, _a);
+}
+
+// SIGNAL 3
+void MediaPlayer::hasVideoChanged(bool _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 3, _a);
+}
+
+// SIGNAL 4
+void MediaPlayer::audioDataGenerated(const QByteArray & _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 4, _a);
 }
 QT_WARNING_POP

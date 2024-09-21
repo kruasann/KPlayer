@@ -6,6 +6,8 @@
 #include <QMediaPlayer>
 #include <QAudioOutput>
 #include <QVideoWidget>
+#include <QTimer>
+#include <QByteArray>
 
 /**
  * @brief Класс MediaPlayer инкапсулирует функциональность воспроизведения медиа.
@@ -26,15 +28,22 @@ public:
     qint64 duration() const;
     bool isPlaying() const;
     void setVideoOutput(QVideoWidget* videoWidget);
+    bool hasVideo() const; // Добавленный метод
 
 signals:
     void positionChanged(qint64 position);
     void durationChanged(qint64 duration);
     void errorOccurred(const QString& errorString);
+    void hasVideoChanged(bool hasVideo); // Новый сигнал
+    void audioDataGenerated(const QByteArray& data);
+
+private slots:
+    void generateAudioData();
 
 private:
-    QMediaPlayer* player;      ///< Объект медиаплеера
-    QAudioOutput* audioOutput; ///< Объект аудиовыхода
+    QMediaPlayer* player;       ///< Объект медиаплеера
+    QAudioOutput* audioOutput;  ///< Объект аудиовыхода
+    QTimer* audioDataTimer;     ///< Таймер для генерации аудио-данных
 };
 
 #endif // MEDIA_PLAYER_H

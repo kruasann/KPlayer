@@ -1,5 +1,7 @@
 N:/KPlayer/KPlayer/build/MediaPlayer_autogen/WAYUIA5GRM/moc_AudioVisualizer.cpp: N:/KPlayer/KPlayer/src/UI/AudioVisualizer.h \
   N:/KPlayer/KPlayer/build/MediaPlayer_autogen/moc_predefs.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QVector \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20functional.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20memory.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -111,6 +113,7 @@ N:/KPlayer/KPlayer/build/MediaPlayer_autogen/WAYUIA5GRM/moc_AudioVisualizer.cpp:
   N:/Qt/6.6.3/mingw_64/include/QtCore/qutf8stringview.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvariant.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvarlengtharray.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qversiontagging.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qxptype_traits.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/QPainter \
@@ -142,13 +145,6 @@ N:/KPlayer/KPlayer/build/MediaPlayer_autogen/WAYUIA5GRM/moc_AudioVisualizer.cpp:
   N:/Qt/6.6.3/mingw_64/include/QtGui/qtransform.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs_win.h \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioBuffer \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudio.h \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudiobuffer.h \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudioformat.h \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
-  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidget \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qsizepolicy.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qtwidgets-config.h \

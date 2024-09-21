@@ -52,11 +52,14 @@ constexpr auto qt_meta_stringdata_CLASSPlayerSceneENDCLASS = QtMocHelpers::strin
     "exitApplication",
     "handleError",
     "errorString",
-    "updateMarquee"
+    "updateMarquee",
+    "handleHasVideoChanged",
+    "hasVideo",
+    "goBack"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSPlayerSceneENDCLASS_t {
-    uint offsetsAndSizes[28];
+    uint offsetsAndSizes[34];
     char stringdata0[12];
     char stringdata1[16];
     char stringdata2[1];
@@ -71,6 +74,9 @@ struct qt_meta_stringdata_CLASSPlayerSceneENDCLASS_t {
     char stringdata11[12];
     char stringdata12[12];
     char stringdata13[14];
+    char stringdata14[22];
+    char stringdata15[9];
+    char stringdata16[7];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSPlayerSceneENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -89,7 +95,10 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSPlayerSceneENDCLASS_t qt_meta_s
         QT_MOC_LITERAL(96, 15),  // "exitApplication"
         QT_MOC_LITERAL(112, 11),  // "handleError"
         QT_MOC_LITERAL(124, 11),  // "errorString"
-        QT_MOC_LITERAL(136, 13)   // "updateMarquee"
+        QT_MOC_LITERAL(136, 13),  // "updateMarquee"
+        QT_MOC_LITERAL(150, 21),  // "handleHasVideoChanged"
+        QT_MOC_LITERAL(172, 8),  // "hasVideo"
+        QT_MOC_LITERAL(181, 6)   // "goBack"
     },
     "PlayerScene",
     "togglePlayPause",
@@ -104,7 +113,10 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSPlayerSceneENDCLASS_t qt_meta_s
     "exitApplication",
     "handleError",
     "errorString",
-    "updateMarquee"
+    "updateMarquee",
+    "handleHasVideoChanged",
+    "hasVideo",
+    "goBack"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -116,7 +128,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSPlayerSceneENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       9,   14, // methods
+      11,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -124,15 +136,17 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSPlayerSceneENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   68,    2, 0x08,    1 /* Private */,
-       3,    0,   69,    2, 0x08,    2 /* Private */,
-       4,    1,   70,    2, 0x08,    3 /* Private */,
-       6,    1,   73,    2, 0x08,    5 /* Private */,
-       7,    1,   76,    2, 0x08,    7 /* Private */,
-       9,    0,   79,    2, 0x08,    9 /* Private */,
-      10,    0,   80,    2, 0x08,   10 /* Private */,
-      11,    1,   81,    2, 0x08,   11 /* Private */,
-      13,    0,   84,    2, 0x08,   13 /* Private */,
+       1,    0,   80,    2, 0x08,    1 /* Private */,
+       3,    0,   81,    2, 0x08,    2 /* Private */,
+       4,    1,   82,    2, 0x08,    3 /* Private */,
+       6,    1,   85,    2, 0x08,    5 /* Private */,
+       7,    1,   88,    2, 0x08,    7 /* Private */,
+       9,    0,   91,    2, 0x08,    9 /* Private */,
+      10,    0,   92,    2, 0x08,   10 /* Private */,
+      11,    1,   93,    2, 0x08,   11 /* Private */,
+      13,    0,   96,    2, 0x08,   13 /* Private */,
+      14,    1,   97,    2, 0x08,   14 /* Private */,
+      16,    0,  100,    2, 0x08,   16 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -143,6 +157,8 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSPlayerSceneENDCLASS[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void, QMetaType::QString,   12,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::Bool,   15,
     QMetaType::Void,
 
        0        // eod
@@ -178,6 +194,11 @@ Q_CONSTINIT const QMetaObject PlayerScene::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
         // method 'updateMarquee'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'handleHasVideoChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        // method 'goBack'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -198,6 +219,8 @@ void PlayerScene::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         case 6: _t->exitApplication(); break;
         case 7: _t->handleError((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 8: _t->updateMarquee(); break;
+        case 9: _t->handleHasVideoChanged((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
+        case 10: _t->goBack(); break;
         default: ;
         }
     }
@@ -222,13 +245,13 @@ int PlayerScene::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 9)
+        if (_id < 11)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 9;
+        _id -= 11;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 9)
+        if (_id < 11)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 9;
+        _id -= 11;
     }
     return _id;
 }

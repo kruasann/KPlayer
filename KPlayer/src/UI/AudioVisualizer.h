@@ -4,24 +4,25 @@
 #define AUDIOVISUALIZER_H
 
 #include <QWidget>
-#include <QAudioBuffer>
+#include <QByteArray>
 #include <QPainter>
+#include <QVector>
 
 class AudioVisualizer : public QWidget {
     Q_OBJECT
 public:
     /**
-     * @brief Конструктор визуализатора звука
+     * @brief Конструктор визуализатора
      * @param parent Родительский виджет
      */
     explicit AudioVisualizer(QWidget* parent = nullptr);
 
 public slots:
     /**
-     * @brief Обрабатывает аудио-буфер для визуализации
-     * @param buffer Аудио-буфер
+     * @brief Обрабатывает аудио-буфер и обновляет визуализацию
+     * @param buffer Аудио-данные
      */
-    void processBuffer(const QAudioBuffer& buffer);
+    void processBuffer(const QByteArray& buffer);
 
 protected:
     /**
@@ -31,7 +32,7 @@ protected:
     void paintEvent(QPaintEvent* event) override;
 
 private:
-    QVector<qreal> levels; ///< Уровни звука для визуализации
+    QVector<qreal> levels;
 };
 
 #endif // AUDIOVISUALIZER_H

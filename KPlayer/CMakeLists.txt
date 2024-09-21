@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Укажите путь к вашей установке Qt
-set(CMAKE_PREFIX_PATH "C:/Qt/6.6.0/mingw_64/lib/cmake")  # Замените на ваш путь
+set(CMAKE_PREFIX_PATH "N:/Qt/6.6.3/mingw_64/lib/cmake")  # Замените на ваш путь
 
 # Находим необходимые компоненты Qt
 find_package(Qt6 COMPONENTS Widgets Multimedia MultimediaWidgets REQUIRED)
@@ -15,13 +15,12 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 
-# Собираем все исходные файлы
+# Собираем исходные файлы вручную
 file(GLOB_RECURSE SOURCES
     src/*.cpp
     src/*.h
     src/resources.qrc
 )
-
 # Создаем исполняемый файл с поддержкой Qt
 qt_add_executable(MediaPlayer
     ${SOURCES}

@@ -53,7 +53,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 26,
+				"line" : 25,
 				"parent" : 0
 			},
 			{
@@ -77,7 +77,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 31,
+				"line" : 30,
 				"parent" : 0
 			},
 			{
@@ -279,7 +279,7 @@
 			{
 				"command" : 10,
 				"file" : 1,
-				"line" : 38,
+				"line" : 37,
 				"parent" : 0
 			}
 		]
@@ -290,7 +290,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd"
+					"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd"
 				}
 			],
 			"defines" : 
@@ -446,7 +446,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd",
+				"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd",
 				"role" : "flags"
 			},
 			{
