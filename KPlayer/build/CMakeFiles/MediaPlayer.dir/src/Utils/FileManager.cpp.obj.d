@@ -345,4 +345,26 @@ CMakeFiles/MediaPlayer.dir/src/Utils/FileManager.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qtextstream.h \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qstringconverter_base.h \
  N:/Qt/6.6.3/mingw_64/include/QtCore/QStandardPaths \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qstandardpaths.h
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qstandardpaths.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QDir \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qdir.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qfile.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qfileinfo.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qshareddata.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qdatetime.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qcalendar.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qlocale.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qvariant.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qdebug.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qtextstream.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qcontiguouscache.h \
+ N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/climits \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qsharedpointer.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qsharedpointer_impl.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qmap.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qshareddata_impl.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qset.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qhash.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qvarlengtharray.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/q23utility.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qtimezone.h

@@ -379,45 +379,14 @@ CMakeFiles/MediaPlayer.dir/src/App.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qstyle.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qtabbar.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qrubberband.h \
- N:\KPlayer\KPlayer\src\UI/ui_MainScene.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/QVariant \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qvariant.h \
- N:/Qt/6.6.3/mingw_64/include/QtGui/QAction \
- N:/Qt/6.6.3/mingw_64/include/QtGui/qaction.h \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/QApplication \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/qapplication.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qcoreapplication.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qcoreevent.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qeventloop.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qnativeinterface.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qcoreapplication_platform.h \
- N:/Qt/6.6.3/mingw_64/include/QtGui/qguiapplication.h \
- N:/Qt/6.6.3/mingw_64/include/QtGui/qinputmethod.h \
- N:/Qt/6.6.3/mingw_64/include/QtGui/qguiapplication_platform.h \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/QLabel \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/qlabel.h \
- N:/Qt/6.6.3/mingw_64/include/QtGui/qpicture.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qiodevice.h \
- N:/Qt/6.6.3/mingw_64/include/QtGui/qtextdocument.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qurl.h \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/QListWidget \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMainWindow \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMenu \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/qmenu.h \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMenuBar \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/qmenubar.h \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/qmenu.h \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/QStatusBar \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/qstatusbar.h \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidget \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/qwidget.h \
- N:\KPlayer\KPlayer\src\UI/PlayerScene.h \
- N:\KPlayer\KPlayer\src\UI/Scene.h \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidget \
- N:/KPlayer/KPlayer/src/UI/Button.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QPushButton \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qpushbutton.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractbutton.h \
+ N:\KPlayer\KPlayer\src\UI/PlayerScene.h \
+ N:\KPlayer\KPlayer\src\UI/Scene.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidget \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qwidget.h \
+ N:/KPlayer/KPlayer/src/UI/Button.h \
  N:/Qt/6.6.3/mingw_64/include/QtCore/QString \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qstring.h \
  N:/KPlayer/KPlayer/src/UI/Slider.h \
@@ -426,6 +395,7 @@ CMakeFiles/MediaPlayer.dir/src/App.cpp.obj: \
  N:/KPlayer/KPlayer/src/Player/MediaPlayer.h \
  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QMediaPlayer \
  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qmediaplayer.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qurl.h \
  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
@@ -451,7 +421,22 @@ CMakeFiles/MediaPlayer.dir/src/App.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtGui/QColor \
  N:/Qt/6.6.3/mingw_64/include/QtGui/qcolor.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QLabel \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qlabel.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qpicture.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qiodevice.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qtextdocument.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMenuBar \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qmenubar.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qmenu.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QApplication \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qapplication.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qcoreapplication.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qcoreevent.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qeventloop.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qnativeinterface.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qcoreapplication_platform.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qguiapplication.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qinputmethod.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qguiapplication_platform.h \
  N:/Qt/6.6.3/mingw_64/include/QtCore/QDebug \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qdebug.h

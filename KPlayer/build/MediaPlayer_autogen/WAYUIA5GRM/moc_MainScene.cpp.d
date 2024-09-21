@@ -1,7 +1,5 @@
 N:/KPlayer/KPlayer/build/MediaPlayer_autogen/WAYUIA5GRM/moc_MainScene.cpp: N:/KPlayer/KPlayer/src/UI/MainScene.h \
   N:/KPlayer/KPlayer/build/MediaPlayer_autogen/moc_predefs.h \
-  N:/KPlayer/KPlayer/src/UI/ui_MainScene.h \
-  N:/Qt/6.6.3/mingw_64/include/QtCore/QVariant \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20functional.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20memory.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -31,13 +29,9 @@ N:/KPlayer/KPlayer/build/MediaPlayer_autogen/WAYUIA5GRM/moc_MainScene.cpp: N:/KP
   N:/Qt/6.6.3/mingw_64/include/QtCore/qcontainerinfo.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qcontainertools_impl.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qcontiguouscache.h \
-  N:/Qt/6.6.3/mingw_64/include/QtCore/qcoreapplication.h \
-  N:/Qt/6.6.3/mingw_64/include/QtCore/qcoreapplication_platform.h \
-  N:/Qt/6.6.3/mingw_64/include/QtCore/qcoreevent.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qdarwinhelpers.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qdatastream.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qdebug.h \
-  N:/Qt/6.6.3/mingw_64/include/QtCore/qeventloop.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qexceptionhandling.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qflags.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qfloat16.h \
@@ -49,7 +43,6 @@ N:/KPlayer/KPlayer/build/MediaPlayer_autogen/WAYUIA5GRM/moc_MainScene.cpp: N:/KP
   N:/Qt/6.6.3/mingw_64/include/QtCore/qglobalstatic.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qhash.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qhashfunctions.h \
-  N:/Qt/6.6.3/mingw_64/include/QtCore/qiodevice.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qiodevicebase.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qitemselectionmodel.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qiterable.h \
@@ -67,7 +60,6 @@ N:/KPlayer/KPlayer/build/MediaPlayer_autogen/WAYUIA5GRM/moc_MainScene.cpp: N:/KP
   N:/Qt/6.6.3/mingw_64/include/QtCore/qmetatype.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qminmax.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qnamespace.h \
-  N:/Qt/6.6.3/mingw_64/include/QtCore/qnativeinterface.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qnumeric.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qobject.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qobject_impl.h \
@@ -120,13 +112,11 @@ N:/KPlayer/KPlayer/build/MediaPlayer_autogen/WAYUIA5GRM/moc_MainScene.cpp: N:/KP
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtversionchecks.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtypeinfo.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtypes.h \
-  N:/Qt/6.6.3/mingw_64/include/QtCore/qurl.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qutf8stringview.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvariant.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvarlengtharray.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qversiontagging.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qxptype_traits.h \
-  N:/Qt/6.6.3/mingw_64/include/QtGui/QAction \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qaction.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qbitmap.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qbrush.h \
@@ -135,22 +125,17 @@ N:/KPlayer/KPlayer/build/MediaPlayer_autogen/WAYUIA5GRM/moc_MainScene.cpp: N:/KP
   N:/Qt/6.6.3/mingw_64/include/QtGui/qfont.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qfontinfo.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qfontmetrics.h \
-  N:/Qt/6.6.3/mingw_64/include/QtGui/qguiapplication.h \
-  N:/Qt/6.6.3/mingw_64/include/QtGui/qguiapplication_platform.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qicon.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qimage.h \
-  N:/Qt/6.6.3/mingw_64/include/QtGui/qinputmethod.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qkeysequence.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qpaintdevice.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qpalette.h \
-  N:/Qt/6.6.3/mingw_64/include/QtGui/qpicture.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qpixelformat.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qpixmap.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qpolygon.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qregion.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qrgb.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qrgba64.h \
-  N:/Qt/6.6.3/mingw_64/include/QtGui/qtextdocument.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qtgui-config.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qtguiexports.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qtguiglobal.h \
@@ -158,32 +143,23 @@ N:/KPlayer/KPlayer/build/MediaPlayer_autogen/WAYUIA5GRM/moc_MainScene.cpp: N:/KP
   N:/Qt/6.6.3/mingw_64/include/QtGui/qvalidator.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs_win.h \
-  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QApplication \
-  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QLabel \
-  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QListWidget \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/QListWidgetItem \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMainWindow \
-  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMenu \
-  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMenuBar \
-  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QStatusBar \
-  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidget \
+  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QPushButton \
+  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractbutton.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractitemview.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractscrollarea.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractslider.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractspinbox.h \
-  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qapplication.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qframe.h \
-  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qlabel.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qlistview.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qlistwidget.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qmainwindow.h \
-  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qmenu.h \
-  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qmenubar.h \
+  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qpushbutton.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qrubberband.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qsizepolicy.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qslider.h \
-  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qstatusbar.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qstyle.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qstyleoption.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qtabbar.h \

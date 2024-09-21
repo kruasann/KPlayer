@@ -390,12 +390,6 @@
 			null
 		],
 		[
-			"N:/KPlayer/KPlayer/src/UI/ui_MainScene.h",
-			"MU",
-			"WAYUIA5GRM/moc_ui_MainScene.cpp",
-			null
-		],
-		[
 			"N:/KPlayer/KPlayer/src/Utils/FileManager.h",
 			"MU",
 			"WGYDDRAMTN/moc_FileManager.cpp",

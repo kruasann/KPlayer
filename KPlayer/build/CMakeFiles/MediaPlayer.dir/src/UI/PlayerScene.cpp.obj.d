@@ -432,30 +432,6 @@ CMakeFiles/MediaPlayer.dir/src/UI/PlayerScene.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qstyle.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qtabbar.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qrubberband.h \
- N:/KPlayer/KPlayer/src/UI/ui_MainScene.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/QVariant \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qvariant.h \
- N:/Qt/6.6.3/mingw_64/include/QtGui/QAction \
- N:/Qt/6.6.3/mingw_64/include/QtGui/qaction.h \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/QApplication \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/qapplication.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qcoreapplication.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qcoreevent.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qeventloop.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qnativeinterface.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qcoreapplication_platform.h \
- N:/Qt/6.6.3/mingw_64/include/QtGui/qguiapplication.h \
- N:/Qt/6.6.3/mingw_64/include/QtGui/qinputmethod.h \
- N:/Qt/6.6.3/mingw_64/include/QtGui/qguiapplication_platform.h \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/QLabel \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/QListWidget \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMainWindow \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMenu \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/qmenu.h \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMenuBar \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/QStatusBar \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/qstatusbar.h \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidget \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QHBoxLayout \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qboxlayout.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qlayout.h \
@@ -504,6 +480,15 @@ CMakeFiles/MediaPlayer.dir/src/UI/PlayerScene.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qtimezone.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qdialog.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QApplication \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qapplication.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qcoreapplication.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qcoreevent.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qeventloop.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qnativeinterface.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qcoreapplication_platform.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qguiapplication.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qinputmethod.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qguiapplication_platform.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMessageBox \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qmessagebox.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qdialogbuttonbox.h \

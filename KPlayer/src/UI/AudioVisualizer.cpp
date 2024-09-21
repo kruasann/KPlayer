@@ -41,8 +41,8 @@ AudioVisualizer::AudioVisualizer(QWidget* parent)
             randHue, 255, 255 // Полная насыщенность и яркость
         ));
 
-        // (Опционально) Отладочные сообщения для проверки значений
-        // qDebug() << "Particle" << i << ": pos=(" << randX << "," << randY << "), vel=(" << randVX << "," << randVY << "), hue=" << randHue;
+        // Отладочные сообщения для проверки значений
+        qDebug() << "Particle" << i << ": pos=(" << randX << "," << randY << "), vel=(" << randVX << "," << randVY << "), hue=" << randHue;
     }
 }
 

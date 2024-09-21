@@ -8,6 +8,7 @@
 	"INPUTS" : 
 	[
 		"N:/KPlayer/KPlayer/src/assets/styles/style.qss",
+		"N:/KPlayer/KPlayer/src/assets/icons/delete.png",
 		"N:/KPlayer/KPlayer/src/assets/icons/stop.png",
 		"N:/KPlayer/KPlayer/src/assets/icons/pause.png",
 		"N:/KPlayer/KPlayer/src/assets/icons/play.png"
