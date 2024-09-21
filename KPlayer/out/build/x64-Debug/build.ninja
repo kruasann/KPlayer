@@ -50,7 +50,7 @@ cmake_ninja_workdir = N$:\KPlayer\KPlayer\out\build\x64-Debug\
 build cmake_object_order_depends_target_MediaPlayer: phony || MediaPlayer_autogen MediaPlayer_autogen\UVLADIE3JM\qrc_resources.cpp MediaPlayer_autogen\mocs_compilation.cpp MediaPlayer_autogen\timestamp MediaPlayer_autogen_timestamp_deps
 
 build CMakeFiles\MediaPlayer.dir\MediaPlayer_autogen\mocs_compilation.cpp.obj: CXX_COMPILER__MediaPlayer_unscanned_Debug N$:\KPlayer\KPlayer\out\build\x64-Debug\MediaPlayer_autogen\mocs_compilation.cpp || cmake_object_order_depends_target_MediaPlayer
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
   INCLUDES = -IN:\KPlayer\KPlayer\out\build\x64-Debug\MediaPlayer_autogen\include -IN:\KPlayer\KPlayer\src -external:IN:\Qt\6.6.3\mingw_64\include\QtCore -external:IN:\Qt\6.6.3\mingw_64\include -external:IN:\Qt\6.6.3\mingw_64\mkspecs\win32-g++ -external:IN:\Qt\6.6.3\mingw_64\include\QtWidgets -external:IN:\Qt\6.6.3\mingw_64\include\QtGui -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimedia -external:IN:\Qt\6.6.3\mingw_64\include\QtNetwork -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimediaWidgets -external:W0
   OBJECT_DIR = CMakeFiles\MediaPlayer.dir
@@ -59,7 +59,7 @@ build CMakeFiles\MediaPlayer.dir\MediaPlayer_autogen\mocs_compilation.cpp.obj: C
   TARGET_PDB = MediaPlayer.pdb
 
 build CMakeFiles\MediaPlayer.dir\src\App.cpp.obj: CXX_COMPILER__MediaPlayer_unscanned_Debug N$:\KPlayer\KPlayer\src\App.cpp || cmake_object_order_depends_target_MediaPlayer
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
   INCLUDES = -IN:\KPlayer\KPlayer\out\build\x64-Debug\MediaPlayer_autogen\include -IN:\KPlayer\KPlayer\src -external:IN:\Qt\6.6.3\mingw_64\include\QtCore -external:IN:\Qt\6.6.3\mingw_64\include -external:IN:\Qt\6.6.3\mingw_64\mkspecs\win32-g++ -external:IN:\Qt\6.6.3\mingw_64\include\QtWidgets -external:IN:\Qt\6.6.3\mingw_64\include\QtGui -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimedia -external:IN:\Qt\6.6.3\mingw_64\include\QtNetwork -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimediaWidgets -external:W0
   OBJECT_DIR = CMakeFiles\MediaPlayer.dir
@@ -68,7 +68,7 @@ build CMakeFiles\MediaPlayer.dir\src\App.cpp.obj: CXX_COMPILER__MediaPlayer_unsc
   TARGET_PDB = MediaPlayer.pdb
 
 build CMakeFiles\MediaPlayer.dir\src\Player\AudioPlayer.cpp.obj: CXX_COMPILER__MediaPlayer_unscanned_Debug N$:\KPlayer\KPlayer\src\Player\AudioPlayer.cpp || cmake_object_order_depends_target_MediaPlayer
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
   INCLUDES = -IN:\KPlayer\KPlayer\out\build\x64-Debug\MediaPlayer_autogen\include -IN:\KPlayer\KPlayer\src -external:IN:\Qt\6.6.3\mingw_64\include\QtCore -external:IN:\Qt\6.6.3\mingw_64\include -external:IN:\Qt\6.6.3\mingw_64\mkspecs\win32-g++ -external:IN:\Qt\6.6.3\mingw_64\include\QtWidgets -external:IN:\Qt\6.6.3\mingw_64\include\QtGui -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimedia -external:IN:\Qt\6.6.3\mingw_64\include\QtNetwork -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimediaWidgets -external:W0
   OBJECT_DIR = CMakeFiles\MediaPlayer.dir
@@ -77,7 +77,7 @@ build CMakeFiles\MediaPlayer.dir\src\Player\AudioPlayer.cpp.obj: CXX_COMPILER__M
   TARGET_PDB = MediaPlayer.pdb
 
 build CMakeFiles\MediaPlayer.dir\src\Player\MediaPlayer.cpp.obj: CXX_COMPILER__MediaPlayer_unscanned_Debug N$:\KPlayer\KPlayer\src\Player\MediaPlayer.cpp || cmake_object_order_depends_target_MediaPlayer
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
   INCLUDES = -IN:\KPlayer\KPlayer\out\build\x64-Debug\MediaPlayer_autogen\include -IN:\KPlayer\KPlayer\src -external:IN:\Qt\6.6.3\mingw_64\include\QtCore -external:IN:\Qt\6.6.3\mingw_64\include -external:IN:\Qt\6.6.3\mingw_64\mkspecs\win32-g++ -external:IN:\Qt\6.6.3\mingw_64\include\QtWidgets -external:IN:\Qt\6.6.3\mingw_64\include\QtGui -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimedia -external:IN:\Qt\6.6.3\mingw_64\include\QtNetwork -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimediaWidgets -external:W0
   OBJECT_DIR = CMakeFiles\MediaPlayer.dir
@@ -86,7 +86,7 @@ build CMakeFiles\MediaPlayer.dir\src\Player\MediaPlayer.cpp.obj: CXX_COMPILER__M
   TARGET_PDB = MediaPlayer.pdb
 
 build CMakeFiles\MediaPlayer.dir\src\Player\VideoPlayer.cpp.obj: CXX_COMPILER__MediaPlayer_unscanned_Debug N$:\KPlayer\KPlayer\src\Player\VideoPlayer.cpp || cmake_object_order_depends_target_MediaPlayer
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
   INCLUDES = -IN:\KPlayer\KPlayer\out\build\x64-Debug\MediaPlayer_autogen\include -IN:\KPlayer\KPlayer\src -external:IN:\Qt\6.6.3\mingw_64\include\QtCore -external:IN:\Qt\6.6.3\mingw_64\include -external:IN:\Qt\6.6.3\mingw_64\mkspecs\win32-g++ -external:IN:\Qt\6.6.3\mingw_64\include\QtWidgets -external:IN:\Qt\6.6.3\mingw_64\include\QtGui -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimedia -external:IN:\Qt\6.6.3\mingw_64\include\QtNetwork -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimediaWidgets -external:W0
   OBJECT_DIR = CMakeFiles\MediaPlayer.dir
@@ -95,7 +95,7 @@ build CMakeFiles\MediaPlayer.dir\src\Player\VideoPlayer.cpp.obj: CXX_COMPILER__M
   TARGET_PDB = MediaPlayer.pdb
 
 build CMakeFiles\MediaPlayer.dir\src\UI\AudioVisualizer.cpp.obj: CXX_COMPILER__MediaPlayer_unscanned_Debug N$:\KPlayer\KPlayer\src\UI\AudioVisualizer.cpp || cmake_object_order_depends_target_MediaPlayer
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
   INCLUDES = -IN:\KPlayer\KPlayer\out\build\x64-Debug\MediaPlayer_autogen\include -IN:\KPlayer\KPlayer\src -external:IN:\Qt\6.6.3\mingw_64\include\QtCore -external:IN:\Qt\6.6.3\mingw_64\include -external:IN:\Qt\6.6.3\mingw_64\mkspecs\win32-g++ -external:IN:\Qt\6.6.3\mingw_64\include\QtWidgets -external:IN:\Qt\6.6.3\mingw_64\include\QtGui -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimedia -external:IN:\Qt\6.6.3\mingw_64\include\QtNetwork -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimediaWidgets -external:W0
   OBJECT_DIR = CMakeFiles\MediaPlayer.dir
@@ -104,7 +104,7 @@ build CMakeFiles\MediaPlayer.dir\src\UI\AudioVisualizer.cpp.obj: CXX_COMPILER__M
   TARGET_PDB = MediaPlayer.pdb
 
 build CMakeFiles\MediaPlayer.dir\src\UI\Button.cpp.obj: CXX_COMPILER__MediaPlayer_unscanned_Debug N$:\KPlayer\KPlayer\src\UI\Button.cpp || cmake_object_order_depends_target_MediaPlayer
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
   INCLUDES = -IN:\KPlayer\KPlayer\out\build\x64-Debug\MediaPlayer_autogen\include -IN:\KPlayer\KPlayer\src -external:IN:\Qt\6.6.3\mingw_64\include\QtCore -external:IN:\Qt\6.6.3\mingw_64\include -external:IN:\Qt\6.6.3\mingw_64\mkspecs\win32-g++ -external:IN:\Qt\6.6.3\mingw_64\include\QtWidgets -external:IN:\Qt\6.6.3\mingw_64\include\QtGui -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimedia -external:IN:\Qt\6.6.3\mingw_64\include\QtNetwork -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimediaWidgets -external:W0
   OBJECT_DIR = CMakeFiles\MediaPlayer.dir
@@ -113,7 +113,7 @@ build CMakeFiles\MediaPlayer.dir\src\UI\Button.cpp.obj: CXX_COMPILER__MediaPlaye
   TARGET_PDB = MediaPlayer.pdb
 
 build CMakeFiles\MediaPlayer.dir\src\UI\MainScene.cpp.obj: CXX_COMPILER__MediaPlayer_unscanned_Debug N$:\KPlayer\KPlayer\src\UI\MainScene.cpp || cmake_object_order_depends_target_MediaPlayer
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
   INCLUDES = -IN:\KPlayer\KPlayer\out\build\x64-Debug\MediaPlayer_autogen\include -IN:\KPlayer\KPlayer\src -external:IN:\Qt\6.6.3\mingw_64\include\QtCore -external:IN:\Qt\6.6.3\mingw_64\include -external:IN:\Qt\6.6.3\mingw_64\mkspecs\win32-g++ -external:IN:\Qt\6.6.3\mingw_64\include\QtWidgets -external:IN:\Qt\6.6.3\mingw_64\include\QtGui -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimedia -external:IN:\Qt\6.6.3\mingw_64\include\QtNetwork -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimediaWidgets -external:W0
   OBJECT_DIR = CMakeFiles\MediaPlayer.dir
@@ -122,7 +122,7 @@ build CMakeFiles\MediaPlayer.dir\src\UI\MainScene.cpp.obj: CXX_COMPILER__MediaPl
   TARGET_PDB = MediaPlayer.pdb
 
 build CMakeFiles\MediaPlayer.dir\src\UI\Menu.cpp.obj: CXX_COMPILER__MediaPlayer_unscanned_Debug N$:\KPlayer\KPlayer\src\UI\Menu.cpp || cmake_object_order_depends_target_MediaPlayer
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
   INCLUDES = -IN:\KPlayer\KPlayer\out\build\x64-Debug\MediaPlayer_autogen\include -IN:\KPlayer\KPlayer\src -external:IN:\Qt\6.6.3\mingw_64\include\QtCore -external:IN:\Qt\6.6.3\mingw_64\include -external:IN:\Qt\6.6.3\mingw_64\mkspecs\win32-g++ -external:IN:\Qt\6.6.3\mingw_64\include\QtWidgets -external:IN:\Qt\6.6.3\mingw_64\include\QtGui -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimedia -external:IN:\Qt\6.6.3\mingw_64\include\QtNetwork -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimediaWidgets -external:W0
   OBJECT_DIR = CMakeFiles\MediaPlayer.dir
@@ -131,7 +131,7 @@ build CMakeFiles\MediaPlayer.dir\src\UI\Menu.cpp.obj: CXX_COMPILER__MediaPlayer_
   TARGET_PDB = MediaPlayer.pdb
 
 build CMakeFiles\MediaPlayer.dir\src\UI\PlayerScene.cpp.obj: CXX_COMPILER__MediaPlayer_unscanned_Debug N$:\KPlayer\KPlayer\src\UI\PlayerScene.cpp || cmake_object_order_depends_target_MediaPlayer
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
   INCLUDES = -IN:\KPlayer\KPlayer\out\build\x64-Debug\MediaPlayer_autogen\include -IN:\KPlayer\KPlayer\src -external:IN:\Qt\6.6.3\mingw_64\include\QtCore -external:IN:\Qt\6.6.3\mingw_64\include -external:IN:\Qt\6.6.3\mingw_64\mkspecs\win32-g++ -external:IN:\Qt\6.6.3\mingw_64\include\QtWidgets -external:IN:\Qt\6.6.3\mingw_64\include\QtGui -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimedia -external:IN:\Qt\6.6.3\mingw_64\include\QtNetwork -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimediaWidgets -external:W0
   OBJECT_DIR = CMakeFiles\MediaPlayer.dir
@@ -140,7 +140,7 @@ build CMakeFiles\MediaPlayer.dir\src\UI\PlayerScene.cpp.obj: CXX_COMPILER__Media
   TARGET_PDB = MediaPlayer.pdb
 
 build CMakeFiles\MediaPlayer.dir\src\UI\Scene.cpp.obj: CXX_COMPILER__MediaPlayer_unscanned_Debug N$:\KPlayer\KPlayer\src\UI\Scene.cpp || cmake_object_order_depends_target_MediaPlayer
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
   INCLUDES = -IN:\KPlayer\KPlayer\out\build\x64-Debug\MediaPlayer_autogen\include -IN:\KPlayer\KPlayer\src -external:IN:\Qt\6.6.3\mingw_64\include\QtCore -external:IN:\Qt\6.6.3\mingw_64\include -external:IN:\Qt\6.6.3\mingw_64\mkspecs\win32-g++ -external:IN:\Qt\6.6.3\mingw_64\include\QtWidgets -external:IN:\Qt\6.6.3\mingw_64\include\QtGui -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimedia -external:IN:\Qt\6.6.3\mingw_64\include\QtNetwork -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimediaWidgets -external:W0
   OBJECT_DIR = CMakeFiles\MediaPlayer.dir
@@ -149,7 +149,7 @@ build CMakeFiles\MediaPlayer.dir\src\UI\Scene.cpp.obj: CXX_COMPILER__MediaPlayer
   TARGET_PDB = MediaPlayer.pdb
 
 build CMakeFiles\MediaPlayer.dir\src\UI\Slider.cpp.obj: CXX_COMPILER__MediaPlayer_unscanned_Debug N$:\KPlayer\KPlayer\src\UI\Slider.cpp || cmake_object_order_depends_target_MediaPlayer
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
   INCLUDES = -IN:\KPlayer\KPlayer\out\build\x64-Debug\MediaPlayer_autogen\include -IN:\KPlayer\KPlayer\src -external:IN:\Qt\6.6.3\mingw_64\include\QtCore -external:IN:\Qt\6.6.3\mingw_64\include -external:IN:\Qt\6.6.3\mingw_64\mkspecs\win32-g++ -external:IN:\Qt\6.6.3\mingw_64\include\QtWidgets -external:IN:\Qt\6.6.3\mingw_64\include\QtGui -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimedia -external:IN:\Qt\6.6.3\mingw_64\include\QtNetwork -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimediaWidgets -external:W0
   OBJECT_DIR = CMakeFiles\MediaPlayer.dir
@@ -158,7 +158,7 @@ build CMakeFiles\MediaPlayer.dir\src\UI\Slider.cpp.obj: CXX_COMPILER__MediaPlaye
   TARGET_PDB = MediaPlayer.pdb
 
 build CMakeFiles\MediaPlayer.dir\src\Utils\FileManager.cpp.obj: CXX_COMPILER__MediaPlayer_unscanned_Debug N$:\KPlayer\KPlayer\src\Utils\FileManager.cpp || cmake_object_order_depends_target_MediaPlayer
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
   INCLUDES = -IN:\KPlayer\KPlayer\out\build\x64-Debug\MediaPlayer_autogen\include -IN:\KPlayer\KPlayer\src -external:IN:\Qt\6.6.3\mingw_64\include\QtCore -external:IN:\Qt\6.6.3\mingw_64\include -external:IN:\Qt\6.6.3\mingw_64\mkspecs\win32-g++ -external:IN:\Qt\6.6.3\mingw_64\include\QtWidgets -external:IN:\Qt\6.6.3\mingw_64\include\QtGui -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimedia -external:IN:\Qt\6.6.3\mingw_64\include\QtNetwork -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimediaWidgets -external:W0
   OBJECT_DIR = CMakeFiles\MediaPlayer.dir
@@ -167,7 +167,7 @@ build CMakeFiles\MediaPlayer.dir\src\Utils\FileManager.cpp.obj: CXX_COMPILER__Me
   TARGET_PDB = MediaPlayer.pdb
 
 build CMakeFiles\MediaPlayer.dir\src\Utils\ThreadPool.cpp.obj: CXX_COMPILER__MediaPlayer_unscanned_Debug N$:\KPlayer\KPlayer\src\Utils\ThreadPool.cpp || cmake_object_order_depends_target_MediaPlayer
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
   INCLUDES = -IN:\KPlayer\KPlayer\out\build\x64-Debug\MediaPlayer_autogen\include -IN:\KPlayer\KPlayer\src -external:IN:\Qt\6.6.3\mingw_64\include\QtCore -external:IN:\Qt\6.6.3\mingw_64\include -external:IN:\Qt\6.6.3\mingw_64\mkspecs\win32-g++ -external:IN:\Qt\6.6.3\mingw_64\include\QtWidgets -external:IN:\Qt\6.6.3\mingw_64\include\QtGui -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimedia -external:IN:\Qt\6.6.3\mingw_64\include\QtNetwork -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimediaWidgets -external:W0
   OBJECT_DIR = CMakeFiles\MediaPlayer.dir
@@ -176,7 +176,7 @@ build CMakeFiles\MediaPlayer.dir\src\Utils\ThreadPool.cpp.obj: CXX_COMPILER__Med
   TARGET_PDB = MediaPlayer.pdb
 
 build CMakeFiles\MediaPlayer.dir\src\main.cpp.obj: CXX_COMPILER__MediaPlayer_unscanned_Debug N$:\KPlayer\KPlayer\src\main.cpp || cmake_object_order_depends_target_MediaPlayer
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
   INCLUDES = -IN:\KPlayer\KPlayer\out\build\x64-Debug\MediaPlayer_autogen\include -IN:\KPlayer\KPlayer\src -external:IN:\Qt\6.6.3\mingw_64\include\QtCore -external:IN:\Qt\6.6.3\mingw_64\include -external:IN:\Qt\6.6.3\mingw_64\mkspecs\win32-g++ -external:IN:\Qt\6.6.3\mingw_64\include\QtWidgets -external:IN:\Qt\6.6.3\mingw_64\include\QtGui -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimedia -external:IN:\Qt\6.6.3\mingw_64\include\QtNetwork -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimediaWidgets -external:W0
   OBJECT_DIR = CMakeFiles\MediaPlayer.dir
@@ -184,8 +184,18 @@ build CMakeFiles\MediaPlayer.dir\src\main.cpp.obj: CXX_COMPILER__MediaPlayer_uns
   TARGET_COMPILE_PDB = CMakeFiles\MediaPlayer.dir\
   TARGET_PDB = MediaPlayer.pdb
 
+build CMakeFiles\MediaPlayer.dir\src\app.rc.res: RC_COMPILER__MediaPlayer_unscanned_Debug N$:\KPlayer\KPlayer\src\app.rc || cmake_object_order_depends_target_MediaPlayer
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\MediaPlayer.dir\src\app.rc.res.d
+  FLAGS = -DWIN32 -D_DEBUG
+  INCLUDES = -I N:\KPlayer\KPlayer\out\build\x64-Debug\MediaPlayer_autogen\include -I N:\KPlayer\KPlayer\src -I N:\Qt\6.6.3\mingw_64\include\QtCore -I N:\Qt\6.6.3\mingw_64\include -I N:\Qt\6.6.3\mingw_64\mkspecs\win32-g++ -I N:\Qt\6.6.3\mingw_64\include\QtWidgets -I N:\Qt\6.6.3\mingw_64\include\QtGui -I N:\Qt\6.6.3\mingw_64\include\QtMultimedia -I N:\Qt\6.6.3\mingw_64\include\QtNetwork -I N:\Qt\6.6.3\mingw_64\include\QtMultimediaWidgets
+  OBJECT_DIR = CMakeFiles\MediaPlayer.dir
+  OBJECT_FILE_DIR = CMakeFiles\MediaPlayer.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\MediaPlayer.dir\
+  TARGET_PDB = MediaPlayer.pdb
+
 build CMakeFiles\MediaPlayer.dir\MediaPlayer_autogen\UVLADIE3JM\qrc_resources.cpp.obj: CXX_COMPILER__MediaPlayer_unscanned_Debug N$:\KPlayer\KPlayer\out\build\x64-Debug\MediaPlayer_autogen\UVLADIE3JM\qrc_resources.cpp || cmake_object_order_depends_target_MediaPlayer
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
   INCLUDES = -IN:\KPlayer\KPlayer\out\build\x64-Debug\MediaPlayer_autogen\include -IN:\KPlayer\KPlayer\src -external:IN:\Qt\6.6.3\mingw_64\include\QtCore -external:IN:\Qt\6.6.3\mingw_64\include -external:IN:\Qt\6.6.3\mingw_64\mkspecs\win32-g++ -external:IN:\Qt\6.6.3\mingw_64\include\QtWidgets -external:IN:\Qt\6.6.3\mingw_64\include\QtGui -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimedia -external:IN:\Qt\6.6.3\mingw_64\include\QtNetwork -external:IN:\Qt\6.6.3\mingw_64\include\QtMultimediaWidgets -external:W0
   OBJECT_DIR = CMakeFiles\MediaPlayer.dir
@@ -201,10 +211,10 @@ build CMakeFiles\MediaPlayer.dir\MediaPlayer_autogen\UVLADIE3JM\qrc_resources.cp
 #############################################
 # Link the executable MediaPlayer.exe
 
-build MediaPlayer.exe: CXX_EXECUTABLE_LINKER__MediaPlayer_Debug CMakeFiles\MediaPlayer.dir\MediaPlayer_autogen\mocs_compilation.cpp.obj CMakeFiles\MediaPlayer.dir\src\App.cpp.obj CMakeFiles\MediaPlayer.dir\src\Player\AudioPlayer.cpp.obj CMakeFiles\MediaPlayer.dir\src\Player\MediaPlayer.cpp.obj CMakeFiles\MediaPlayer.dir\src\Player\VideoPlayer.cpp.obj CMakeFiles\MediaPlayer.dir\src\UI\AudioVisualizer.cpp.obj CMakeFiles\MediaPlayer.dir\src\UI\Button.cpp.obj CMakeFiles\MediaPlayer.dir\src\UI\MainScene.cpp.obj CMakeFiles\MediaPlayer.dir\src\UI\Menu.cpp.obj CMakeFiles\MediaPlayer.dir\src\UI\PlayerScene.cpp.obj CMakeFiles\MediaPlayer.dir\src\UI\Scene.cpp.obj CMakeFiles\MediaPlayer.dir\src\UI\Slider.cpp.obj CMakeFiles\MediaPlayer.dir\src\Utils\FileManager.cpp.obj CMakeFiles\MediaPlayer.dir\src\Utils\ThreadPool.cpp.obj CMakeFiles\MediaPlayer.dir\src\main.cpp.obj CMakeFiles\MediaPlayer.dir\MediaPlayer_autogen\UVLADIE3JM\qrc_resources.cpp.obj | N$:\Qt\6.6.3\mingw_64\lib\libQt6MultimediaWidgets.a N$:\Qt\6.6.3\mingw_64\lib\libQt6Multimedia.a N$:\Qt\6.6.3\mingw_64\lib\libQt6Network.a N$:\Qt\6.6.3\mingw_64\lib\libQt6Widgets.a N$:\Qt\6.6.3\mingw_64\lib\libQt6Gui.a N$:\Qt\6.6.3\mingw_64\lib\libQt6Core.a || MediaPlayer_autogen MediaPlayer_autogen_timestamp_deps
+build MediaPlayer.exe: CXX_EXECUTABLE_LINKER__MediaPlayer_Debug CMakeFiles\MediaPlayer.dir\MediaPlayer_autogen\mocs_compilation.cpp.obj CMakeFiles\MediaPlayer.dir\src\App.cpp.obj CMakeFiles\MediaPlayer.dir\src\Player\AudioPlayer.cpp.obj CMakeFiles\MediaPlayer.dir\src\Player\MediaPlayer.cpp.obj CMakeFiles\MediaPlayer.dir\src\Player\VideoPlayer.cpp.obj CMakeFiles\MediaPlayer.dir\src\UI\AudioVisualizer.cpp.obj CMakeFiles\MediaPlayer.dir\src\UI\Button.cpp.obj CMakeFiles\MediaPlayer.dir\src\UI\MainScene.cpp.obj CMakeFiles\MediaPlayer.dir\src\UI\Menu.cpp.obj CMakeFiles\MediaPlayer.dir\src\UI\PlayerScene.cpp.obj CMakeFiles\MediaPlayer.dir\src\UI\Scene.cpp.obj CMakeFiles\MediaPlayer.dir\src\UI\Slider.cpp.obj CMakeFiles\MediaPlayer.dir\src\Utils\FileManager.cpp.obj CMakeFiles\MediaPlayer.dir\src\Utils\ThreadPool.cpp.obj CMakeFiles\MediaPlayer.dir\src\main.cpp.obj CMakeFiles\MediaPlayer.dir\src\app.rc.res CMakeFiles\MediaPlayer.dir\MediaPlayer_autogen\UVLADIE3JM\qrc_resources.cpp.obj | N$:\Qt\6.6.3\mingw_64\lib\libQt6MultimediaWidgets.a N$:\Qt\6.6.3\mingw_64\lib\libQt6Multimedia.a N$:\Qt\6.6.3\mingw_64\lib\libQt6Network.a N$:\Qt\6.6.3\mingw_64\lib\libQt6Widgets.a N$:\Qt\6.6.3\mingw_64\lib\libQt6Gui.a N$:\Qt\6.6.3\mingw_64\lib\libQt6Core.a N$:\Qt\6.6.3\mingw_64\lib\libQt6EntryPoint.a || MediaPlayer_autogen MediaPlayer_autogen_timestamp_deps
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd
-  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = N:\Qt\6.6.3\mingw_64\lib\libQt6MultimediaWidgets.a  N:\Qt\6.6.3\mingw_64\lib\libQt6Multimedia.a  N:\Qt\6.6.3\mingw_64\lib\libQt6Network.a  ws2_32.lib  N:\Qt\6.6.3\mingw_64\lib\libQt6Widgets.a  N:\Qt\6.6.3\mingw_64\lib\libQt6Gui.a  N:\Qt\6.6.3\mingw_64\lib\libQt6Core.a  mpr.lib  userenv.lib  d3d11.lib  dxgi.lib  dxguid.lib  d3d12.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:windows
+  LINK_LIBRARIES = N:\Qt\6.6.3\mingw_64\lib\libQt6MultimediaWidgets.a  N:\Qt\6.6.3\mingw_64\lib\libQt6Multimedia.a  N:\Qt\6.6.3\mingw_64\lib\libQt6Network.a  ws2_32.lib  N:\Qt\6.6.3\mingw_64\lib\libQt6Widgets.a  N:\Qt\6.6.3\mingw_64\lib\libQt6Gui.a  N:\Qt\6.6.3\mingw_64\lib\libQt6Core.a  mpr.lib  userenv.lib  mingw32.lib  N:\Qt\6.6.3\mingw_64\lib\libQt6EntryPoint.a  shell32.lib  d3d11.lib  dxgi.lib  dxguid.lib  d3d12.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\MediaPlayer.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -262,7 +272,7 @@ build MediaPlayer_autogen\timestamp MediaPlayer_autogen\mocs_compilation.cpp | $
 #############################################
 # Custom command for MediaPlayer_autogen\UVLADIE3JM\qrc_resources.cpp
 
-build MediaPlayer_autogen\UVLADIE3JM\qrc_resources.cpp | ${cmake_ninja_workdir}MediaPlayer_autogen\UVLADIE3JM\qrc_resources.cpp: CUSTOM_COMMAND N$:\KPlayer\KPlayer\src\resources.qrc CMakeFiles\MediaPlayer_autogen.dir\AutoRcc_resources_UVLADIE3JM_Info.json N$:\KPlayer\KPlayer\src\assets\styles\style.qss N$:\KPlayer\KPlayer\src\assets\icons\delete.png N$:\KPlayer\KPlayer\src\assets\icons\stop.png N$:\KPlayer\KPlayer\src\assets\icons\pause.png N$:\KPlayer\KPlayer\src\assets\icons\play.png N$:\Qt\6.6.3\mingw_64\.\bin\rcc.exe || MediaPlayer_autogen MediaPlayer_autogen_timestamp_deps
+build MediaPlayer_autogen\UVLADIE3JM\qrc_resources.cpp | ${cmake_ninja_workdir}MediaPlayer_autogen\UVLADIE3JM\qrc_resources.cpp: CUSTOM_COMMAND N$:\KPlayer\KPlayer\src\resources.qrc CMakeFiles\MediaPlayer_autogen.dir\AutoRcc_resources_UVLADIE3JM_Info.json N$:\KPlayer\KPlayer\src\assets\styles\style.qss N$:\KPlayer\KPlayer\src\assets\icons\delete.png N$:\KPlayer\KPlayer\src\assets\icons\stop.png N$:\KPlayer\KPlayer\src\assets\icons\pause.png N$:\KPlayer\KPlayer\src\assets\icons\play.png N$:\KPlayer\KPlayer\src\assets\icons\app_icon.ico N$:\Qt\6.6.3\mingw_64\.\bin\rcc.exe || MediaPlayer_autogen MediaPlayer_autogen_timestamp_deps
   COMMAND = cmd.exe /C "cd /D N:\KPlayer\KPlayer\out\build\x64-Debug && N:\VisualSt\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E cmake_autorcc N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/MediaPlayer_autogen.dir/AutoRcc_resources_UVLADIE3JM_Info.json Debug"
   DESC = Automatic RCC for src/resources.qrc
   restat = 1
@@ -271,7 +281,7 @@ build MediaPlayer_autogen\UVLADIE3JM\qrc_resources.cpp | ${cmake_ninja_workdir}M
 #############################################
 # Phony custom command for CMakeFiles\MediaPlayer_autogen_timestamp_deps
 
-build CMakeFiles\MediaPlayer_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles\MediaPlayer_autogen_timestamp_deps: phony N$:\Qt\6.6.3\mingw_64\.\bin\moc.exe N$:\Qt\6.6.3\mingw_64\.\bin\uic.exe N$:\Qt\6.6.3\mingw_64\lib\libQt6Multimedia.a N$:\Qt\6.6.3\mingw_64\lib\libQt6Widgets.a N$:\Qt\6.6.3\mingw_64\lib\libQt6Core.a N$:\Qt\6.6.3\mingw_64\lib\libQt6MultimediaWidgets.a
+build CMakeFiles\MediaPlayer_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles\MediaPlayer_autogen_timestamp_deps: phony N$:\Qt\6.6.3\mingw_64\.\bin\moc.exe N$:\Qt\6.6.3\mingw_64\lib\libQt6MultimediaWidgets.a N$:\Qt\6.6.3\mingw_64\lib\libQt6Core.a N$:\Qt\6.6.3\mingw_64\lib\libQt6Multimedia.a N$:\Qt\6.6.3\mingw_64\.\bin\uic.exe N$:\Qt\6.6.3\mingw_64\lib\libQt6Widgets.a
 
 
 #############################################

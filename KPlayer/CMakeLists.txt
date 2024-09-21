@@ -38,6 +38,11 @@ target_include_directories(MediaPlayer PRIVATE
     ${CMAKE_SOURCE_DIR}/src
 )
 
+if(WIN32)
+    target_sources(MediaPlayer PRIVATE src/app.rc)
+    set_target_properties(MediaPlayer PROPERTIES WIN32_EXECUTABLE TRUE)
+endif()
+
 # Установка флага для MSVC
 if (MSVC)
     add_compile_options(/Zc:__cplusplus)

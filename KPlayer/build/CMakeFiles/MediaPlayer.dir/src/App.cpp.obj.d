@@ -439,4 +439,6 @@ CMakeFiles/MediaPlayer.dir/src/App.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtGui/qinputmethod.h \
  N:/Qt/6.6.3/mingw_64/include/QtGui/qguiapplication_platform.h \
  N:/Qt/6.6.3/mingw_64/include/QtCore/QDebug \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qdebug.h
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qdebug.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/QIcon \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qicon.h

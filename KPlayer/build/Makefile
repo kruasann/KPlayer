@@ -514,6 +514,14 @@ src/Utils/ThreadPool.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MediaPlayer.dir\build.make CMakeFiles/MediaPlayer.dir/src/Utils/ThreadPool.cpp.s
 .PHONY : src/Utils/ThreadPool.cpp.s
 
+src/app.obj: src/app.rc.obj
+.PHONY : src/app.obj
+
+# target to build an object file
+src/app.rc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MediaPlayer.dir\build.make CMakeFiles/MediaPlayer.dir/src/app.rc.obj
+.PHONY : src/app.rc.obj
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -594,6 +602,7 @@ help:
 	@echo ... src/Utils/ThreadPool.obj
 	@echo ... src/Utils/ThreadPool.i
 	@echo ... src/Utils/ThreadPool.s
+	@echo ... src/app.obj
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

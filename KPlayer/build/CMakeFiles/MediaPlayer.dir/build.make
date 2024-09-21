@@ -82,6 +82,7 @@ MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: N:/KPlayer/KPlayer/src/assets/
 MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: N:/KPlayer/KPlayer/src/assets/icons/stop.png
 MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: N:/KPlayer/KPlayer/src/assets/icons/pause.png
 MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: N:/KPlayer/KPlayer/src/assets/icons/play.png
+MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: N:/KPlayer/KPlayer/src/assets/icons/app_icon.ico
 MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: N:/Qt/6.6.3/mingw_64/./bin/rcc.exe
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=N:\KPlayer\KPlayer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for src/resources.qrc"
 	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc N:/KPlayer/KPlayer/build/CMakeFiles/MediaPlayer_autogen.dir/AutoRcc_resources_UVLADIE3JM_Info.json 
@@ -311,11 +312,16 @@ CMakeFiles/MediaPlayer.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MediaPlayer.dir/src/main.cpp.s"
 	N:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S N:\KPlayer\KPlayer\src\main.cpp -o CMakeFiles\MediaPlayer.dir\src\main.cpp.s
 
+CMakeFiles/MediaPlayer.dir/src/app.rc.obj: CMakeFiles/MediaPlayer.dir/flags.make
+CMakeFiles/MediaPlayer.dir/src/app.rc.obj: N:/KPlayer/KPlayer/src/app.rc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=N:\KPlayer\KPlayer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building RC object CMakeFiles/MediaPlayer.dir/src/app.rc.obj"
+	N:\Qt\Tools\mingw1120_64\bin\windres.exe -O coff $(RC_DEFINES) $(RC_INCLUDES) $(RC_FLAGS) N:\KPlayer\KPlayer\src\app.rc CMakeFiles\MediaPlayer.dir\src\app.rc.obj
+
 CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp.obj: CMakeFiles/MediaPlayer.dir/flags.make
 CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp.obj: CMakeFiles/MediaPlayer.dir/includes_CXX.rsp
 CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp.obj: MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp
 CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp.obj: CMakeFiles/MediaPlayer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=N:\KPlayer\KPlayer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=N:\KPlayer\KPlayer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp.obj"
 	N:\Qt\Tools\mingw1120_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp.obj -MF CMakeFiles\MediaPlayer.dir\MediaPlayer_autogen\UVLADIE3JM\qrc_resources.cpp.obj.d -o CMakeFiles\MediaPlayer.dir\MediaPlayer_autogen\UVLADIE3JM\qrc_resources.cpp.obj -c N:\KPlayer\KPlayer\build\MediaPlayer_autogen\UVLADIE3JM\qrc_resources.cpp
 
 CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp.i: cmake_force
@@ -343,6 +349,7 @@ MediaPlayer_OBJECTS = \
 "CMakeFiles/MediaPlayer.dir/src/Utils/FileManager.cpp.obj" \
 "CMakeFiles/MediaPlayer.dir/src/Utils/ThreadPool.cpp.obj" \
 "CMakeFiles/MediaPlayer.dir/src/main.cpp.obj" \
+"CMakeFiles/MediaPlayer.dir/src/app.rc.obj" \
 "CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp.obj"
 
 # External object files for target MediaPlayer
@@ -363,6 +370,7 @@ MediaPlayer.exe: CMakeFiles/MediaPlayer.dir/src/UI/Slider.cpp.obj
 MediaPlayer.exe: CMakeFiles/MediaPlayer.dir/src/Utils/FileManager.cpp.obj
 MediaPlayer.exe: CMakeFiles/MediaPlayer.dir/src/Utils/ThreadPool.cpp.obj
 MediaPlayer.exe: CMakeFiles/MediaPlayer.dir/src/main.cpp.obj
+MediaPlayer.exe: CMakeFiles/MediaPlayer.dir/src/app.rc.obj
 MediaPlayer.exe: CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp.obj
 MediaPlayer.exe: CMakeFiles/MediaPlayer.dir/build.make
 MediaPlayer.exe: N:/Qt/6.6.3/mingw_64/lib/libQt6MultimediaWidgets.a
@@ -371,10 +379,11 @@ MediaPlayer.exe: N:/Qt/6.6.3/mingw_64/lib/libQt6Network.a
 MediaPlayer.exe: N:/Qt/6.6.3/mingw_64/lib/libQt6Widgets.a
 MediaPlayer.exe: N:/Qt/6.6.3/mingw_64/lib/libQt6Gui.a
 MediaPlayer.exe: N:/Qt/6.6.3/mingw_64/lib/libQt6Core.a
+MediaPlayer.exe: N:/Qt/6.6.3/mingw_64/lib/libQt6EntryPoint.a
 MediaPlayer.exe: CMakeFiles/MediaPlayer.dir/linkLibs.rsp
 MediaPlayer.exe: CMakeFiles/MediaPlayer.dir/objects1.rsp
 MediaPlayer.exe: CMakeFiles/MediaPlayer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=N:\KPlayer\KPlayer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable MediaPlayer.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=N:\KPlayer\KPlayer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable MediaPlayer.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MediaPlayer.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

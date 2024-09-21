@@ -29,6 +29,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/MediaPlayer.dir/src/Utils/FileManager.cpp.obj.d"
   "CMakeFiles/MediaPlayer.dir/src/Utils/ThreadPool.cpp.obj"
   "CMakeFiles/MediaPlayer.dir/src/Utils/ThreadPool.cpp.obj.d"
+  "CMakeFiles/MediaPlayer.dir/src/app.rc.obj"
   "CMakeFiles/MediaPlayer.dir/src/main.cpp.obj"
   "CMakeFiles/MediaPlayer.dir/src/main.cpp.obj.d"
   "MediaPlayer.exe"
@@ -44,6 +45,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang CXX)
+foreach(lang CXX RC)
   include(CMakeFiles/MediaPlayer.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

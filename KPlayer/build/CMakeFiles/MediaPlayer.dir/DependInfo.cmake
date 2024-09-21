@@ -4,6 +4,44 @@ set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
 
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "RC"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_RC
+  "N:/KPlayer/KPlayer/src/app.rc" "N:/KPlayer/KPlayer/build/CMakeFiles/MediaPlayer.dir/src/app.rc.obj"
+  )
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_RC
+  "MINGW_HAS_SECURE_API=1"
+  "QT_CORE_LIB"
+  "QT_GUI_LIB"
+  "QT_MULTIMEDIAWIDGETS_LIB"
+  "QT_MULTIMEDIA_LIB"
+  "QT_NEEDS_QMAIN"
+  "QT_NETWORK_LIB"
+  "QT_NO_DEBUG"
+  "QT_WIDGETS_LIB"
+  "UNICODE"
+  "WIN32"
+  "WIN64"
+  "_ENABLE_EXTENDED_ALIGNED_STORAGE"
+  "_UNICODE"
+  "_WIN64"
+  )
+
+# The include file search paths:
+set(CMAKE_RC_TARGET_INCLUDE_PATH
+  "MediaPlayer_autogen/include"
+  "N:/KPlayer/KPlayer/src"
+  "N:/Qt/6.6.3/mingw_64/include/QtCore"
+  "N:/Qt/6.6.3/mingw_64/include"
+  "N:/Qt/6.6.3/mingw_64/mkspecs/win32-g++"
+  "N:/Qt/6.6.3/mingw_64/include/QtWidgets"
+  "N:/Qt/6.6.3/mingw_64/include/QtGui"
+  "N:/Qt/6.6.3/mingw_64/include/QtMultimedia"
+  "N:/Qt/6.6.3/mingw_64/include/QtNetwork"
+  "N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets"
   )
 
 # The set of dependency files which are needed:

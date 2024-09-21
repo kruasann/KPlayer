@@ -11,7 +11,8 @@
 		"N:/KPlayer/KPlayer/src/assets/icons/delete.png",
 		"N:/KPlayer/KPlayer/src/assets/icons/stop.png",
 		"N:/KPlayer/KPlayer/src/assets/icons/pause.png",
-		"N:/KPlayer/KPlayer/src/assets/icons/play.png"
+		"N:/KPlayer/KPlayer/src/assets/icons/play.png",
+		"N:/KPlayer/KPlayer/src/assets/icons/app_icon.ico"
 	],
 	"LOCK_FILE" : "N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/MediaPlayer_autogen.dir/AutoRcc_resources_UVLADIE3JM_Lock.lock",
 	"MULTI_CONFIG" : false,

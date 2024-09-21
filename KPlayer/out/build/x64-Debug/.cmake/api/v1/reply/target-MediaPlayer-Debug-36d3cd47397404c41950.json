@@ -23,7 +23,8 @@
 			"find_package",
 			"find_dependency",
 			"_qt_internal_find_qt_dependencies",
-			"target_include_directories"
+			"target_include_directories",
+			"target_sources"
 		],
 		"files" : 
 		[
@@ -42,6 +43,9 @@
 			"N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
 			"N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
 			"N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake",
+			"N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets.cmake",
+			"N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfig.cmake",
+			"N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake",
 			"N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake",
 			"N:/Qt/6.6.3/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake"
 		],
@@ -245,6 +249,60 @@
 				"parent" : 35
 			},
 			{
+				"command" : 6,
+				"file" : 13,
+				"line" : 41,
+				"parent" : 33
+			},
+			{
+				"file" : 17,
+				"parent" : 37
+			},
+			{
+				"command" : 9,
+				"file" : 17,
+				"line" : 39,
+				"parent" : 38
+			},
+			{
+				"command" : 8,
+				"file" : 5,
+				"line" : 111,
+				"parent" : 39
+			},
+			{
+				"command" : 7,
+				"file" : 4,
+				"line" : 76,
+				"parent" : 40
+			},
+			{
+				"file" : 16,
+				"parent" : 41
+			},
+			{
+				"command" : 6,
+				"file" : 16,
+				"line" : 52,
+				"parent" : 42
+			},
+			{
+				"file" : 15,
+				"parent" : 43
+			},
+			{
+				"command" : 5,
+				"file" : 15,
+				"line" : 61,
+				"parent" : 44
+			},
+			{
+				"command" : 5,
+				"file" : 15,
+				"line" : 76,
+				"parent" : 44
+			},
+			{
 				"command" : 8,
 				"file" : 5,
 				"line" : 111,
@@ -254,32 +312,38 @@
 				"command" : 7,
 				"file" : 4,
 				"line" : 76,
-				"parent" : 37
+				"parent" : 47
 			},
 			{
-				"file" : 16,
-				"parent" : 38
+				"file" : 19,
+				"parent" : 48
 			},
 			{
 				"command" : 6,
-				"file" : 16,
+				"file" : 19,
 				"line" : 52,
-				"parent" : 39
+				"parent" : 49
 			},
 			{
-				"file" : 15,
-				"parent" : 40
+				"file" : 18,
+				"parent" : 50
 			},
 			{
 				"command" : 5,
-				"file" : 15,
+				"file" : 18,
 				"line" : 61,
-				"parent" : 41
+				"parent" : 51
 			},
 			{
 				"command" : 10,
 				"file" : 1,
 				"line" : 37,
+				"parent" : 0
+			},
+			{
+				"command" : 11,
+				"file" : 1,
+				"line" : 42,
 				"parent" : 0
 			}
 		]
@@ -314,6 +378,10 @@
 				{
 					"backtrace" : 5,
 					"define" : "QT_MULTIMEDIA_LIB"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "QT_NEEDS_QMAIN"
 				},
 				{
 					"backtrace" : 5,
@@ -355,7 +423,7 @@
 					"path" : "N:/KPlayer/KPlayer/out/build/x64-Debug/MediaPlayer_autogen/include"
 				},
 				{
-					"backtrace" : 43,
+					"backtrace" : 53,
 					"path" : "N:/KPlayer/KPlayer/src"
 				},
 				{
@@ -426,7 +494,130 @@
 				23,
 				25,
 				27,
-				30
+				31
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-DWIN32 -D_DEBUG"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 27,
+					"define" : "MINGW_HAS_SECURE_API=1"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_MULTIMEDIAWIDGETS_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_MULTIMEDIA_LIB"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "QT_NEEDS_QMAIN"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_WIDGETS_LIB"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "WIN32"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "WIN64"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "_ENABLE_EXTENDED_ALIGNED_STORAGE"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "_UNICODE"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "_WIN64"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "N:/KPlayer/KPlayer/out/build/x64-Debug/MediaPlayer_autogen/include"
+				},
+				{
+					"backtrace" : 53,
+					"path" : "N:/KPlayer/KPlayer/src"
+				},
+				{
+					"backtrace" : 27,
+					"isSystem" : true,
+					"path" : "N:/Qt/6.6.3/mingw_64/include/QtCore"
+				},
+				{
+					"backtrace" : 27,
+					"isSystem" : true,
+					"path" : "N:/Qt/6.6.3/mingw_64/include"
+				},
+				{
+					"backtrace" : 27,
+					"isSystem" : true,
+					"path" : "N:/Qt/6.6.3/mingw_64/mkspecs/win32-g++"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "N:/Qt/6.6.3/mingw_64/include/QtWidgets"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "N:/Qt/6.6.3/mingw_64/include/QtGui"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "N:/Qt/6.6.3/mingw_64/include/QtMultimedia"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "N:/Qt/6.6.3/mingw_64/include/QtNetwork"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets"
+				}
+			],
+			"language" : "RC",
+			"sourceIndexes" : 
+			[
+				29
 			]
 		}
 	],
@@ -450,7 +641,7 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:windows",
 				"role" : "flags"
 			},
 			{
@@ -499,22 +690,37 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 42,
+				"backtrace" : 45,
+				"fragment" : "mingw32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 45,
+				"fragment" : "N:\\Qt\\6.6.3\\mingw_64\\lib\\libQt6EntryPoint.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 46,
+				"fragment" : "shell32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 52,
 				"fragment" : "d3d11.lib",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 42,
+				"backtrace" : 52,
 				"fragment" : "dxgi.lib",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 42,
+				"backtrace" : 52,
 				"fragment" : "dxguid.lib",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 42,
+				"backtrace" : 52,
 				"fragment" : "d3d12.lib",
 				"role" : "libraries"
 			},
@@ -553,7 +759,8 @@
 				23,
 				25,
 				27,
-				30
+				29,
+				31
 			]
 		},
 		{
@@ -580,15 +787,15 @@
 			"sourceIndexes" : 
 			[
 				28,
-				29
+				30
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				31,
-				32
+				32,
+				33
 			]
 		}
 	],
@@ -754,6 +961,12 @@
 			"backtrace" : 4,
 			"path" : "src/resources.qrc",
 			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 54,
+			"compileGroupIndex" : 1,
+			"path" : "src/app.rc",
+			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
