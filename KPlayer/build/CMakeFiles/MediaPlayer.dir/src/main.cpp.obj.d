@@ -405,4 +405,6 @@ CMakeFiles/MediaPlayer.dir/src/main.cpp.obj: \
  N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_dir.h \
  N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_ops.h \
  N:/Qt/6.6.3/mingw_64/include/QtCore/QDebug \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qdebug.h
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qdebug.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QSettings \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qsettings.h

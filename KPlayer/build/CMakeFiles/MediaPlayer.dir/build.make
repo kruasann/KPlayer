@@ -77,7 +77,12 @@ MediaPlayer_autogen/timestamp: CMakeFiles/MediaPlayer.dir/compiler_depend.ts
 
 MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: N:/KPlayer/KPlayer/src/resources.qrc
 MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: CMakeFiles/MediaPlayer_autogen.dir/AutoRcc_resources_UVLADIE3JM_Info.json
-MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: N:/KPlayer/KPlayer/src/assets/styles/style.qss
+MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: N:/KPlayer/KPlayer/src/assets/styles/MonokaiPro.qss
+MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: N:/KPlayer/KPlayer/src/assets/styles/SolarizedDark.qss
+MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: N:/KPlayer/KPlayer/src/assets/styles/NordStyle.qss
+MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: N:/KPlayer/KPlayer/src/assets/styles/PastelDream.qss
+MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: N:/KPlayer/KPlayer/src/assets/styles/LightTheme.qss
+MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: N:/KPlayer/KPlayer/src/assets/styles/OceanBreeze.qss
 MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: N:/KPlayer/KPlayer/src/assets/icons/delete.png
 MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: N:/KPlayer/KPlayer/src/assets/icons/stop.png
 MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: N:/KPlayer/KPlayer/src/assets/icons/pause.png

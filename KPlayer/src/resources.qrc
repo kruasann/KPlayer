@@ -1,8 +1,13 @@
 <!-- resources.qrc -->
 <RCC>
     <qresource prefix="/">
-        <file>assets/styles/style.qss</file>    
-        <file>assets/icons/play.png</file>
+        <file>assets/styles/NordStyle.qss</file>
+		<file>assets/styles/LightTheme.qss</file>
+		<file>assets/styles/PastelDream.qss</file>
+		<file>assets/styles/SolarizedDark.qss</file>
+		<file>assets/styles/MonokaiPro.qss</file>
+		<file>assets/styles/OceanBreeze.qss</file>
+		<file>assets/icons/play.png</file>
 		<file>assets/icons/delete.png</file>
         <file>assets/icons/pause.png</file>
         <file>assets/icons/stop.png</file>

@@ -432,6 +432,10 @@ CMakeFiles/MediaPlayer.dir/src/UI/PlayerScene.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qstyle.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qtabbar.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qrubberband.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QComboBox \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qcombobox.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidgetAction \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qwidgetaction.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QHBoxLayout \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qboxlayout.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qlayout.h \

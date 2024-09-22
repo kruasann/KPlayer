@@ -379,9 +379,13 @@ CMakeFiles/MediaPlayer.dir/src/App.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qstyle.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qtabbar.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qrubberband.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QComboBox \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qcombobox.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QPushButton \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qpushbutton.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractbutton.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidgetAction \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qwidgetaction.h \
  N:\KPlayer\KPlayer\src\UI/PlayerScene.h \
  N:\KPlayer\KPlayer\src\UI/Scene.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidget \

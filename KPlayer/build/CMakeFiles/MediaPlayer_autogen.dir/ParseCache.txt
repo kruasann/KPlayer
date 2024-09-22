@@ -1565,15 +1565,18 @@ N:/KPlayer/KPlayer/src/UI/MainScene.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qvalidator.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs_win.h
+ mdp:N:/Qt/6.6.3/mingw_64/include/QtWidgets/QComboBox
  mdp:N:/Qt/6.6.3/mingw_64/include/QtWidgets/QListWidgetItem
  mdp:N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMainWindow
  mdp:N:/Qt/6.6.3/mingw_64/include/QtWidgets/QPushButton
+ mdp:N:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidgetAction
  mdp:N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractbutton.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractitemdelegate.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractitemview.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractscrollarea.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractslider.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractspinbox.h
+ mdp:N:/Qt/6.6.3/mingw_64/include/QtWidgets/qcombobox.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtWidgets/qframe.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtWidgets/qlistview.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtWidgets/qlistwidget.h
@@ -1590,6 +1593,7 @@ N:/KPlayer/KPlayer/src/UI/MainScene.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtWidgets/qtwidgetsexports.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtWidgets/qtwidgetsglobal.h
  mdp:N:/Qt/6.6.3/mingw_64/include/QtWidgets/qwidget.h
+ mdp:N:/Qt/6.6.3/mingw_64/include/QtWidgets/qwidgetaction.h
  mdp:N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/limits.h
  mdp:N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/syslimits.h
  mdp:N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/algorithm

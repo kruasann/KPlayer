@@ -12,8 +12,10 @@
 #include <QFile>
 #include <QLabel>
 #include <QPushButton>
+#include <QComboBox>
 #include <QDebug>
-#include <QApplication> // Для использования qApp
+#include <QApplication>
+#include <QSettings>
 
 MainScene::MainScene(App* app, QWidget* parent)
     : QMainWindow(parent), app(app)
@@ -31,6 +33,9 @@ MainScene::MainScene(App* app, QWidget* parent)
 
     // Загружаем историю воспроизведения
     loadHistory();
+
+    // Загрузка сохранённой темы
+    loadSavedStyle();
 
     setWindowTitle("KPlayer - Main Scene");
     resize(800, 600);
@@ -53,17 +58,80 @@ void MainScene::createActions()
     connect(actionExit, &QAction::triggered, this, &MainScene::onExitApplication);
 }
 
-void MainScene::createMenus()
-{
-    // Создание меню и добавление в меню-бар
+void MainScene::createMenus() {
     menubar = new QMenuBar(this);
+
+    // File Menu
     menuFile = new QMenu("File", this);
     menuFile->addAction(actionOpen);
     menuFile->addSeparator();
     menuFile->addAction(actionExit);
 
+    // Settings Menu
+    menuSettings = new QMenu("Settings", this);
+
+    // Create a combo box for selecting styles
+    styleComboBox = new QComboBox(this);
+    styleComboBox->addItem("NordStyle");
+    styleComboBox->addItem("LightTheme");
+    styleComboBox->addItem("PastelDream");
+    styleComboBox->addItem("SolarizedDark");
+    styleComboBox->addItem("MonokaiPro");
+    styleComboBox->addItem("OceanBreeze");
+
+    // Add combo box to a QWidgetAction
+    QWidgetAction* styleAction = new QWidgetAction(this);
+    QWidget* comboBoxWidget = new QWidget(this);
+    QHBoxLayout* comboBoxLayout = new QHBoxLayout(comboBoxWidget);
+    comboBoxLayout->addWidget(new QLabel("Select Theme:", this));
+    comboBoxLayout->addWidget(styleComboBox);
+    styleAction->setDefaultWidget(comboBoxWidget);
+
+    menuSettings->addAction(styleAction);
+
+    // Add menus to menubar
     menubar->addMenu(menuFile);
+    menubar->addMenu(menuSettings);
+
+    // Ensure the menubar is set to the main window
     setMenuBar(menubar);
+
+    // Connect the style combo box to the slot
+    connect(styleComboBox, &QComboBox::currentTextChanged, this, &MainScene::onStyleChanged);
+}
+
+
+void MainScene::onStyleChanged(const QString& styleName) {
+    QString stylePath = ":/assets/styles/" + styleName + ".qss";
+    loadStyle(stylePath);
+
+    // Сохраняем выбранную тему в QSettings
+    QSettings settings("Kruasann", "KPlayer");
+    settings.setValue("theme", styleName);
+
+    statusbar->showMessage("Theme changed to " + styleName, 2000);
+}
+
+void MainScene::loadStyle(const QString& stylePath) {
+    QFile file(stylePath);
+    if (file.open(QFile::ReadOnly)) {
+        QString styleSheet = QLatin1String(file.readAll());
+        qApp->setStyleSheet(styleSheet);
+        file.close();
+    }
+    else {
+        statusbar->showMessage("Failed to load style: " + stylePath, 2000);
+    }
+}
+
+void MainScene::loadSavedStyle() {
+    // Загружаем сохранённую тему из QSettings
+    QSettings settings("Kruasann", "KPlayer");
+    QString savedStyle = settings.value("theme", "NordStyle").toString();  // По умолчанию NordStyle
+
+    // Устанавливаем сохранённую тему
+    styleComboBox->setCurrentText(savedStyle);
+    onStyleChanged(savedStyle);  // Применяем стиль
 }
 
 void MainScene::createCentralWidget()

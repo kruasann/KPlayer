@@ -421,6 +421,10 @@ CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/mocs_compilation.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qstyle.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qtabbar.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qrubberband.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QComboBox \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qcombobox.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidgetAction \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qwidgetaction.h \
  N:\KPlayer\KPlayer\build\MediaPlayer_autogen\WAYUIA5GRM/moc_Menu.cpp \
  N:/KPlayer/KPlayer/src/UI/Menu.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMenuBar \

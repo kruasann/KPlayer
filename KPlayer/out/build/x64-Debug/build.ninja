@@ -272,7 +272,7 @@ build MediaPlayer_autogen\timestamp MediaPlayer_autogen\mocs_compilation.cpp | $
 #############################################
 # Custom command for MediaPlayer_autogen\UVLADIE3JM\qrc_resources.cpp
 
-build MediaPlayer_autogen\UVLADIE3JM\qrc_resources.cpp | ${cmake_ninja_workdir}MediaPlayer_autogen\UVLADIE3JM\qrc_resources.cpp: CUSTOM_COMMAND N$:\KPlayer\KPlayer\src\resources.qrc CMakeFiles\MediaPlayer_autogen.dir\AutoRcc_resources_UVLADIE3JM_Info.json N$:\KPlayer\KPlayer\src\assets\styles\style.qss N$:\KPlayer\KPlayer\src\assets\icons\delete.png N$:\KPlayer\KPlayer\src\assets\icons\stop.png N$:\KPlayer\KPlayer\src\assets\icons\pause.png N$:\KPlayer\KPlayer\src\assets\icons\plus-s.png N$:\KPlayer\KPlayer\src\assets\icons\minus-s.png N$:\KPlayer\KPlayer\src\assets\icons\play.png N$:\KPlayer\KPlayer\src\assets\icons\app_icon.ico N$:\Qt\6.6.3\mingw_64\.\bin\rcc.exe || MediaPlayer_autogen MediaPlayer_autogen_timestamp_deps
+build MediaPlayer_autogen\UVLADIE3JM\qrc_resources.cpp | ${cmake_ninja_workdir}MediaPlayer_autogen\UVLADIE3JM\qrc_resources.cpp: CUSTOM_COMMAND N$:\KPlayer\KPlayer\src\resources.qrc CMakeFiles\MediaPlayer_autogen.dir\AutoRcc_resources_UVLADIE3JM_Info.json N$:\KPlayer\KPlayer\src\assets\styles\MonokaiPro.qss N$:\KPlayer\KPlayer\src\assets\styles\SolarizedDark.qss N$:\KPlayer\KPlayer\src\assets\styles\NordStyle.qss N$:\KPlayer\KPlayer\src\assets\styles\PastelDream.qss N$:\KPlayer\KPlayer\src\assets\styles\LightTheme.qss N$:\KPlayer\KPlayer\src\assets\styles\OceanBreeze.qss N$:\KPlayer\KPlayer\src\assets\icons\delete.png N$:\KPlayer\KPlayer\src\assets\icons\stop.png N$:\KPlayer\KPlayer\src\assets\icons\pause.png N$:\KPlayer\KPlayer\src\assets\icons\plus-s.png N$:\KPlayer\KPlayer\src\assets\icons\minus-s.png N$:\KPlayer\KPlayer\src\assets\icons\play.png N$:\KPlayer\KPlayer\src\assets\icons\app_icon.ico N$:\Qt\6.6.3\mingw_64\.\bin\rcc.exe || MediaPlayer_autogen MediaPlayer_autogen_timestamp_deps
   COMMAND = cmd.exe /C "cd /D N:\KPlayer\KPlayer\out\build\x64-Debug && N:\VisualSt\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E cmake_autorcc N:/KPlayer/KPlayer/out/build/x64-Debug/CMakeFiles/MediaPlayer_autogen.dir/AutoRcc_resources_UVLADIE3JM_Info.json Debug"
   DESC = Automatic RCC for src/resources.qrc
   restat = 1
@@ -281,7 +281,7 @@ build MediaPlayer_autogen\UVLADIE3JM\qrc_resources.cpp | ${cmake_ninja_workdir}M
 #############################################
 # Phony custom command for CMakeFiles\MediaPlayer_autogen_timestamp_deps
 
-build CMakeFiles\MediaPlayer_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles\MediaPlayer_autogen_timestamp_deps: phony N$:\Qt\6.6.3\mingw_64\.\bin\moc.exe N$:\Qt\6.6.3\mingw_64\lib\libQt6Core.a N$:\Qt\6.6.3\mingw_64\lib\libQt6Widgets.a N$:\Qt\6.6.3\mingw_64\lib\libQt6Multimedia.a N$:\Qt\6.6.3\mingw_64\.\bin\uic.exe N$:\Qt\6.6.3\mingw_64\lib\libQt6MultimediaWidgets.a
+build CMakeFiles\MediaPlayer_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles\MediaPlayer_autogen_timestamp_deps: phony N$:\Qt\6.6.3\mingw_64\.\bin\moc.exe N$:\Qt\6.6.3\mingw_64\lib\libQt6MultimediaWidgets.a N$:\Qt\6.6.3\mingw_64\.\bin\uic.exe N$:\Qt\6.6.3\mingw_64\lib\libQt6Multimedia.a N$:\Qt\6.6.3\mingw_64\lib\libQt6Core.a N$:\Qt\6.6.3\mingw_64\lib\libQt6Widgets.a
 
 
 #############################################

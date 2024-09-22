@@ -143,15 +143,18 @@ N:/KPlayer/KPlayer/build/MediaPlayer_autogen/WAYUIA5GRM/moc_MainScene.cpp: N:/KP
   N:/Qt/6.6.3/mingw_64/include/QtGui/qvalidator.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs_win.h \
+  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QComboBox \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/QListWidgetItem \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMainWindow \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/QPushButton \
+  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidgetAction \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractbutton.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractitemview.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractscrollarea.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractslider.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qabstractspinbox.h \
+  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qcombobox.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qframe.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qlistview.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qlistwidget.h \
@@ -168,6 +171,7 @@ N:/KPlayer/KPlayer/build/MediaPlayer_autogen/WAYUIA5GRM/moc_MainScene.cpp: N:/KP
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qwidget.h \
+  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qwidgetaction.h \
   N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/limits.h \
   N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/syslimits.h \
   N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/algorithm \

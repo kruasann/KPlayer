@@ -1,0 +1,71 @@
+/* Общий стиль для приложения */
+QWidget {
+    background-color: #E0F7FA;
+    color: #006064;
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+}
+
+/* Стили для кнопок */
+QPushButton {
+    background-color: #80DEEA;
+    border: 1px solid #00ACC1;
+    border-radius: 4px;
+    padding: 8px;
+    min-width: 36px;
+    min-height: 36px;
+}
+
+QPushButton:hover {
+    background-color: #26C6DA;
+}
+
+QPushButton:pressed {
+    background-color: #00BCD4;
+}
+
+/* Стили для слайдеров */
+QSlider::groove:horizontal {
+    height: 6px;
+    background: #00ACC1;
+    border-radius: 3px;
+}
+
+QSlider::handle:horizontal {
+    background: #00838F;
+    border: none;
+    width: 14px;
+    height: 14px;
+    margin: -4px 0;
+    border-radius: 7px;
+}
+
+/* Стили для меток */
+QLabel {
+    color: #006064;
+}
+
+/* Стили для меню */
+QMenuBar {
+    background-color: #80DEEA;
+}
+
+QMenuBar::item {
+    color: #006064;
+    spacing: 3px;
+    padding: 1px 4px;
+    background: transparent;
+}
+
+QMenuBar::item:selected {
+    background: #00ACC1;
+}
+
+QMenu {
+    background-color: #80DEEA;
+    color: #006064;
+}
+
+QMenu::item:selected {
+    background-color: #00ACC1;
+}

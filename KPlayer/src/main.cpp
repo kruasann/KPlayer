@@ -3,12 +3,18 @@
 #include <QApplication>
 #include <QFile>
 #include <QDebug>
+#include <QSettings>  // Для работы с настройками
 
 int main(int argc, char* argv[]) {
     QApplication app(argc, argv);
 
+    // Загружаем предыдущую тему, сохранённую в QSettings
+    QSettings settings("Kruasann", "KPlayer");  // Используем одинаковое пространство имён
+    QString savedStyle = settings.value("theme", "NordStyle").toString();  // По умолчанию NordStyle
+
     // Загрузка стилей (опционально)
-    QFile file(":/assets/styles/style.qss");
+    QString stylePath = ":/assets/styles/" + savedStyle + ".qss";
+    QFile file(stylePath);
     if (file.open(QFile::ReadOnly)) {
         QString styleSheet = QLatin1String(file.readAll());
         app.setStyleSheet(styleSheet);
