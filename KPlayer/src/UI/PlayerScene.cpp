@@ -18,20 +18,9 @@ PlayerScene::PlayerScene(App* app, const QString& filePath, QWidget* parent)
     mainLayout->setContentsMargins(5, 5, 5, 5);
     mainLayout->setSpacing(5);
 
-    // Меню
-    menuBar = new QMenuBar(this);
-    QMenu* fileMenu = new QMenu("File", this);
-    QAction* openAction = new QAction("Open", this);
-    QAction* exitAction = new QAction("Exit", this);
-
-    connect(openAction, &QAction::triggered, this, &PlayerScene::openFile);
-    connect(exitAction, &QAction::triggered, this, &PlayerScene::exitApplication);
-
-    fileMenu->addAction(openAction);
-    fileMenu->addAction(exitAction);
-    menuBar->addMenu(fileMenu);
-
-    mainLayout->setMenuBar(menuBar);
+    // Создание меню
+    createActions();
+    createMenus();
 
     // Метка названия медиа
     mediaLabel = new QLabel(this);
@@ -42,50 +31,51 @@ PlayerScene::PlayerScene(App* app, const QString& filePath, QWidget* parent)
     // Видео-виджет
     videoWidget = new QVideoWidget(this);
     videoWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
-    videoWidget->hide(); // Скрываем по умолчанию
+    videoWidget->hide();
     mainLayout->addWidget(videoWidget, 1);
 
     // Аудио-визуализатор
     audioVisualizer = new AudioVisualizer(this);
     audioVisualizer->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
-    audioVisualizer->show(); // Показываем по умолчанию
+    audioVisualizer->show();
     mainLayout->addWidget(audioVisualizer, 1);
 
     // Медиаплеер
     mediaPlayer = new MediaPlayer(this);
     mediaPlayer->setVideoOutput(videoWidget);
 
-    // Подключаем сигналы
     connect(mediaPlayer, &MediaPlayer::positionChanged, this, &PlayerScene::updateProgress);
     connect(mediaPlayer, &MediaPlayer::durationChanged, this, [this](qint64 duration) {
         progressSlider->setMaximum(static_cast<int>(duration));
         });
     connect(mediaPlayer, &MediaPlayer::errorOccurred, this, &PlayerScene::handleError);
-
-    // Подключаем сигнал hasVideoChanged
     connect(mediaPlayer, &MediaPlayer::hasVideoChanged, this, &PlayerScene::handleHasVideoChanged);
-
-    // Подключаем аудио-данные к визуализатору
     connect(mediaPlayer, &MediaPlayer::audioDataGenerated, audioVisualizer, &AudioVisualizer::processBuffer);
 
     // Панель управления
     QHBoxLayout* controlLayout = new QHBoxLayout();
     controlLayout->setSpacing(10);
 
-    // Кнопка "Back"
     backButton = new QPushButton("Back", this);
     connect(backButton, &QPushButton::clicked, this, &PlayerScene::goBack);
     controlLayout->addWidget(backButton);
 
-    // Кнопка Play/Pause
+    rewindButton = new Button(":/assets/icons/minus-s.png", this);
+    connect(rewindButton, &QPushButton::clicked, this, &PlayerScene::rewind);
+    controlLayout->addWidget(rewindButton);
+
     playPauseButton = new Button(":/assets/icons/play.png", this);
     connect(playPauseButton, &QPushButton::clicked, this, &PlayerScene::togglePlayPause);
+    controlLayout->addWidget(playPauseButton);
 
-    // Кнопка Stop
+    fastForwardButton = new Button(":/assets/icons/plus-s.png", this);
+    connect(fastForwardButton, &QPushButton::clicked, this, &PlayerScene::fastForward);
+    controlLayout->addWidget(fastForwardButton);
+
     stopButton = new Button(":/assets/icons/stop.png", this);
     connect(stopButton, &QPushButton::clicked, this, &PlayerScene::stopPlayback);
+    controlLayout->addWidget(stopButton);
 
-    // Ползунок громкости
     QLabel* volumeLabel = new QLabel("Volume:", this);
     volumeSlider = new Slider(Qt::Horizontal, this);
     volumeSlider->setRange(0, 100);
@@ -93,15 +83,12 @@ PlayerScene::PlayerScene(App* app, const QString& filePath, QWidget* parent)
     volumeSlider->setFixedWidth(100);
     connect(volumeSlider, &QSlider::valueChanged, this, &PlayerScene::setVolume);
 
-    controlLayout->addWidget(playPauseButton);
-    controlLayout->addWidget(stopButton);
     controlLayout->addStretch();
     controlLayout->addWidget(volumeLabel);
     controlLayout->addWidget(volumeSlider);
 
     mainLayout->addLayout(controlLayout);
 
-    // Прогресс и время
     QHBoxLayout* progressLayout = new QHBoxLayout();
     progressLayout->setSpacing(10);
 
@@ -110,12 +97,10 @@ PlayerScene::PlayerScene(App* app, const QString& filePath, QWidget* parent)
     connect(progressSlider, &QSlider::sliderMoved, this, &PlayerScene::seek);
 
     timeLabel = new QLabel("00:00 / 00:00", this);
-
     progressLayout->addWidget(progressSlider);
     progressLayout->addWidget(timeLabel);
 
     mainLayout->addLayout(progressLayout);
-
     setLayout(mainLayout);
 
     mediaPlayer->setVolume(50);
@@ -124,29 +109,8 @@ PlayerScene::PlayerScene(App* app, const QString& filePath, QWidget* parent)
     connect(marqueeTimer, &QTimer::timeout, this, &PlayerScene::updateMarquee);
     marqueeTimer->start(200);
 
-    // Если был передан файл при запуске
     if (!filePath.isEmpty()) {
-        qDebug() << "PlayerScene::PlayerScene() - Opening file:" << filePath;
-
-        QFileInfo checkFile(filePath);
-        if (!checkFile.exists() || !checkFile.isFile()) {
-            qDebug() << "PlayerScene::PlayerScene() - File does not exist or is not a file.";
-            QMessageBox::critical(this, "Error", "File does not exist or is not a file.");
-            return;
-        }
-
-        QUrl mediaUrl = QUrl::fromLocalFile(filePath);
-        qDebug() << "PlayerScene::PlayerScene() - Media URL:" << mediaUrl.toString();
-
-        mediaPlayer->setSource(mediaUrl);
-
-        FileManager::addToHistory(filePath);
-
-        fullMediaTitle = checkFile.fileName();
-        mediaLabel->setText(fullMediaTitle);
-        mediaPlayer->play();
-        playPauseButton->setIconPath(":/assets/icons/pause.png");
-        isPlaying = true;
+        setMediaSource(filePath);
     }
 }
 
@@ -169,41 +133,32 @@ void PlayerScene::togglePlayPause()
     isPlaying = !isPlaying;
 }
 
+void PlayerScene::rewind()
+{
+    qint64 currentPosition = mediaPlayer->position();
+    mediaPlayer->setPosition(currentPosition - 10000);
+}
+
+void PlayerScene::fastForward()
+{
+    qint64 currentPosition = mediaPlayer->position();
+    mediaPlayer->setPosition(currentPosition + 10000);
+}
+
 void PlayerScene::setMediaSource(const QString& filePath)
 {
-    if (!filePath.isEmpty()) {
-        qDebug() << "PlayerScene::setMediaSource() - Opening file:" << filePath;
-
-        QFileInfo checkFile(filePath);
-        if (!checkFile.exists() || !checkFile.isFile()) {
-            qDebug() << "PlayerScene::setMediaSource() - File does not exist or is not a file.";
-            QMessageBox::critical(this, "Error", "File does not exist or is not a file.");
-            return;
-        }
-
-        QUrl mediaUrl = QUrl::fromLocalFile(filePath);
-        qDebug() << "PlayerScene::setMediaSource() - Media URL:" << mediaUrl.toString();
-
-        mediaPlayer->setSource(mediaUrl);
-        FileManager::addToHistory(filePath);
-        fullMediaTitle = checkFile.fileName();
-        mediaLabel->setText(fullMediaTitle);
-        mediaPlayer->play();
-        playPauseButton->setIconPath(":/assets/icons/pause.png");
-        isPlaying = true;
-
-        // Дополнительная проверка наличия видео
-        // Используем QTimer::singleShot, чтобы дождаться загрузки медиа
-        QTimer::singleShot(1000, this, [this]() {
-            bool hasVideo = mediaPlayer->hasVideo();
-            qDebug() << "PlayerScene::setMediaSource() - hasVideo:" << hasVideo;
-            handleHasVideoChanged(hasVideo);
-            });
-
-        // Немедленно проверить наличие видео и обновить видимость
-        bool hasVideo = mediaPlayer->hasVideo();
-        handleHasVideoChanged(hasVideo);
+    QFileInfo checkFile(filePath);
+    if (!checkFile.exists() || !checkFile.isFile()) {
+        QMessageBox::critical(this, "Error", "File does not exist or is not a file.");
+        return;
     }
+    mediaPlayer->setSource(QUrl::fromLocalFile(filePath));
+    FileManager::addToHistory(filePath);
+    fullMediaTitle = checkFile.fileName();
+    mediaLabel->setText(fullMediaTitle);
+    mediaPlayer->play();
+    playPauseButton->setIconPath(":/assets/icons/pause.png");
+    isPlaying = true;
 }
 
 void PlayerScene::stopPlayback()
@@ -232,38 +187,14 @@ void PlayerScene::updateProgress(qint64 position)
     qint64 totalTime = mediaPlayer->duration();
     QTime currentTimeObj = QTime::fromMSecsSinceStartOfDay(static_cast<int>(position));
     QTime totalTimeObj = QTime::fromMSecsSinceStartOfDay(static_cast<int>(totalTime));
-    QString timeString = currentTimeObj.toString("mm:ss") + " / " + totalTimeObj.toString("mm:ss");
-    timeLabel->setText(timeString);
+    timeLabel->setText(currentTimeObj.toString("mm:ss") + " / " + totalTimeObj.toString("mm:ss"));
 }
 
 void PlayerScene::openFile()
 {
     QString filePath = QFileDialog::getOpenFileName(this, "Choose Mediafile");
     if (!filePath.isEmpty()) {
-        qDebug() << "PlayerScene::openFile() - Opening file:" << filePath;
-
-        QFileInfo checkFile(filePath);
-        if (!checkFile.exists() || !checkFile.isFile()) {
-            qDebug() << "PlayerScene::openFile() - File does not exist or is not a file.";
-            QMessageBox::critical(this, "Error", "File does not exist or is not a file.");
-            return;
-        }
-
-        QUrl mediaUrl = QUrl::fromLocalFile(filePath);
-        qDebug() << "PlayerScene::openFile() - Media URL:" << mediaUrl.toString();
-
-        mediaPlayer->setSource(mediaUrl);
-        FileManager::addToHistory(filePath);
-        fullMediaTitle = checkFile.fileName();
-        marqueeIndex = 0;
-        mediaLabel->setText(fullMediaTitle);
-        mediaPlayer->play();
-        playPauseButton->setIconPath(":/assets/icons/pause.png");
-        isPlaying = true;
-
-        // Немедленно проверить наличие видео и обновить видимость
-        bool hasVideo = mediaPlayer->hasVideo();
-        handleHasVideoChanged(hasVideo);
+        setMediaSource(filePath);
     }
 }
 
@@ -274,7 +205,6 @@ void PlayerScene::exitApplication()
 
 void PlayerScene::handleError(const QString& errorString)
 {
-    qDebug() << "Play Error:" << errorString;
     QMessageBox::critical(this, "Error", "Play Error: " + errorString);
 }
 
@@ -290,7 +220,6 @@ void PlayerScene::updateMarquee()
     }
 }
 
-// Функция для обработки наличия видео
 void PlayerScene::handleHasVideoChanged(bool hasVideo)
 {
     if (hasVideo) {
@@ -305,7 +234,48 @@ void PlayerScene::handleHasVideoChanged(bool hasVideo)
 
 void PlayerScene::goBack()
 {
-    qDebug() << "PlayerScene::goBack() - Switching to MainScene";
-    // Возвращаемся к MainScene
     app->changeScene(new MainScene(app));
+}
+
+void PlayerScene::createActions()
+{
+    // Создание действий для меню
+    actionOpen = new QAction("Open", this);
+    actionOpen->setShortcut(QKeySequence::Open);
+    connect(actionOpen, &QAction::triggered, this, &PlayerScene::openFile);
+
+    actionExit = new QAction("Exit", this);
+    actionExit->setShortcut(QKeySequence::Quit);
+    connect(actionExit, &QAction::triggered, this, &PlayerScene::exitApplication);
+
+    actionRewind = new QAction("Rewind 10s", this);
+    actionRewind->setShortcut(QKeySequence(Qt::CTRL | Qt::Key_Left)); // Изменение оператора на '|'
+    connect(actionRewind, &QAction::triggered, this, &PlayerScene::rewind);
+
+    actionFastForward = new QAction("Fast Forward 10s", this);
+    actionFastForward->setShortcut(QKeySequence(Qt::CTRL | Qt::Key_Right)); // Изменение оператора на '|'
+    connect(actionFastForward, &QAction::triggered, this, &PlayerScene::fastForward);
+
+    actionPlayPause = new QAction("Play/Pause", this);
+    actionPlayPause->setShortcut(QKeySequence(Qt::Key_Space));
+    connect(actionPlayPause, &QAction::triggered, this, &PlayerScene::togglePlayPause);
+}
+
+
+void PlayerScene::createMenus()
+{
+    menuBar = new QMenuBar(this);
+    menuFile = new QMenu("File", this);
+    menuFile->addAction(actionOpen);
+    menuFile->addSeparator();
+    menuFile->addAction(actionExit);
+
+    menuPlayback = new QMenu("Playback", this);
+    menuPlayback->addAction(actionPlayPause);
+    menuPlayback->addAction(actionRewind);
+    menuPlayback->addAction(actionFastForward);
+
+    menuBar->addMenu(menuFile);
+    menuBar->addMenu(menuPlayback);
+    layout()->setMenuBar(menuBar);
 }

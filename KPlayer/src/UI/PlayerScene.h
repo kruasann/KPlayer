@@ -1,4 +1,3 @@
-// src/UI/PlayerScene.h
 #ifndef PLAYER_SCENE_H
 #define PLAYER_SCENE_H
 
@@ -12,7 +11,7 @@
 #include <QVideoWidget>
 #include <QMenuBar>
 #include <QTimer>
-#include <QPushButton> // Добавлено
+#include <QPushButton> 
 
 class App;
 
@@ -26,6 +25,10 @@ private slots:
     void togglePlayPause();
     void stopPlayback();
     void setVolume(int value);
+    void rewind();
+    void fastForward();
+    void createActions();        // Для создания действий
+    void createMenus();          // Для создания меню
     void seek(int value);
     void updateProgress(qint64 position);
     void openFile();
@@ -33,23 +36,32 @@ private slots:
     void handleError(const QString& errorString);
     void updateMarquee();
     void handleHasVideoChanged(bool hasVideo);
-    void goBack(); // Новый слот
+    void goBack();               // Новый слот
 
 private:
     void setMediaSource(const QString& filePath);
 
     MediaPlayer* mediaPlayer;
+    Button* rewindButton;
+    Button* fastForwardButton;
     Button* playPauseButton;
     Button* stopButton;
     Slider* volumeSlider;
     Slider* progressSlider;
+    QAction* actionOpen;
+    QAction* actionExit;
+    QAction* actionRewind;
+    QAction* actionFastForward;
+    QAction* actionPlayPause;
     QLabel* timeLabel;
     QLabel* mediaLabel;
+    QMenu* menuFile;
+    QMenu* menuPlayback;
     QMenuBar* menuBar;
     QVideoWidget* videoWidget;
     AudioVisualizer* audioVisualizer;
     QTimer* marqueeTimer;
-    QPushButton* backButton; // Кнопка "Back"
+    QPushButton* backButton;
     QString fullMediaTitle;
     int marqueeIndex;
     bool isPlaying;

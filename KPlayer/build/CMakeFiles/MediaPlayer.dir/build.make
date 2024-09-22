@@ -81,6 +81,8 @@ MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: N:/KPlayer/KPlayer/src/assets/
 MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: N:/KPlayer/KPlayer/src/assets/icons/delete.png
 MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: N:/KPlayer/KPlayer/src/assets/icons/stop.png
 MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: N:/KPlayer/KPlayer/src/assets/icons/pause.png
+MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: N:/KPlayer/KPlayer/src/assets/icons/plus-s.png
+MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: N:/KPlayer/KPlayer/src/assets/icons/minus-s.png
 MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: N:/KPlayer/KPlayer/src/assets/icons/play.png
 MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: N:/KPlayer/KPlayer/src/assets/icons/app_icon.ico
 MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp: N:/Qt/6.6.3/mingw_64/./bin/rcc.exe

@@ -6,6 +6,8 @@
 		<file>assets/icons/delete.png</file>
         <file>assets/icons/pause.png</file>
         <file>assets/icons/stop.png</file>
+		<file>assets/icons/plus-s.png</file>
+		<file>assets/icons/minus-s.png</file>
 		<file>assets/icons/app_icon.ico</file>
     </qresource>
 </RCC>
