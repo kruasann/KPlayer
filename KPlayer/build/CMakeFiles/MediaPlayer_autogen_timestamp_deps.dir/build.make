@@ -68,9 +68,9 @@ include CMakeFiles/MediaPlayer_autogen_timestamp_deps.dir/progress.make
 CMakeFiles/MediaPlayer_autogen_timestamp_deps: N:/Qt/6.6.3/mingw_64/./bin/moc.exe
 CMakeFiles/MediaPlayer_autogen_timestamp_deps: N:/Qt/6.6.3/mingw_64/./bin/uic.exe
 CMakeFiles/MediaPlayer_autogen_timestamp_deps: N:/Qt/6.6.3/mingw_64/lib/libQt6Widgets.a
-CMakeFiles/MediaPlayer_autogen_timestamp_deps: N:/Qt/6.6.3/mingw_64/lib/libQt6Multimedia.a
 CMakeFiles/MediaPlayer_autogen_timestamp_deps: N:/Qt/6.6.3/mingw_64/lib/libQt6MultimediaWidgets.a
 CMakeFiles/MediaPlayer_autogen_timestamp_deps: N:/Qt/6.6.3/mingw_64/lib/libQt6Core.a
+CMakeFiles/MediaPlayer_autogen_timestamp_deps: N:/Qt/6.6.3/mingw_64/lib/libQt6Multimedia.a
 
 MediaPlayer_autogen_timestamp_deps: CMakeFiles/MediaPlayer_autogen_timestamp_deps
 MediaPlayer_autogen_timestamp_deps: CMakeFiles/MediaPlayer_autogen_timestamp_deps.dir/build.make

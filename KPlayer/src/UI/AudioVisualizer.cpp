@@ -4,111 +4,179 @@
 #include <QRandomGenerator>
 #include <QColor>
 #include <QLinearGradient>
-#include <QDebug> // Опционально для отладки
+#include <QDebug>
+#include <QPainterPath>
+
+/**
+ * @brief Интерполяция между двумя цветами
+ * @param startColor Начальный цвет
+ * @param endColor Конечный цвет
+ * @param t Коэффициент интерполяции [0, 1]
+ * @return Интерполированный цвет
+ */
+QColor interpolateColor(const QColor& startColor, const QColor& endColor, qreal t) {
+    int red = static_cast<int>(startColor.red() + t * (endColor.red() - startColor.red()));
+    int green = static_cast<int>(startColor.green() + t * (endColor.green() - startColor.green()));
+    int blue = static_cast<int>(startColor.blue() + t * (endColor.blue() - startColor.blue()));
+    return QColor(red, green, blue);
+}
 
 AudioVisualizer::AudioVisualizer(QWidget* parent)
-    : QWidget(parent)
+    : QWidget(parent), currentType(AbstractShapes), transitionStep(0)  // Начальный тип визуализации "AbstractShapes"
 {
-    // Инициализация таймера для анимации
     QTimer* timer = new QTimer(this);
     connect(timer, &QTimer::timeout, this, &AudioVisualizer::updateAnimation);
-    timer->start(30); // обновляем анимацию каждые 30 миллисекунд
+    timer->start(30); // Частота обновления
 
-    // Инициализируем случайные позиции и параметры для "дымков"
-    for (int i = 0; i < numParticles; ++i) {
-        // Генерация случайной позиции (целые числа)
-        int randX = QRandomGenerator::global()->bounded(width());   // Версия для int
-        int randY = QRandomGenerator::global()->bounded(height());  // Версия для int
-
-        particlePositions.append(QPointF(
-            static_cast<qreal>(randX),
-            static_cast<qreal>(randY)
+    // Инициализация начальных точек для абстрактных форм
+    for (int i = 0; i < numShapes; ++i) {
+        controlPoints.append(QPointF(
+            QRandomGenerator::global()->bounded(width()),
+            QRandomGenerator::global()->bounded(height())
         ));
-
-        // Генерация случайной скорости (числа с плавающей точкой)
-        double randVX = QRandomGenerator::global()->generateDouble() * 2.0 - 1.0; // Диапазон [-1.0, 1.0)
-        double randVY = QRandomGenerator::global()->generateDouble() * 2.0 - 1.0; // Диапазон [-1.0, 1.0)
-
-        particleVelocities.append(QPointF(
-            static_cast<qreal>(randVX),
-            static_cast<qreal>(randVY)
+        nextControlPoints.append(QPointF( // Добавляем инициализацию nextControlPoints
+            QRandomGenerator::global()->bounded(width()),
+            QRandomGenerator::global()->bounded(height())
         ));
-
-        // Генерация случайного оттенка цвета
-        int randHue = QRandomGenerator::global()->bounded(360); // Версия для int
-
-        particleColors.append(QColor::fromHsv(
-            randHue, 255, 255 // Полная насыщенность и яркость
-        ));
-
-        // Отладочные сообщения для проверки значений
-        qDebug() << "Particle" << i << ": pos=(" << randX << "," << randY << "), vel=(" << randVX << "," << randVY << "), hue=" << randHue;
     }
+
+    // Начальные цвета градиента
+    gradientStartColor = QColor::fromHsv(QRandomGenerator::global()->bounded(360), 255, 255);
+    gradientEndColor = QColor::fromHsv(QRandomGenerator::global()->bounded(360), 255, 255);
 }
 
-void AudioVisualizer::processBuffer(const QByteArray& buffer)
-{
-    // Если визуализация не зависит от аудио-данных, оставь функцию пустой
+
+/**
+ * @brief Устанавливает тип визуализации
+ * @param type Тип визуализации (Particles, AbstractShapes)
+ */
+void AudioVisualizer::setVisualizationType(VisualizationType type) {
+    currentType = type; // Обновляем тип визуализации
+    update();           // Перерисовываем виджет
+}
+
+void AudioVisualizer::processBuffer(const QByteArray& buffer) {
     Q_UNUSED(buffer);
-
-    // Если хочешь использовать аудио-данные для влияния на визуализацию, реализуй логику здесь
-    // Пример: изменять количество частиц в зависимости от уровня громкости
-    qint64 sum = 0;
-    for (char byte : buffer) {
-        sum += static_cast<unsigned char>(byte);
-    }
-    double average = static_cast<double>(sum) / buffer.size();
-    int newParticleCount = static_cast<int>((average / 255.0) * maxParticles);
-
-    // Логика добавления или удаления частиц
+    // Пока что не привязываем к аудио-данным
 }
 
-void AudioVisualizer::updateAnimation()
-{
-    // Обновляем позиции и цвета для частиц
+/**
+ * @brief Обновляет анимацию в зависимости от текущего типа визуализации
+ */
+void AudioVisualizer::updateAnimation() {
+    switch (currentType) {
+    case Particles:
+        updateParticles();  // Обновление частиц
+        break;
+    case AbstractShapes:
+        updateAbstractShapes(); // Обновление абстрактных форм
+        break;
+    }
+    update(); // Запрос на перерисовку
+}
+
+/**
+ * @brief Обновляет позиции и цвета частиц
+ */
+void AudioVisualizer::updateParticles() {
     for (int i = 0; i < numParticles; ++i) {
         particlePositions[i] += particleVelocities[i];
-
-        // Отражение от краев виджета
         if (particlePositions[i].x() < 0 || particlePositions[i].x() > width()) {
             particleVelocities[i].setX(-particleVelocities[i].x());
         }
         if (particlePositions[i].y() < 0 || particlePositions[i].y() > height()) {
             particleVelocities[i].setY(-particleVelocities[i].y());
         }
-
-        // Плавное изменение цвета
-        int hue = particleColors[i].hue();
-        hue = (hue + 1) % 360; // изменяем цвет плавно
-        particleColors[i].setHsv(hue, 255, 255);
+        particleColors[i].setHsv((particleColors[i].hue() + 1) % 360, 255, 255);
     }
-
-    // Обновляем виджет
-    update();
 }
 
-void AudioVisualizer::paintEvent(QPaintEvent* event)
-{
-    Q_UNUSED(event);
+/**
+ * @brief Обновление абстрактных форм с плавными переходами
+ */
+void AudioVisualizer::updateAbstractShapes() {
+    if (controlPoints.size() != nextControlPoints.size()) {
+        qDebug() << "Ошибка: контрольные точки и следующие контрольные точки имеют разный размер.";
+        return;
+    }
 
+    // Плавное изменение точек контрольных точек
+    transitionStep += 0.02; // Плавный переход за счет маленьких шагов
+
+    if (transitionStep >= 1.0) {
+        transitionStep = 0.0;
+        // Когда завершается цикл, генерируем новые контрольные точки и цвета
+        for (int i = 0; i < numShapes; ++i) {
+            nextControlPoints[i] = QPointF(
+                QRandomGenerator::global()->bounded(width()),
+                QRandomGenerator::global()->bounded(height())
+            );
+        }
+        gradientStartColor = gradientEndColor;
+        gradientEndColor = QColor::fromHsv(QRandomGenerator::global()->bounded(360), 255, 255);
+    }
+
+    // Интерполируем текущие контрольные точки и цвета
+    for (int i = 0; i < controlPoints.size(); ++i) {
+        controlPoints[i] = controlPoints[i] * (1 - transitionStep) + nextControlPoints[i] * transitionStep;
+    }
+
+    currentGradientColor = interpolateColor(gradientStartColor, gradientEndColor, transitionStep);
+}
+
+
+void AudioVisualizer::paintEvent(QPaintEvent* event) {
+    Q_UNUSED(event);
     QPainter painter(this);
     painter.setRenderHint(QPainter::Antialiasing, true);
 
-    painter.fillRect(rect(), Qt::black); // заполняем черный фон
+    switch (currentType) {
+    case Particles:
+        paintParticles(painter);
+        break;
+    case AbstractShapes:
+        paintAbstractShapes(painter);
+        break;
+    }
+}
 
-    // Рисуем "дымки"
+void AudioVisualizer::paintParticles(QPainter& painter) {
+    painter.fillRect(rect(), Qt::black);
     for (int i = 0; i < numParticles; ++i) {
-        QColor color = particleColors[i];
-        QPointF position = particlePositions[i];
-
-        // Рисуем плавные круги, которые постепенно изменяются по размеру
-        QRadialGradient gradient(position, 50);
-        gradient.setColorAt(0, color);
-        gradient.setColorAt(1, QColor(0, 0, 0, 0)); // Прозрачный край
-
+        QRadialGradient gradient(particlePositions[i], 50);
+        gradient.setColorAt(0, particleColors[i]);
+        gradient.setColorAt(1, QColor(0, 0, 0, 0));
         painter.setBrush(gradient);
         painter.setPen(Qt::NoPen);
-
-        painter.drawEllipse(position, 50, 50); // Рисуем круг
+        painter.drawEllipse(particlePositions[i], 50, 50);
     }
+}
+
+
+/**
+ * @brief Рисование плавных абстрактных форм с градиентами
+ */
+void AudioVisualizer::paintAbstractShapes(QPainter& painter) {
+    painter.fillRect(rect(), Qt::black);
+
+    // Создаем путь для плавных кривых
+    QPainterPath path;
+    path.moveTo(controlPoints[0]);
+
+    for (int i = 1; i < controlPoints.size(); ++i) {
+        qreal x1 = controlPoints[i - 1].x();
+        qreal y1 = controlPoints[i - 1].y();
+        qreal x2 = controlPoints[i].x();
+        qreal y2 = controlPoints[i].y();
+        path.quadTo(QPointF(x1, y1), QPointF(x2, y2));
+    }
+
+    // Плавный градиент между двумя цветами
+    QLinearGradient gradient(0, 0, width(), height());
+    gradient.setColorAt(0, currentGradientColor);
+    gradient.setColorAt(1, QColor(0, 0, 0));
+
+    painter.setBrush(QBrush(gradient));
+    painter.setPen(Qt::NoPen);
+    painter.drawPath(path);
 }

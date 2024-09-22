@@ -241,10 +241,13 @@ void MainScene::onExitApplication()
 
 void MainScene::onFileSelected(const QString& filePath)
 {
-    FileManager::addToHistory(filePath);
-    addHistoryItem(filePath); // Добавляем в QListWidget
+    FileManager::addToHistory(filePath);  // Добавляем файл в историю
+    addHistoryItem(filePath);  // Добавляем файл в список истории
+
+    // Переходим на новую сцену
     app->changeScene(new PlayerScene(app, filePath));
 }
+
 
 void MainScene::onHistoryItemClicked(QListWidgetItem* item)
 {

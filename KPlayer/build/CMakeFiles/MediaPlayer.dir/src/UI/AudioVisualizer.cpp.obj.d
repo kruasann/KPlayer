@@ -382,4 +382,6 @@ CMakeFiles/MediaPlayer.dir/src/UI/AudioVisualizer.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtGui/QLinearGradient \
  N:/Qt/6.6.3/mingw_64/include/QtGui/qbrush.h \
  N:/Qt/6.6.3/mingw_64/include/QtCore/QDebug \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qdebug.h
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qdebug.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/QPainterPath \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qpainterpath.h

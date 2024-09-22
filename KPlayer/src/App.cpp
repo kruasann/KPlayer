@@ -33,9 +33,8 @@ void App::start(const QString& filePath) {
 
 void App::changeScene(QWidget* newScene) {
     if (currentScene) {
-        mainWindow->setCentralWidget(nullptr);
-        delete currentScene;
+        currentScene->deleteLater();  // Освобождаем предыдущую сцену
     }
     currentScene = newScene;
-    mainWindow->setCentralWidget(currentScene);
+    mainWindow->setCentralWidget(currentScene);  // Устанавливаем новую сцену как центральный виджет
 }

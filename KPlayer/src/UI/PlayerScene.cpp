@@ -234,8 +234,10 @@ void PlayerScene::handleHasVideoChanged(bool hasVideo)
 
 void PlayerScene::goBack()
 {
-    app->changeScene(new MainScene(app));
+    // Убедитесь, что сцена освобождается при возврате
+    app->changeScene(new MainScene(app));  // Создаем новую сцену и переходим к ней
 }
+
 
 void PlayerScene::createActions()
 {
