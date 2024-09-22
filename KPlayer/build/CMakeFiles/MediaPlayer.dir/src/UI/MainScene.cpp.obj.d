@@ -386,16 +386,6 @@ CMakeFiles/MediaPlayer.dir/src/UI/MainScene.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qwidgetaction.h \
  N:/KPlayer/KPlayer/src/App.h N:/Qt/6.6.3/mingw_64/include/QtCore/QObject \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qobject.h \
- N:\KPlayer\KPlayer\src\UI\PlayerScene.h \
- N:\KPlayer\KPlayer\src\UI\Scene.h \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidget \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/qwidget.h \
- N:/KPlayer/KPlayer/src/UI/Button.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/QString \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qstring.h \
- N:/KPlayer/KPlayer/src/UI/Slider.h \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/QSlider \
- N:/Qt/6.6.3/mingw_64/include/QtWidgets/qslider.h \
  N:/KPlayer/KPlayer/src/Player/MediaPlayer.h \
  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QMediaPlayer \
  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qmediaplayer.h \
@@ -418,12 +408,22 @@ CMakeFiles/MediaPlayer.dir/src/UI/MainScene.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qbytearray.h \
  N:/KPlayer/KPlayer/src/UI/AudioVisualizer.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidget \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qwidget.h \
  N:/Qt/6.6.3/mingw_64/include/QtCore/QVector \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h \
  N:/Qt/6.6.3/mingw_64/include/QtCore/QPointF \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qpoint.h \
  N:/Qt/6.6.3/mingw_64/include/QtGui/QColor \
  N:/Qt/6.6.3/mingw_64/include/QtGui/qcolor.h \
+ N:\KPlayer\KPlayer\src\UI\PlayerScene.h \
+ N:\KPlayer\KPlayer\src\UI\Scene.h N:/KPlayer/KPlayer/src/UI/Button.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QString \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qstring.h \
+ N:/KPlayer/KPlayer/src/UI/Slider.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QSlider \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qslider.h \
+ N:/KPlayer/KPlayer/src/Player/MediaPlayer.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QLabel \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qlabel.h \
  N:/Qt/6.6.3/mingw_64/include/QtGui/qpicture.h \

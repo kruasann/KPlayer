@@ -377,6 +377,15 @@ CMakeFiles/MediaPlayer.dir/src/Player/MediaPlayer.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qbasictimer.h \
  N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qbytearray.h \
+ N:/KPlayer/KPlayer/src/UI/AudioVisualizer.h \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidget \
+ N:/Qt/6.6.3/mingw_64/include/QtWidgets/qwidget.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QVector \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/QPointF \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qpoint.h \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/QColor \
+ N:/Qt/6.6.3/mingw_64/include/QtGui/qcolor.h \
  N:/Qt/6.6.3/mingw_64/include/QtCore/QRandomGenerator \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qrandom.h \
  N:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/random \

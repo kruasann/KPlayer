@@ -245,7 +245,11 @@ void MainScene::onFileSelected(const QString& filePath)
     addHistoryItem(filePath);  // Добавляем файл в список истории
 
     // Переходим на новую сцену
-    app->changeScene(new PlayerScene(app, filePath));
+    PlayerScene* playerScene = new PlayerScene(app, filePath);
+    app->changeScene(playerScene);
+
+    // Подключаем сигнал смены визуализации
+    connect(app->mediaPlayer(), &MediaPlayer::visualizationTypeChanged, playerScene->audiovisualizer(), &AudioVisualizer::setVisualizationType);
 }
 
 

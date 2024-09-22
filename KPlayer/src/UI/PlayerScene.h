@@ -19,6 +19,7 @@ class PlayerScene : public QWidget {
     Q_OBJECT
 public:
     explicit PlayerScene(App* app, const QString& filePath = QString(), QWidget* parent = nullptr);
+    AudioVisualizer* audiovisualizer() const { return audioVisualizer; }
     ~PlayerScene();
 
 private slots:

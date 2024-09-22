@@ -360,8 +360,6 @@ CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/mocs_compilation.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtGui/qcursor.h \
  N:/Qt/6.6.3/mingw_64/include/QtGui/qbitmap.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qtabwidget.h \
- N:/Qt/6.6.3/mingw_64/include/QtCore/qtmochelpers.h \
- N:\KPlayer\KPlayer\build\MediaPlayer_autogen\FOM3TICJJW/moc_MediaPlayer.cpp \
  N:/KPlayer/KPlayer/src/Player/MediaPlayer.h \
  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QMediaPlayer \
  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qmediaplayer.h \
@@ -383,7 +381,6 @@ CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/mocs_compilation.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qbasictimer.h \
  N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qbytearray.h \
- N:\KPlayer\KPlayer\build\MediaPlayer_autogen\WAYUIA5GRM/moc_AudioVisualizer.cpp \
  N:/KPlayer/KPlayer/src/UI/AudioVisualizer.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidget \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qwidget.h \
@@ -393,6 +390,11 @@ CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/mocs_compilation.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qpoint.h \
  N:/Qt/6.6.3/mingw_64/include/QtGui/QColor \
  N:/Qt/6.6.3/mingw_64/include/QtGui/qcolor.h \
+ N:/Qt/6.6.3/mingw_64/include/QtCore/qtmochelpers.h \
+ N:\KPlayer\KPlayer\build\MediaPlayer_autogen\FOM3TICJJW/moc_MediaPlayer.cpp \
+ N:/KPlayer/KPlayer/src/Player/MediaPlayer.h \
+ N:\KPlayer\KPlayer\build\MediaPlayer_autogen\WAYUIA5GRM/moc_AudioVisualizer.cpp \
+ N:/KPlayer/KPlayer/src/UI/AudioVisualizer.h \
  N:\KPlayer\KPlayer\build\MediaPlayer_autogen\WAYUIA5GRM/moc_Button.cpp \
  N:/KPlayer/KPlayer/src/UI/Button.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QPushButton \
@@ -437,7 +439,6 @@ CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/mocs_compilation.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QSlider \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qslider.h \
  N:/KPlayer/KPlayer/src/Player/MediaPlayer.h \
- N:/KPlayer/KPlayer/src/UI/AudioVisualizer.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QLabel \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qlabel.h \
  N:/Qt/6.6.3/mingw_64/include/QtGui/qpicture.h \

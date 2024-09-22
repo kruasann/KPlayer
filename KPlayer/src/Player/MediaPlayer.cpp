@@ -1,7 +1,9 @@
 // src/Player/MediaPlayer.cpp
 #include "MediaPlayer.h"
 #include <QRandomGenerator>
+#include "UI/AudioVisualizer.h"
 #include <QDebug>
+
 
 MediaPlayer::MediaPlayer(QObject* parent)
     : QObject(parent)
@@ -44,6 +46,7 @@ void MediaPlayer::setSource(const QUrl& url)
     player->setSource(url);
 }
 
+
 void MediaPlayer::play()
 {
     qDebug() << "MediaPlayer::play()";
@@ -51,7 +54,17 @@ void MediaPlayer::play()
 
     // Запускаем таймер генерации аудио-данных
     audioDataTimer->start(100); // Обновление каждые 100 мс
+
+    // Случайный выбор типа визуализации при каждом запуске
+    int randomType = QRandomGenerator::global()->bounded(2); // 0 или 1
+    AudioVisualizer::VisualizationType selectedType = static_cast<AudioVisualizer::VisualizationType>(randomType);
+
+    // Устанавливаем случайный тип визуализации
+    emit visualizationTypeChanged(selectedType);
+
+    qDebug() << "Selected visualization type:" << selectedType; // Отладочный вывод для проверки
 }
+
 
 void MediaPlayer::pause()
 {

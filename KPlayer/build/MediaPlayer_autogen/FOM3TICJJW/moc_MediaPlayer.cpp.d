@@ -1,8 +1,11 @@
 N:/KPlayer/KPlayer/build/MediaPlayer_autogen/FOM3TICJJW/moc_MediaPlayer.cpp: N:/KPlayer/KPlayer/src/Player/MediaPlayer.h \
   N:/KPlayer/KPlayer/build/MediaPlayer_autogen/moc_predefs.h \
+  N:/KPlayer/KPlayer/src/UI/AudioVisualizer.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QObject \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QPointF \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QTimer \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QVector \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20functional.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20memory.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -118,8 +121,10 @@ N:/KPlayer/KPlayer/build/MediaPlayer_autogen/FOM3TICJJW/moc_MediaPlayer.cpp: N:/
   N:/Qt/6.6.3/mingw_64/include/QtCore/qutf8stringview.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvariant.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvarlengtharray.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qversiontagging.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qxptype_traits.h \
+  N:/Qt/6.6.3/mingw_64/include/QtGui/QColor \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qaction.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qbitmap.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qbrush.h \
@@ -158,6 +163,7 @@ N:/KPlayer/KPlayer/build/MediaPlayer_autogen/FOM3TICJJW/moc_MediaPlayer.cpp: N:/
   N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h \
   N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
   N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/qvideowidget.h \
+  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidget \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qsizepolicy.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qtwidgets-config.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qtwidgetsexports.h \

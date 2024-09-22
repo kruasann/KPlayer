@@ -22,8 +22,14 @@ QColor interpolateColor(const QColor& startColor, const QColor& endColor, qreal 
 }
 
 AudioVisualizer::AudioVisualizer(QWidget* parent)
-    : QWidget(parent), currentType(AbstractShapes), transitionStep(0)  // Начальный тип визуализации "AbstractShapes"
+    : QWidget(parent), transitionStep(0)
 {
+    // Случайный выбор начального типа визуализации
+    int randomType = QRandomGenerator::global()->bounded(2); // 0 или 1
+    currentType = static_cast<VisualizationType>(randomType); // Устанавливаем случайный тип
+
+    qDebug() << "Selected visualization type:" << currentType;  // Отладка для проверки
+
     QTimer* timer = new QTimer(this);
     connect(timer, &QTimer::timeout, this, &AudioVisualizer::updateAnimation);
     timer->start(30); // Частота обновления
@@ -34,7 +40,7 @@ AudioVisualizer::AudioVisualizer(QWidget* parent)
             QRandomGenerator::global()->bounded(width()),
             QRandomGenerator::global()->bounded(height())
         ));
-        nextControlPoints.append(QPointF( // Добавляем инициализацию nextControlPoints
+        nextControlPoints.append(QPointF(
             QRandomGenerator::global()->bounded(width()),
             QRandomGenerator::global()->bounded(height())
         ));
@@ -43,7 +49,22 @@ AudioVisualizer::AudioVisualizer(QWidget* parent)
     // Начальные цвета градиента
     gradientStartColor = QColor::fromHsv(QRandomGenerator::global()->bounded(360), 255, 255);
     gradientEndColor = QColor::fromHsv(QRandomGenerator::global()->bounded(360), 255, 255);
+
+    // Инициализация частиц для визуализации Particles
+    for (int i = 0; i < numParticles; ++i) {
+        particlePositions.append(QPointF(
+            QRandomGenerator::global()->bounded(width()),
+            QRandomGenerator::global()->bounded(height())
+        ));
+        particleVelocities.append(QPointF(
+            QRandomGenerator::global()->bounded(-5, 5),
+            QRandomGenerator::global()->bounded(-5, 5)
+        ));
+        particleColors.append(QColor::fromHsv(QRandomGenerator::global()->bounded(360), 255, 255));
+    }
 }
+
+
 
 
 /**

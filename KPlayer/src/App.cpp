@@ -9,7 +9,9 @@
 App::App() {
     mainWindow = new QMainWindow();
     currentScene = nullptr;
+    mediaPlayerInstance = new MediaPlayer();  // Инициализируем медиаплеер
 }
+
 
     // test
 

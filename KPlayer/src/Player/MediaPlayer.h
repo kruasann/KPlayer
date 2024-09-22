@@ -8,6 +8,7 @@
 #include <QVideoWidget>
 #include <QTimer>
 #include <QByteArray>
+#include "UI/AudioVisualizer.h"
 
 /**
  * @brief Класс MediaPlayer инкапсулирует функциональность воспроизведения медиа.
@@ -36,6 +37,7 @@ signals:
     void errorOccurred(const QString& errorString);
     void hasVideoChanged(bool hasVideo); // Новый сигнал
     void audioDataGenerated(const QByteArray& data);
+    void visualizationTypeChanged(AudioVisualizer::VisualizationType type); // Сигнал для смены типа визуализации
 
 private slots:
     void generateAudioData();

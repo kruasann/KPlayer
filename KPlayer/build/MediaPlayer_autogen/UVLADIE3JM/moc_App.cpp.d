@@ -1,6 +1,12 @@
 N:/KPlayer/KPlayer/build/MediaPlayer_autogen/UVLADIE3JM/moc_App.cpp: N:/KPlayer/KPlayer/src/App.h \
   N:/KPlayer/KPlayer/build/MediaPlayer_autogen/moc_predefs.h \
+  N:/KPlayer/KPlayer/src/Player/MediaPlayer.h \
+  N:/KPlayer/KPlayer/src/UI/AudioVisualizer.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QByteArray \
   N:/Qt/6.6.3/mingw_64/include/QtCore/QObject \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QPointF \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QTimer \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/QVector \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20functional.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20memory.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -14,6 +20,7 @@ N:/KPlayer/KPlayer/build/MediaPlayer_autogen/UVLADIE3JM/moc_App.cpp: N:/KPlayer/
   N:/Qt/6.6.3/mingw_64/include/QtCore/qatomic.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qatomic_cxx11.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qbasicatomic.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/qbasictimer.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qbindingstorage.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qbytearray.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qbytearrayalgorithms.h \
@@ -55,6 +62,7 @@ N:/KPlayer/KPlayer/build/MediaPlayer_autogen/UVLADIE3JM/moc_App.cpp: N:/KPlayer/
   N:/Qt/6.6.3/mingw_64/include/QtCore/qmargins.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qmath.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qmetacontainer.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/qmetaobject.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qmetatype.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qminmax.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qnamespace.h \
@@ -99,6 +107,7 @@ N:/KPlayer/KPlayer/build/MediaPlayer_autogen/UVLADIE3JM/moc_App.cpp: N:/KPlayer/
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtdeprecationmarkers.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtenvironmentvariables.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtextstream.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/qtimer.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtmetamacros.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtnoop.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtpreprocessorsupport.h \
@@ -109,11 +118,14 @@ N:/KPlayer/KPlayer/build/MediaPlayer_autogen/UVLADIE3JM/moc_App.cpp: N:/KPlayer/
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtversionchecks.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtypeinfo.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qtypes.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/qurl.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qutf8stringview.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvariant.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qvarlengtharray.h \
+  N:/Qt/6.6.3/mingw_64/include/QtCore/qvector.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qversiontagging.h \
   N:/Qt/6.6.3/mingw_64/include/QtCore/qxptype_traits.h \
+  N:/Qt/6.6.3/mingw_64/include/QtGui/QColor \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qaction.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qbitmap.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qbrush.h \
@@ -139,7 +151,21 @@ N:/KPlayer/KPlayer/build/MediaPlayer_autogen/UVLADIE3JM/moc_App.cpp: N:/KPlayer/
   N:/Qt/6.6.3/mingw_64/include/QtGui/qtransform.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs.h \
   N:/Qt/6.6.3/mingw_64/include/QtGui/qwindowdefs_win.h \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QAudioOutput \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/QMediaPlayer \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudio.h \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qaudiooutput.h \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qmediaenumdebug.h \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qmediaplayer.h \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/QVideoWidget \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
+  N:/Qt/6.6.3/mingw_64/include/QtMultimediaWidgets/qvideowidget.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMainWindow \
+  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QWidget \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qmainwindow.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qsizepolicy.h \
   N:/Qt/6.6.3/mingw_64/include/QtWidgets/qtabwidget.h \

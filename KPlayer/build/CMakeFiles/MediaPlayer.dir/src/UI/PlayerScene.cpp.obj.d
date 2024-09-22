@@ -411,6 +411,7 @@ CMakeFiles/MediaPlayer.dir/src/UI/PlayerScene.cpp.obj: \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/QMainWindow \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qmainwindow.h \
  N:/Qt/6.6.3/mingw_64/include/QtWidgets/qtabwidget.h \
+ N:/KPlayer/KPlayer/src/Player/MediaPlayer.h \
  N:/KPlayer/KPlayer/src/Utils/FileManager.h \
  N:/Qt/6.6.3/mingw_64/include/QtCore/QStringList \
  N:/Qt/6.6.3/mingw_64/include/QtCore/qstringlist.h \
