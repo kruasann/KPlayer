@@ -328,21 +328,9 @@
 	[
 		[ "N:/KPlayer/KPlayer/src/App.h", "MU", "UVLADIE3JM/moc_App.cpp", null ],
 		[
-			"N:/KPlayer/KPlayer/src/Player/AudioPlayer.h",
-			"MU",
-			"FOM3TICJJW/moc_AudioPlayer.cpp",
-			null
-		],
-		[
 			"N:/KPlayer/KPlayer/src/Player/MediaPlayer.h",
 			"MU",
 			"FOM3TICJJW/moc_MediaPlayer.cpp",
-			null
-		],
-		[
-			"N:/KPlayer/KPlayer/src/Player/VideoPlayer.h",
-			"MU",
-			"FOM3TICJJW/moc_VideoPlayer.cpp",
 			null
 		],
 		[
@@ -391,12 +379,6 @@
 			"N:/KPlayer/KPlayer/src/Utils/FileManager.h",
 			"MU",
 			"WGYDDRAMTN/moc_FileManager.cpp",
-			null
-		],
-		[
-			"N:/KPlayer/KPlayer/src/Utils/ThreadPool.h",
-			"MU",
-			"WGYDDRAMTN/moc_ThreadPool.cpp",
 			null
 		]
 	],
@@ -464,9 +446,7 @@
 	"SOURCES" : 
 	[
 		[ "N:/KPlayer/KPlayer/src/App.cpp", "MU", null ],
-		[ "N:/KPlayer/KPlayer/src/Player/AudioPlayer.cpp", "MU", null ],
 		[ "N:/KPlayer/KPlayer/src/Player/MediaPlayer.cpp", "MU", null ],
-		[ "N:/KPlayer/KPlayer/src/Player/VideoPlayer.cpp", "MU", null ],
 		[ "N:/KPlayer/KPlayer/src/UI/AudioVisualizer.cpp", "MU", null ],
 		[ "N:/KPlayer/KPlayer/src/UI/Button.cpp", "MU", null ],
 		[ "N:/KPlayer/KPlayer/src/UI/MainScene.cpp", "MU", null ],
@@ -475,7 +455,6 @@
 		[ "N:/KPlayer/KPlayer/src/UI/Scene.cpp", "MU", null ],
 		[ "N:/KPlayer/KPlayer/src/UI/Slider.cpp", "MU", null ],
 		[ "N:/KPlayer/KPlayer/src/Utils/FileManager.cpp", "MU", null ],
-		[ "N:/KPlayer/KPlayer/src/Utils/ThreadPool.cpp", "MU", null ],
 		[ "N:/KPlayer/KPlayer/src/main.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

@@ -57,7 +57,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 25,
+				"line" : 35,
 				"parent" : 0
 			},
 			{
@@ -81,7 +81,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 30,
+				"line" : 40,
 				"parent" : 0
 			},
 			{
@@ -337,13 +337,13 @@
 			{
 				"command" : 10,
 				"file" : 1,
-				"line" : 37,
+				"line" : 47,
 				"parent" : 0
 			},
 			{
 				"command" : 11,
 				"file" : 1,
-				"line" : 42,
+				"line" : 53,
 				"parent" : 0
 			}
 		]
@@ -481,20 +481,17 @@
 			[
 				0,
 				1,
+				2,
 				3,
+				4,
 				5,
+				6,
 				7,
+				8,
 				9,
+				10,
 				11,
-				13,
-				15,
-				17,
-				19,
-				21,
-				23,
-				25,
-				27,
-				31
+				15
 			]
 		},
 		{
@@ -617,18 +614,18 @@
 			"language" : "RC",
 			"sourceIndexes" : 
 			[
-				29
+				13
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "MediaPlayer_autogen::@6890427a1f51a3e7e1df"
+			"id" : "MediaPlayer_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "MediaPlayer_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "MediaPlayer_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "MediaPlayer::@6890427a1f51a3e7e1df",
@@ -746,56 +743,34 @@
 			[
 				0,
 				1,
+				2,
 				3,
+				4,
 				5,
+				6,
 				7,
+				8,
 				9,
+				10,
 				11,
 				13,
-				15,
-				17,
-				19,
-				21,
-				23,
-				25,
-				27,
-				29,
-				31
-			]
-		},
-		{
-			"name" : "Header Files",
-			"sourceIndexes" : 
-			[
-				2,
-				4,
-				6,
-				8,
-				10,
-				12,
-				14,
-				16,
-				18,
-				20,
-				22,
-				24,
-				26
+				15
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				28,
-				30
+				12,
+				14
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				32,
-				33
+				16,
+				17
 			]
 		}
 	],
@@ -811,57 +786,14 @@
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
+			"path" : "src/main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
 			"path" : "src/App.cpp",
 			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"path" : "src/App.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "src/Player/AudioPlayer.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"path" : "src/Player/AudioPlayer.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "src/Player/MediaPlayer.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"path" : "src/Player/MediaPlayer.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "src/Player/VideoPlayer.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"path" : "src/Player/VideoPlayer.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "src/UI/AudioVisualizer.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"path" : "src/UI/AudioVisualizer.h",
-			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 4,
@@ -871,8 +803,15 @@
 		},
 		{
 			"backtrace" : 4,
-			"path" : "src/UI/Button.h",
-			"sourceGroupIndex" : 1
+			"compileGroupIndex" : 0,
+			"path" : "src/UI/Slider.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/UI/AudioVisualizer.cpp",
+			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 4,
@@ -882,8 +821,9 @@
 		},
 		{
 			"backtrace" : 4,
-			"path" : "src/UI/MainScene.h",
-			"sourceGroupIndex" : 1
+			"compileGroupIndex" : 0,
+			"path" : "src/UI/Scene.cpp",
+			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 4,
@@ -893,41 +833,9 @@
 		},
 		{
 			"backtrace" : 4,
-			"path" : "src/UI/Menu.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
 			"compileGroupIndex" : 0,
 			"path" : "src/UI/PlayerScene.cpp",
 			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"path" : "src/UI/PlayerScene.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "src/UI/Scene.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"path" : "src/UI/Scene.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "src/UI/Slider.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"path" : "src/UI/Slider.h",
-			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 4,
@@ -937,30 +845,14 @@
 		},
 		{
 			"backtrace" : 4,
-			"path" : "src/Utils/FileManager.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "src/Utils/ThreadPool.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"path" : "src/Utils/ThreadPool.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "src/main.cpp",
+			"path" : "src/Player/MediaPlayer.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 4,
 			"path" : "src/resources.qrc",
-			"sourceGroupIndex" : 2
+			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 54,
@@ -972,7 +864,7 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "out/build/x64-Debug/MediaPlayer_autogen/timestamp",
-			"sourceGroupIndex" : 2
+			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
@@ -985,13 +877,13 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "out/build/x64-Debug/MediaPlayer_autogen/timestamp.rule",
-			"sourceGroupIndex" : 3
+			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "out/build/x64-Debug/MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp.rule",
-			"sourceGroupIndex" : 3
+			"sourceGroupIndex" : 2
 		}
 	],
 	"type" : "EXECUTABLE"

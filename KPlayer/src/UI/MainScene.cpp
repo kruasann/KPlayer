@@ -56,6 +56,9 @@ void MainScene::createActions()
     actionExit = new QAction("Exit", this);
     actionExit->setShortcut(QKeySequence::Quit);
     connect(actionExit, &QAction::triggered, this, &MainScene::onExitApplication);
+
+    actionAbout = new QAction("About", this);  // Действие для окошко "About"
+    connect(actionAbout, &QAction::triggered, this, &MainScene::onAbout);  // Подключаем к слоту
 }
 
 void MainScene::createMenus() {
@@ -87,11 +90,14 @@ void MainScene::createMenus() {
     comboBoxLayout->addWidget(styleComboBox);
     styleAction->setDefaultWidget(comboBoxWidget);
 
-    menuSettings->addAction(styleAction);
+    // Help Menu
+    menuHelp = new QMenu("Help", this);  // Новое меню для "Help"
+    menuHelp->addAction(actionAbout);  // Добавляем пункт "About"
 
     // Add menus to menubar
     menubar->addMenu(menuFile);
     menubar->addMenu(menuSettings);
+    menubar->addMenu(menuHelp);  // Добавляем новое меню в menubar
 
     // Ensure the menubar is set to the main window
     setMenuBar(menubar);
@@ -111,6 +117,15 @@ void MainScene::onStyleChanged(const QString& styleName) {
 
     statusbar->showMessage("Theme changed to " + styleName, 2000);
 }
+
+void MainScene::onAbout() {
+    QMessageBox::information(this, "About KPlayer",
+        "KPlayer\n"
+        "Version: 1.0.0\n"
+        "Created by: <Kruasann>\n"
+        "A multimedia player built with Qt.");
+}
+
 
 void MainScene::loadStyle(const QString& stylePath) {
     QFile file(stylePath);

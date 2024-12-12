@@ -226,30 +226,6 @@ src/App.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MediaPlayer.dir\build.make CMakeFiles/MediaPlayer.dir/src/App.cpp.s
 .PHONY : src/App.cpp.s
 
-src/Player/AudioPlayer.obj: src/Player/AudioPlayer.cpp.obj
-.PHONY : src/Player/AudioPlayer.obj
-
-# target to build an object file
-src/Player/AudioPlayer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MediaPlayer.dir\build.make CMakeFiles/MediaPlayer.dir/src/Player/AudioPlayer.cpp.obj
-.PHONY : src/Player/AudioPlayer.cpp.obj
-
-src/Player/AudioPlayer.i: src/Player/AudioPlayer.cpp.i
-.PHONY : src/Player/AudioPlayer.i
-
-# target to preprocess a source file
-src/Player/AudioPlayer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MediaPlayer.dir\build.make CMakeFiles/MediaPlayer.dir/src/Player/AudioPlayer.cpp.i
-.PHONY : src/Player/AudioPlayer.cpp.i
-
-src/Player/AudioPlayer.s: src/Player/AudioPlayer.cpp.s
-.PHONY : src/Player/AudioPlayer.s
-
-# target to generate assembly for a file
-src/Player/AudioPlayer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MediaPlayer.dir\build.make CMakeFiles/MediaPlayer.dir/src/Player/AudioPlayer.cpp.s
-.PHONY : src/Player/AudioPlayer.cpp.s
-
 src/Player/MediaPlayer.obj: src/Player/MediaPlayer.cpp.obj
 .PHONY : src/Player/MediaPlayer.obj
 
@@ -273,30 +249,6 @@ src/Player/MediaPlayer.s: src/Player/MediaPlayer.cpp.s
 src/Player/MediaPlayer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MediaPlayer.dir\build.make CMakeFiles/MediaPlayer.dir/src/Player/MediaPlayer.cpp.s
 .PHONY : src/Player/MediaPlayer.cpp.s
-
-src/Player/VideoPlayer.obj: src/Player/VideoPlayer.cpp.obj
-.PHONY : src/Player/VideoPlayer.obj
-
-# target to build an object file
-src/Player/VideoPlayer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MediaPlayer.dir\build.make CMakeFiles/MediaPlayer.dir/src/Player/VideoPlayer.cpp.obj
-.PHONY : src/Player/VideoPlayer.cpp.obj
-
-src/Player/VideoPlayer.i: src/Player/VideoPlayer.cpp.i
-.PHONY : src/Player/VideoPlayer.i
-
-# target to preprocess a source file
-src/Player/VideoPlayer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MediaPlayer.dir\build.make CMakeFiles/MediaPlayer.dir/src/Player/VideoPlayer.cpp.i
-.PHONY : src/Player/VideoPlayer.cpp.i
-
-src/Player/VideoPlayer.s: src/Player/VideoPlayer.cpp.s
-.PHONY : src/Player/VideoPlayer.s
-
-# target to generate assembly for a file
-src/Player/VideoPlayer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MediaPlayer.dir\build.make CMakeFiles/MediaPlayer.dir/src/Player/VideoPlayer.cpp.s
-.PHONY : src/Player/VideoPlayer.cpp.s
 
 src/UI/AudioVisualizer.obj: src/UI/AudioVisualizer.cpp.obj
 .PHONY : src/UI/AudioVisualizer.obj
@@ -490,30 +442,6 @@ src/Utils/FileManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MediaPlayer.dir\build.make CMakeFiles/MediaPlayer.dir/src/Utils/FileManager.cpp.s
 .PHONY : src/Utils/FileManager.cpp.s
 
-src/Utils/ThreadPool.obj: src/Utils/ThreadPool.cpp.obj
-.PHONY : src/Utils/ThreadPool.obj
-
-# target to build an object file
-src/Utils/ThreadPool.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MediaPlayer.dir\build.make CMakeFiles/MediaPlayer.dir/src/Utils/ThreadPool.cpp.obj
-.PHONY : src/Utils/ThreadPool.cpp.obj
-
-src/Utils/ThreadPool.i: src/Utils/ThreadPool.cpp.i
-.PHONY : src/Utils/ThreadPool.i
-
-# target to preprocess a source file
-src/Utils/ThreadPool.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MediaPlayer.dir\build.make CMakeFiles/MediaPlayer.dir/src/Utils/ThreadPool.cpp.i
-.PHONY : src/Utils/ThreadPool.cpp.i
-
-src/Utils/ThreadPool.s: src/Utils/ThreadPool.cpp.s
-.PHONY : src/Utils/ThreadPool.s
-
-# target to generate assembly for a file
-src/Utils/ThreadPool.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MediaPlayer.dir\build.make CMakeFiles/MediaPlayer.dir/src/Utils/ThreadPool.cpp.s
-.PHONY : src/Utils/ThreadPool.cpp.s
-
 src/app.obj: src/app.rc.obj
 .PHONY : src/app.obj
 
@@ -566,15 +494,9 @@ help:
 	@echo ... src/App.obj
 	@echo ... src/App.i
 	@echo ... src/App.s
-	@echo ... src/Player/AudioPlayer.obj
-	@echo ... src/Player/AudioPlayer.i
-	@echo ... src/Player/AudioPlayer.s
 	@echo ... src/Player/MediaPlayer.obj
 	@echo ... src/Player/MediaPlayer.i
 	@echo ... src/Player/MediaPlayer.s
-	@echo ... src/Player/VideoPlayer.obj
-	@echo ... src/Player/VideoPlayer.i
-	@echo ... src/Player/VideoPlayer.s
 	@echo ... src/UI/AudioVisualizer.obj
 	@echo ... src/UI/AudioVisualizer.i
 	@echo ... src/UI/AudioVisualizer.s
@@ -599,9 +521,6 @@ help:
 	@echo ... src/Utils/FileManager.obj
 	@echo ... src/Utils/FileManager.i
 	@echo ... src/Utils/FileManager.s
-	@echo ... src/Utils/ThreadPool.obj
-	@echo ... src/Utils/ThreadPool.i
-	@echo ... src/Utils/ThreadPool.s
 	@echo ... src/app.obj
 	@echo ... src/main.obj
 	@echo ... src/main.i

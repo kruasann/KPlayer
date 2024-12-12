@@ -7,7 +7,6 @@
 #include <QPushButton>
 #include <QWidgetAction>
 
-
 class App;
 class QAction;
 class QListWidget;
@@ -28,6 +27,7 @@ private slots:
     void onFileSelected(const QString& filePath);
     void onHistoryItemClicked(QListWidgetItem* item);
     void onStyleChanged(const QString& styleName);  // Новый слот для изменения стиля
+    void onAbout();  // Новый слот для отображения информации о приложении
 
 private:
     void createActions();
@@ -44,8 +44,10 @@ private:
     QMenuBar* menubar;
     QMenu* menuFile;
     QMenu* menuSettings;  // Новое меню для настроек
+    QMenu* menuHelp;      // Меню "Help" для отображения информации
     QAction* actionOpen;
     QAction* actionExit;
+    QAction* actionAbout;  // Действие для "About"
 
     QComboBox* styleComboBox;  // Выпадающий список для выбора стиля
 

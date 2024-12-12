@@ -117,7 +117,7 @@ CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 CMAKE_LINKER:FILEPATH=N:/VisualSt/VS/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/link.exe
 
 //No help, variable specified on the command line.
-CMAKE_MAKE_PROGRAM:UNINITIALIZED=N:\VISUALST\VS\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe
+CMAKE_MAKE_PROGRAM:UNINITIALIZED=n:\visualst\vs\common7\ide\commonextensions\microsoft\cmake\Ninja\ninja.exe
 
 //Flags used by the linker during the creation of modules during
 // all build types.

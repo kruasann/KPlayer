@@ -50,9 +50,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "N:/KPlayer/KPlayer/build/MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp" "CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp.obj" "gcc" "CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/UVLADIE3JM/qrc_resources.cpp.obj.d"
   "N:/KPlayer/KPlayer/build/MediaPlayer_autogen/mocs_compilation.cpp" "CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/mocs_compilation.cpp.obj.d"
   "N:/KPlayer/KPlayer/src/App.cpp" "CMakeFiles/MediaPlayer.dir/src/App.cpp.obj" "gcc" "CMakeFiles/MediaPlayer.dir/src/App.cpp.obj.d"
-  "N:/KPlayer/KPlayer/src/Player/AudioPlayer.cpp" "CMakeFiles/MediaPlayer.dir/src/Player/AudioPlayer.cpp.obj" "gcc" "CMakeFiles/MediaPlayer.dir/src/Player/AudioPlayer.cpp.obj.d"
   "N:/KPlayer/KPlayer/src/Player/MediaPlayer.cpp" "CMakeFiles/MediaPlayer.dir/src/Player/MediaPlayer.cpp.obj" "gcc" "CMakeFiles/MediaPlayer.dir/src/Player/MediaPlayer.cpp.obj.d"
-  "N:/KPlayer/KPlayer/src/Player/VideoPlayer.cpp" "CMakeFiles/MediaPlayer.dir/src/Player/VideoPlayer.cpp.obj" "gcc" "CMakeFiles/MediaPlayer.dir/src/Player/VideoPlayer.cpp.obj.d"
   "N:/KPlayer/KPlayer/src/UI/AudioVisualizer.cpp" "CMakeFiles/MediaPlayer.dir/src/UI/AudioVisualizer.cpp.obj" "gcc" "CMakeFiles/MediaPlayer.dir/src/UI/AudioVisualizer.cpp.obj.d"
   "N:/KPlayer/KPlayer/src/UI/Button.cpp" "CMakeFiles/MediaPlayer.dir/src/UI/Button.cpp.obj" "gcc" "CMakeFiles/MediaPlayer.dir/src/UI/Button.cpp.obj.d"
   "N:/KPlayer/KPlayer/src/UI/MainScene.cpp" "CMakeFiles/MediaPlayer.dir/src/UI/MainScene.cpp.obj" "gcc" "CMakeFiles/MediaPlayer.dir/src/UI/MainScene.cpp.obj.d"
@@ -61,7 +59,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "N:/KPlayer/KPlayer/src/UI/Scene.cpp" "CMakeFiles/MediaPlayer.dir/src/UI/Scene.cpp.obj" "gcc" "CMakeFiles/MediaPlayer.dir/src/UI/Scene.cpp.obj.d"
   "N:/KPlayer/KPlayer/src/UI/Slider.cpp" "CMakeFiles/MediaPlayer.dir/src/UI/Slider.cpp.obj" "gcc" "CMakeFiles/MediaPlayer.dir/src/UI/Slider.cpp.obj.d"
   "N:/KPlayer/KPlayer/src/Utils/FileManager.cpp" "CMakeFiles/MediaPlayer.dir/src/Utils/FileManager.cpp.obj" "gcc" "CMakeFiles/MediaPlayer.dir/src/Utils/FileManager.cpp.obj.d"
-  "N:/KPlayer/KPlayer/src/Utils/ThreadPool.cpp" "CMakeFiles/MediaPlayer.dir/src/Utils/ThreadPool.cpp.obj" "gcc" "CMakeFiles/MediaPlayer.dir/src/Utils/ThreadPool.cpp.obj.d"
   "N:/KPlayer/KPlayer/src/main.cpp" "CMakeFiles/MediaPlayer.dir/src/main.cpp.obj" "gcc" "CMakeFiles/MediaPlayer.dir/src/main.cpp.obj.d"
   )
 
