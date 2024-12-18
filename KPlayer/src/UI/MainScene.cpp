@@ -122,7 +122,7 @@ void MainScene::onAbout() {
     QMessageBox::information(this, "About KPlayer",
         "KPlayer\n"
         "Version: 1.0.0\n"
-        "Created by: <Kruasann>\n"
+        "Created by: <Alice Balykina>\n"
         "A multimedia player built with Qt.");
 }
 
